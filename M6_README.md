@@ -1,6 +1,6 @@
 # M6 — Riyadh Travel Planner
 
-**Status, 8 November 2026:** implementation and offline validation are complete. No live M6 model run has been performed. Mock records are software fixtures, not research results. M6 submission is not complete until the approved live comparison and failure analysis are recorded.
+**Status, 8 November 2026:** implementation, offline validation and the live paired pilot are complete. A live paired G01/seed11 pilot completed with 2 records and 9 HTTP requests. Formal experiments have not been run. Mock records are software fixtures, not research results. M6 submission is not complete until the approved live comparison and failure analysis are recorded.
 
 Start with `docs/M6_Experiment_Protocol.md` and `M6_Team_Guide.html`. M5 remains unchanged in its separate repository. This M6 project contains only its runtime dependencies and new M6 work.
 
@@ -38,9 +38,9 @@ This uses the real pinned SDK with `httpx.MockTransport`, a fake clock and a soc
 
 ## Separately approved live execution
 
-Open `notebooks/M6_Colab_Run.ipynb`. All installation/upload/live flags start false. Do not run archived M4/M5notebooks. Use the existing Colab Secret `GEMINI_API_KEY`; never paste it into code, reports or chat.
+Open `notebooks/M6_Colab_Run.ipynb`. All installation/upload/live flags start false. Do not run archived M4/M5 notebooks. Use the existing Colab Secret `GEMINI_API_KEY`; never paste it into code, reports or chat.
 
-The proposed first step, requiring separate approval, is a **paired pilot: G01/seed11, baseline + treatment**, at most2new records and60total HTTP requests. It is stored under a `pilot-` version and never substituted into the formal cohort. The code will not start another record unless30requests of approved session capacity remain. Unused capacity is not spent automatically.
+The completed readiness step was a **paired pilot: G01/seed11, baseline + treatment**, at most2new records and60total HTTP requests. It is stored under a `pilot-` version and never substituted into the formal cohort. The code will not start another record unless30requests of approved session capacity remain. Unused capacity is not spent automatically.
 
 After reviewing the pilot, a separately approved formal study uses all20cases ×3seeds ×2conditions =120records. A conservative session cap is6new records/180HTTP requests; actual requests may be fewer. Resume the SAME formal version without rerunning saved failures or completed records. Keep the environment/source/settings fixed. Download saved evidence after every chunk.
 
@@ -53,11 +53,15 @@ Full-cohort comparison refuses incomplete/extra records. `analysis/M6_Results.cs
 - `m6planner/`: model workflow, shared policy, paired runner, analysis and mock service.
 - `notebooks/M6_Colab_Run.ipynb`: safe default Colab entry point.
 - `docs/M6_Experiment_Protocol.md`: frozen design and execution/measurement policy.
-- `reports/M6_Report.md`: implementation report with experimental results explicitly pending.
+- `reports/M6_Report.md`: implementation report with formal comparative results explicitly pending.
 - `M6_Team_Guide.html`: Arabic/English guide, opens locally without internet.
 - `reports/M6_Verification.json`: executed verification checks and their scope.
 - `m6_runs/`: separate validation/pilot/formal output versions. The original 120 mocked records remain in the validation archive; regenerate them with the command above.
 
 The original 49 M5 tests and saved V3 verifier were executed against the preserved M5 source snapshot before this independent export. Their historical artifacts remain in the separate M5 repository/validation archive.
 
-All historical M5 evidence and attribution are preserved. No merges, purchases, billing upgrades, API-key retrieval or live model requests were performed.
+All historical M5 evidence and attribution are preserved. No merges, purchases or billing upgrades were performed. The approved pilot used the existing Colab Secret without exposing or copying its value outside Colab. See reports/M6_Pilot_Report.md.
+
+## Pilot evidence storage
+
+The two pilot records and their full request/response/tool journals are retained in the separate local M6_Pilot_Evidence.zip. Raw pilot traces are not uploaded to GitHub. Extract this evidence ZIP under m6_runs/ to audit pilot-v1 with scripts/verify_m6.py. Summary measurements are in reports/M6_Pilot_Report.md and reports/M6_Pilot_Audit.json.

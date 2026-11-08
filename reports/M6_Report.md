@@ -1,6 +1,6 @@
 # M6: Coordinated Riyadh Travel Planner
 
-**Current status:** implementation and offline verification complete; live pilot and controlled experiments pending approval. This is an implementation report, not a completed experimental-results report. Prepared 8 November 2026.
+**Current status:** implementation, offline verification and a live paired pilot complete; formal controlled experiments pending approval. This is an implementation report, not a completed experimental-results report. Prepared 8 November 2026.
 
 ## Problem and design
 
@@ -12,13 +12,13 @@ The M2 inputs, M4 datasets, twenty M5 cases, requested seeds 11/22/33 and frozen
 
 `m6planner/workflow.py` implements typed messages, four model stages, frozen search-tool access and final parsing. `policy.py` specifies shared timeout/retry/pacing/resource limits. `experiment.py` creates counterbalanced paired records with immutable manifests, resumable complete records and interruption guards. `analysis.py` verifies and summarizes both complete conditions, retaining all failures. The Colab notebook disables live execution by default.
 
-Both conditions share model/temperature/SDK/parser/data/cases/scoring and a 10 HTTPrequest ceiling per whole-system attempt. Treatment allocation is 1/4/4/1 for dispatch/activities/budget/final, with up to 3 whole-system attempts only for approved transient provider codes. Every HTTP request is paced globally by 12 seconds; no parallel agents or repair loop are used. Retries discard earlier message state but retain their usage and traces. See `docs/M6_Experiment_Protocol.md` for the exact execution contract.
+Both conditions share model/temperature/SDK/parser/data/cases/scoring and a 10 HTTP request ceiling per whole-system attempt. Treatment allocation is 1/4/4/1 for dispatch/activities/budget/final, with up to 3 whole-system attempts only for approved transient provider codes. Every HTTP request is paced globally by 12 seconds; no parallel agents or repair loop are used. Retries discard earlier message state but retain their usage and traces. See `docs/M6_Experiment_Protocol.md` for the exact execution contract.
 
 ## Baseline comparability
 
-The preserved M5 V 3 cohort has 60 records,58 parsed outputs and 49 structurally valid plans. Its primary means are APM 93.50%, RBM 96.67%, HBM 96.67%, IFR 81.67% and RTC 100%. These are historical M5 values, not M6 results.
+The preserved M5 V3 cohort has 60 records, 58 parsed outputs and 49 structurally valid plans. Its primary means are APM 93.50%, RBM 96.67%, HBM 96.67%, IFR 81.67% and RTC 100%. These are historical M5 values, not M6 results.
 
-V 3's scheduling differs materially from the shared M6 policy, so it is retained for context rather than used as a perfectly controlled primary comparison. A separately approved M6 baseline will use the same policy as the treatment. V 3 is not overwritten or repaired.
+V3's scheduling differs materially from the shared M6 policy, so it is retained for context rather than used as a perfectly controlled primary comparison. A separately approved M6 baseline will use the same policy as the treatment. V3 is not overwritten or repaired.
 
 ## Verification actually performed
 
@@ -27,7 +27,7 @@ V 3's scheduling differs materially from the shared M6 policy, so it is retained
 - A full offline fixture grid of 120 records (60 per condition) exercised the SDK, tools, messages, storage, resume, scoring and summary path. A separate verifier recomputed its results. The fixtures use deterministic provider replies and a fake clock: they are not empirical model-quality, cost or latency observations.
 - The existing M5 full-cohort evidence was independently rechecked. See `reports/M6_Verification.json` for exact scope and limitations.
 
-No live M6 model requests have been performed. Experimental results remain pending.
+The G01/seed11 pilot completed two live records using 9 HTTP requests. Both outputs received 100% on all five measures. The baseline recovered from an HTTP 504 error; all treatment requests succeeded. System wall times were 58.879s and 84.460s. See `M6_Pilot_Report.md` and `M6_Pilot_Audit.json`. Formal results remain pending; this single pair cannot establish treatment benefit.
 
 ## Controlled results — pending
 
@@ -40,10 +40,10 @@ No live M6 model requests have been performed. Experimental results remain pendi
 | Observed usage and monetary-cost status |Pending |Pending |
 | Trace-supported failure analysis |Pending |Pending |
 
-The software exports these tables from saved complete cohorts; it does not fill them with mock results. The approved live pilot, formal 120 records and final analysis are required before M6 can be declared complete.
+The software exports these tables from saved complete cohorts; it does not fill them with mock results. The formal 120 records and final analysis are required before M6 can be declared complete.
 
 ## Interpretation and limitations
 
 The parsed M5 outputs already reached case-specific APM ceilings and 100% hotel/restaurant budget matching, leaving little improvement headroom. Structural reliability, service failures, coordination failures and added resource use may distinguish the architectures more clearly. G05/G08/G15 remain in the study with their original APM ceilings.
 
-Equal aggregate HTTP ceilings control maximum resources but do not guarantee equal practical difficulty: a fixed role split can disadvantage a specialist. Serial communication increases context and can increase latency. Provider quotas/model availability and seed effects remain unverified. Token observations are not billing receipts; missing cost remains null. Any final claim of benefit must follow real comparative evidence, including negative or inconclusive findings.
+Equal aggregate HTTP ceilings control maximum resources but do not guarantee equal practical difficulty: a fixed role split can disadvantage a specialist. Serial communication increases context and can increase latency. Model availability was observed for this pilot only; future availability, quotas and seed effects remain uncertain. Token observations are not billing receipts; missing cost remains null. Any final claim of benefit must follow real comparative evidence, including negative or inconclusive findings.

@@ -1,6 +1,6 @@
 # M6 Experiment Protocol — m6-shared-v1
 
-Status: design approved for implementation/offline checks; live pilot/formal experiments require separate project-lead approval. Date:8 November 2026.
+Status: implementation/offline checks and the separately approved G01/seed11 paired live pilot are complete. Formal experiments require separate project-lead approval. Date: 8 November 2026.
 
 ## Research question and controlled factor
 
@@ -48,11 +48,11 @@ The same caps are a resource-controlled design choice; fixed role allocation can
 
 ## Baseline decision, cohort and ordering
 
-V 3 remains immutable historical evidence. The new 12 second **per-HTTP** scheduler differs materially from V 3's initially unpaced chunks and later 12 second **inter-record** pauses. Therefore the primary M6 comparison requires a separately versioned baseline generated under this shared policy; V 3 is not labelled a perfectly controlled comparator. No new baseline has been run yet. Architecture change alone is not a reason to regenerate it.
+V3 remains immutable historical evidence. The new 12 second **per-HTTP** scheduler differs materially from V3's initially unpaced chunks and later 12 second **inter-record** pauses. Therefore the primary M6 comparison requires a separately versioned baseline generated under this shared policy; V3 is not labelled a perfectly controlled comparator. No formal M6 baseline cohort has been run yet; the single pilot baseline is stored separately. Architecture change alone is not a reason to regenerate it.
 
 Formal grid:20 unchanged cases ×3 requested seeds ×2 conditions =120 records (60 each). Case-major/seed-minor order; within each consecutive pair alternate baseline→treatment and treatment→baseline to reduce one-sided order effects. Scheduling is determined before outcomes. Temporal provider variability remains a limitation.
 
-G01/seed11 paired pilot uses a separate version and does not count toward the formal 120. If pilot findings require a protocol/prompt/code change, freeze a new version before formal runs. Do not tune after comparative outcomes, drop difficult cases or change scoring. G05/G08/G15 retain APM ceilings 90/66.67/80%. Baseline headroom is limited: parsed V 3 outputs already reached APM ceilings and 100% RBM/HBM.
+G01/seed11 paired pilot uses a separate version and does not count toward the formal 120. If pilot findings require a protocol/prompt/code change, freeze a new version before formal runs. Do not tune after comparative outcomes, drop difficult cases or change scoring. G05/G08/G15 retain APM ceilings 90/66.67/80%. Baseline headroom is limited: parsed V3 outputs already reached APM ceilings and 100% RBM/HBM.
 
 ## Scoring, statistics and evidence
 
@@ -68,4 +68,4 @@ Each version saves a manifest of source/data/policy/cases/dependency hashes. Eac
 
 ## Required final evidence, still pending
 
-Real 120 records; comparative means/SD/seedmeans; actual measured system latency and observable usage/cost status; trace-supported failure analysis; updated `M6_Report.md`; saved outputs/errors/traces; reproducible ZIP and bilingual guide. No live run or treatment-improvement claim is currently supported.
+Real 120 records; comparative means/SD/seedmeans; actual measured system latency and observable usage/cost status; trace-supported failure analysis; updated `M6_Report.md`; saved outputs/errors/traces; reproducible ZIP and bilingual guide. Only the two-record live pilot is complete; no formal comparative or treatment-improvement claim is currently supported.

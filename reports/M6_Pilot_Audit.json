@@ -1,0 +1,167 @@
+{
+  "status": "PASS_PILOT_EVIDENCE_REVIEW",
+  "saved_audit": {
+    "status": "PASS_SAVED_EVIDENCE",
+    "scope": "Integrity and independent arithmetic; no provider attestation",
+    "evidence_mode": "live",
+    "records": 2,
+    "conditions": {
+      "baseline": {
+        "APM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "RBM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "HBM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "IFR": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "RTC": {
+          "mean": 100.0,
+          "sample_sd": null
+        }
+      },
+      "treatment": {
+        "APM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "RBM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "HBM": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "IFR": {
+          "mean": 100.0,
+          "sample_sd": null
+        },
+        "RTC": {
+          "mean": 100.0,
+          "sample_sd": null
+        }
+      }
+    },
+    "saved_comparison_verified": true
+  },
+  "archive_sha256": "e300ad3eee21b75f7423862c0ce8a04435198671c87c310cf61a338c4a158d7d",
+  "http_requests": 9,
+  "consecutive_http_start_gaps_seconds": [
+    34.628082,
+    12.000684,
+    12.000532,
+    12.000627,
+    12.000613,
+    24.708383,
+    12.000677,
+    12.000536
+  ],
+  "minimum_global_gap_seconds": 12.000532,
+  "observed_model_versions": [
+    "gemini-3.5-flash-lite"
+  ],
+  "request_config_verified": {
+    "seed": 11,
+    "temperature": 0,
+    "requested_model": "gemini-3.5-flash-lite"
+  },
+  "runs": [
+    {
+      "run_id": "baseline_G01_seed11",
+      "attempts": 2,
+      "http_statuses": [
+        504,
+        200,
+        200
+      ],
+      "stage_http_counts": {
+        "baseline": 3
+      },
+      "selected_final_attempt_tool_membership": {
+        "find_hotels": 1,
+        "find_activities": 2,
+        "find_restaurants": 2
+      },
+      "timing": {
+        "system_wall_ms": 58878.92382999996,
+        "pacing_wait_ms": 22481.784730000072,
+        "retry_wait_ms": 5000.136634,
+        "processing_ms": 31397.00246599989,
+        "scope": "Once per case/seed/condition; includes tools, logging, attempts and scheduled waits; excludes setup/download"
+      },
+      "usage": {
+        "observed_tokens": {
+          "promptTokenCount": 3121,
+          "candidatesTokenCount": 156,
+          "totalTokenCount": 3277,
+          "thoughtsTokenCount": null,
+          "cachedContentTokenCount": null
+        },
+        "http_responses": 3,
+        "responses_with_usage": 2,
+        "scope": "Observed usage across all agents/attempts; missing provider usage is unknown, not zero.",
+        "actual_cost_usd": null,
+        "estimated_cost_usd": null
+      }
+    },
+    {
+      "run_id": "treatment_G01_seed11",
+      "attempts": 1,
+      "http_statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "stage_http_counts": {
+        "budget": 2,
+        "activities": 2,
+        "coordinator_dispatch": 1,
+        "coordinator_final": 1
+      },
+      "selected_final_attempt_tool_membership": {
+        "find_hotels": 1,
+        "find_activities": 2,
+        "find_restaurants": 2
+      },
+      "timing": {
+        "system_wall_ms": 84459.82561799997,
+        "pacing_wait_ms": 55626.04004199999,
+        "retry_wait_ms": 0,
+        "processing_ms": 28833.78557599998,
+        "scope": "Once per case/seed/condition; includes tools, logging, attempts and scheduled waits; excludes setup/download"
+      },
+      "usage": {
+        "observed_tokens": {
+          "promptTokenCount": 10020,
+          "candidatesTokenCount": 425,
+          "totalTokenCount": 10445,
+          "thoughtsTokenCount": null,
+          "cachedContentTokenCount": null
+        },
+        "http_responses": 6,
+        "responses_with_usage": 6,
+        "scope": "Observed usage across all agents/attempts; missing provider usage is unknown, not zero.",
+        "actual_cost_usd": null,
+        "estimated_cost_usd": null
+      }
+    }
+  ],
+  "limits": [
+    "One paired case/seed only; no efficacy or variance claim.",
+    "504 has no usageMetadata; token totals are observed values, not complete billing.",
+    "Currency cost remains null; no claim of zero payment.",
+    "Checksums and logs do not authenticate the provider independently."
+  ]
+}
