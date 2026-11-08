@@ -1,6 +1,6 @@
 # M6 — Riyadh Travel Planner
 
-**Status, 8 November 2026:** implementation, offline validation and the live paired pilot are complete. A live paired G01/seed11 pilot completed with 2 records and 9 HTTP requests. Formal experiments have not been run. Mock records are software fixtures, not research results. M6 submission is not complete until the approved live comparison and failure analysis are recorded.
+**Status, 8 November 2026:** implementation, offline validation and the live paired pilot are complete. A live paired G01/seed11 pilot completed with 2 records and 9 HTTP requests. Formal-v1 was attempted but its evidence is incomplete after runtime-storage loss. Only 12 raw records are durably recovered; the progress log reaches 114. The approved formal-v2 recovery used verified Drive storage, then stopped after five requests when the daily free-tier quota was exhausted. One complete baseline and one interrupted treatment journal are preserved. No complete formal comparison is reported. See reports/M6_Execution_Incident.md. Mock records are software fixtures, not research results. M6 submission is not complete until the approved live comparison and failure analysis are recorded.
 
 Start with `docs/M6_Experiment_Protocol.md` and `M6_Team_Guide.html`. M5 remains unchanged in its separate repository. This M6 project contains only its runtime dependencies and new M6 work.
 

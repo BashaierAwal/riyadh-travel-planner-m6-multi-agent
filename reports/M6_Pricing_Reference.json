@@ -1,0 +1,10 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "checked_date": "2026-11-08",
+  "official_source": "https://ai.google.dev/gemini-api/docs/pricing",
+  "standard_input_USD_per_1M_tokens": 0.3,
+  "standard_output_USD_per_1M_tokens_including_thinking": 2.5,
+  "cached_input_USD_per_1M_tokens": 0.03,
+  "free_tier_listed": true,
+  "use": "Observable-token equivalent at standard uncached list prices; not actual billing. Missing usage and cache/billing eligibility prevent a receipt claim."
+}

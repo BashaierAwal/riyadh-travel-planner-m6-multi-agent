@@ -70,7 +70,7 @@
     "saved_comparison_verified": true
   },
   "notebook_default_check": "All code cells executed with live/upload/install flags false; no credential retrieval, installation or network calls",
-  "live_M6_HTTP_requests": 9,
+  "live_M6_HTTP_requests": null,
   "limitations": [
     "Mock fixtures are not experimental results.",
     "Fake-clock durations are not measured live model latency.",
@@ -84,5 +84,33 @@
     "http_requests": 9,
     "independent_audit": "PASS_PILOT_EVIDENCE_REVIEW",
     "full_formal_cohort_complete": false
+  },
+  "live_M6_HTTP_status": "Final total unknown after formal-v1 storage loss",
+  "formal_v1_recovery": {
+    "durable_records": 12,
+    "durable_raw_HTTP_requests": 48,
+    "last_reported_records": 114,
+    "last_reported_HTTP_requests": 463,
+    "final_six_status": "unknown",
+    "full_120_completion_established": false
+  },
+  "persistent_storage_preparation": {
+    "mocked_tests_passed": 2,
+    "cloud_integration_verified": true,
+    "cloud_verification_scope": "Colab mounted write/fsync/readback, independent Drive web preview and browser download with identical SHA256",
+    "probe_sha256": "ed9379a331913068ad0b55393d1991718dcdc517c362b285758bbe3665d1add6",
+    "probe_utc": "2026-11-08T19:47:09.692453+00:00",
+    "formal_v2_status": "STOPPED_DAILY_FREE_QUOTA"
+  },
+  "formal_v2": {
+    "complete_records": 1,
+    "interrupted_records": 1,
+    "http_requests": 5,
+    "complete_formal_cohort": false,
+    "quota_limit_observed": 500,
+    "quota_period": "per day, free tier, per project/model",
+    "provider_retry_delay_seconds": 43404,
+    "stopped_at_utc": "2026-11-08T20:09:12.277136+00:00",
+    "archive_sha256": "bcdb357b2a93138ce2b90b5db4adbd0d6d19b1d8a723ad2edac40a020caae44d"
   }
 }

@@ -15,3 +15,5 @@ Working Drive notebook: [M6_Colab_Run.ipynb](https://colab.research.google.com/d
 The frozen scorer, search tools, data and golden cases are copied from verified M5 commit e59f1b49c0c6d7d695a885df6cf9fafe4113ab61. See M6_Provenance.json.
 
 Detailed pilot prompts, responses and tool traces are preserved in the separate local evidence archive. This repository publishes the implementation, reports and aggregate audit only. To verify raw pilot evidence, extract M6_Pilot_Evidence.zip under m6_runs/.
+
+Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are recovered despite a 114-record progress log. See [the execution incident](reports/M6_Execution_Incident.md). No complete formal comparison is claimed; formal-v2 then stopped after five requests because the provider reported its daily free-tier quota exhausted. Its one complete record and interrupted journal are preserved in Drive and locally.

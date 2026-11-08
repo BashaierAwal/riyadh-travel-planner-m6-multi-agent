@@ -1,6 +1,6 @@
 # M6: Coordinated Riyadh Travel Planner
 
-**Current status:** implementation, offline verification and a live paired pilot complete; formal controlled experiments pending approval. This is an implementation report, not a completed experimental-results report. Prepared 8 November 2026.
+**Current status:** implementation, offline verification and a live paired pilot complete; formal-v1 evidence incomplete after a runtime-storage loss; the approved formal-v2 recovery stopped at the provider daily quota. This is an implementation report, not a completed experimental-results report. Prepared 8 November 2026.
 
 ## Problem and design
 
@@ -29,11 +29,12 @@ V3's scheduling differs materially from the shared M6 policy, so it is retained 
 
 The G01/seed11 pilot completed two live records using 9 HTTP requests. Both outputs received 100% on all five measures. The baseline recovered from an HTTP 504 error; all treatment requests succeeded. System wall times were 58.879s and 84.460s. See `M6_Pilot_Report.md` and `M6_Pilot_Audit.json`. Formal results remain pending; this single pair cannot establish treatment benefit.
 
-## Controlled results — pending
+## Controlled results — incomplete evidence
 
 | Required comparison | New baseline | Three-agent treatment |
 |---|---|---|
-| Expected formal records |60; not run |60; not run |
+| Expected formal records |60 |60 |
+| Durable raw records recovered |6 |6 |
 | APM/RBM/HBM/IFR/RTC mean |Pending |Pending |
 | Run/case/seed sampleSD and seed means |Pending |Pending |
 | Measured system latency and waits |Pending |Pending |
@@ -47,3 +48,9 @@ The software exports these tables from saved complete cohorts; it does not fill 
 The parsed M5 outputs already reached case-specific APM ceilings and 100% hotel/restaurant budget matching, leaving little improvement headroom. Structural reliability, service failures, coordination failures and added resource use may distinguish the architectures more clearly. G05/G08/G15 remain in the study with their original APM ceilings.
 
 Equal aggregate HTTP ceilings control maximum resources but do not guarantee equal practical difficulty: a fixed role split can disadvantage a specialist. Serial communication increases context and can increase latency. Model availability was observed for this pilot only; future availability, quotas and seed effects remain uncertain. Token observations are not billing receipts; missing cost remains null. Any final claim of benefit must follow real comparative evidence, including negative or inconclusive findings.
+
+## Formal-v1 evidence loss
+
+The progress log reaches 114 records/463 requests, but only 12 raw records are durably recovered. No complete formal result is reported and missing outputs are not silently regenerated or pooled with the pilot. See `M6_Execution_Incident.md` for the evidence, limits and verified persistent-storage recovery and subsequent daily-quota stop.
+
+Formal-v2: durable Drive storage was independently verified before execution. The recovery stopped after five HTTP requests when the provider reported the daily free-tier request quota exhausted. One baseline record is complete; the treatment journal is interrupted. These do not constitute a paired comparison or a full formal cohort. No further automatic requests or billing changes were made.
