@@ -1,0 +1,4 @@
+-r requirements.txt
+google-genai==1.30.0
+httpx==0.28.1
+pydantic==2.14.3

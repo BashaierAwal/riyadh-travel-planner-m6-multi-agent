@@ -1,0 +1,25 @@
+{
+  "M6_repository": "BashaierAwal/riyadh-travel-planner-m6-multi-agent",
+  "M5_source_repository": "BashaierAwal/riyadh-travel-planner-m5-evaluation",
+  "M5_verified_commit": "e59f1b49c0c6d7d695a885df6cf9fafe4113ab61",
+  "shared_components": "Copied unchanged for reproducibility; original M5 project and outputs are preserved separately.",
+  "shared_file_sha256": {
+    "m5eval/generation.py": "0ac6cc92a151d61f1fb0673c422f7f00ae5c7d1a59dd65ea71666cbc7bc7af47",
+    "m5eval/baseline_tools.py": "f9fa6c9210385b613bc8e4b5b76c27030f5def6f602f51b3a7a75570d04ea1bc",
+    "m5eval/scoring.py": "d2fb4c3985b34c2b8245ac6fed2b6142b050f6b4a3f6002cf1998790fa40180d",
+    "m5eval/records.py": "2007ae0adc9840d32589f4d2b7f71e0fcf8e5904914fc4e1a4840645d50ecf74",
+    "m5eval/__init__.py": "007b773981ab0b88611eb030bb5c6e765030ca3e97fff347167948f32247ffb3",
+    "m5eval/experiment.py": "f5783fce81b04f39cc34a03b54853dcc1a20a3f4618775c433676ba5c5f022f9",
+    "m5eval/evaluate.py": "783d38e783060d585bce8f6d7cfd2eec896289597c082ae964c84baab02c283f",
+    "m5eval/statistics.py": "6418d76abb06238f6e3a01a03910e0ac96c886e6fe67d88c297d1c6981729830",
+    "m5eval/components.py": "42d5bb1c826bd25b94893c615e35155cf6cac612d66fd4922673140f1567f0a8",
+    "m5eval/demo.py": "a6e3c8161fde33b9f12349dff1ebe33f46e668cee0512cc282f4fcefa348d50a",
+    "m5eval/__main__.py": "fa93afceb72b559c9ec91a1f4a1b8ac81f2c1fe10867027addf155ae49c502e2",
+    "data/hotels.csv": "910e7b6055b37fd76c0aec254e4e8f5cf9a6028735096a112f512f3c715ae878",
+    "data/activities.csv": "df5abb1fbb5fe13e0e8f20776fc83f707f2d7bf5e610a36acedb06cffa76d01f",
+    "data/restaurants.csv": "2f808d6007d026b3c11b38ea9c922560b97920f3da82020b3662b24313c63cbc",
+    "requirements.txt": "50bd36afe0a4a4950f51db01fddfedc5d16814a1664c8a21a02e7c247b481bda",
+    "requirements-gemini.txt": "17a6c00a64cf6071ed0140d8db15a3a8ba031ec1da6c20275c04e66132ba76cf",
+    "source/05_M5_Evaluation/baseline_v2_standardized/baseline_v2_implementation_reference.json": "3fcc392c57f8e429204df7c3ec5fe3bc752a84d0d20ad1b0e2a7cd0d42511c0a"
+  }
+}

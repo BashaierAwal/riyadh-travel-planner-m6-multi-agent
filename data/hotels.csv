@@ -1,0 +1,56 @@
+﻿hotel_id,hotel_name,median_price,min_price,max_price,price_observations,rating,count,latitude,longitude,budget_level,place_id,original_budget_level
+299190,"Holiday Inn Riyadh - Olaya, an IHG hotel",675.0,592.5,873.75,29,4.0,499,24.680237,46.690372,Medium,HOT_00001,Medium
+299191,"InterContinental Riyadh, an IHG hotel",1554.375,761.25,2925.0,28,4.5,957,24.666677,46.692158,High,HOT_00002,High
+301864,Sheraton Riyadh Hotel & Towers,1196.25,573.75,8617.5,54,4.0,407,,,High,HOT_00003,Medium
+506759,Madareem Hotel,800.625,787.5,813.75,2,3.5,105,,,Medium,HOT_00004,Medium
+810042,Continent Al Waha Hotel,750.0,476.25,843.75,30,4.5,407,24.680944,46.689484,Medium,HOT_00005,Medium
+969150,"Holiday Inn Riyadh - al Qasr, an IHG hotel",907.5,573.75,1571.25,29,4.5,1073,24.683914,46.68803,Medium,HOT_00006,Medium
+1486058,"Crowne Plaza Riyadh Palace, an IHG hotel",690.0,483.75,1297.5,27,4.0,239,24.664728,46.71136,Medium,HOT_00007,Medium
+1732120,Rand by Wandalus,656.25,566.25,712.5,29,3.5,70,,,Medium,HOT_00008,Medium
+1748545,Executives Hotel - Olaya,566.25,446.25,615.0,30,4.0,165,24.70869,46.678,Low,HOT_00009,Low
+2149240,Riyadh Airport Marriott Hotel,1500.0,892.5,4631.25,25,4.0,256,,,High,HOT_00010,High
+2366709,The Ritz-Carlton Riyadh,4696.875,1207.5,7413.75,30,4.5,1045,,,High,HOT_00011,High
+3250538,Al Mashreq Boutique Hotel,783.75,603.75,2171.25,31,4.5,170,24.70452,46.655216,Medium,HOT_00012,Medium
+3349253,Carawan Al Fahad Hotel,532.5,405.0,532.5,26,4.0,54,24.711273,46.671043,Low,HOT_00013,Low
+3437636,Intour Qurtoba Hotel Suites,390.0,390.0,390.0,1,3.5,5,,,Low,HOT_00014,Low
+3514706,ibis Riyadh Olaya Street,401.25,326.25,701.25,28,3.5,430,24.712132,46.67674,Low,HOT_00015,Low
+3879255,OYO 146 Al Asemah Hotel,266.25,187.5,266.25,27,3.5,3,24.641687,46.72113,Low,HOT_00016,Low
+5249543,Meral Crown Hotel,300.0,300.0,300.0,1,3.5,20,,,Low,HOT_00017,Low
+5994700,Narcissus Hotel & Spa Riyadh,1976.25,1177.5,2700.0,30,4.5,338,24.695637,46.683575,High,HOT_00018,High
+6164000,JW Marriott Hotel Riyadh,2332.5,1398.75,3135.0,17,4.5,669,,,High,HOT_00019,High
+7789088,"Crowne Plaza Riyadh Rdc Hotel & Convention, An Ihg Hotel",1869.375,892.5,4556.25,28,4.5,331,24.738811,46.635284,High,HOT_00020,High
+7988480,Vivienda Hotel Villas Granada,3495.0,3495.0,3495.0,1,5.0,4,,,High,HOT_00021,High
+8470987,Al Oroba Hotel,131.25,120.0,165.0,25,2.5,2,,,Low,HOT_00022,Low
+9702375,Rosh Rayhaan by Rotana,1087.5,813.75,2212.5,13,4.5,1311,24.700346,46.682137,High,HOT_00023,Medium
+9720941,Burj Alhayah Hotel Suites Alfalah,318.75,300.0,390.0,3,4.0,5,,,Low,HOT_00024,Low
+10131963,Spectrums Hotel Riyadh,605.625,540.0,645.0,30,4.5,189,24.700665,46.678635,Low,HOT_00025,Low
+10319364,Al Diafah Hotel Suites,603.75,532.5,675.0,2,3.5,2,,,Low,HOT_00026,Low
+11667441,Hyatt Regency Riyadh Olaya,3532.5,3532.5,3532.5,1,4.5,742,24.698381,46.682392,High,HOT_00027,High
+11879864,Thwary Hotel Suites,615.0,615.0,615.0,1,4.5,3,,,Low,HOT_00028,Low
+12248951,Towlan Khurais,202.5,202.5,202.5,1,4.5,3,,,Low,HOT_00029,Low
+12363377,Braira Al Wezarat,498.75,498.75,498.75,1,3.5,6,,,Low,HOT_00030,Low
+14027272,Nawara Dala,435.0,435.0,435.0,1,3.5,2,,,Low,HOT_00031,Low
+14182161,Hyatt Place Riyadh Al Sulaimania,1359.375,603.75,2163.75,6,4.5,264,,,High,HOT_00032,High
+15056872,Centro Olaya,1301.25,1301.25,1301.25,1,4.5,333,24.692995,46.684284,High,HOT_00033,High
+15215188,Fairmont Riyadh,2118.75,1556.25,3798.75,33,4.5,220,24.808397,46.71805,High,HOT_00034,High
+15239002,Shaza Riyadh,748.125,600.0,978.75,30,4.5,176,24.675924,46.7792,Medium,HOT_00035,Medium
+15368089,IntercityHotel Riyadh Malaz,1181.25,431.25,2051.25,29,4.0,14,,,High,HOT_00036,Medium
+15756839,Hilton Riyadh Hotel & Residences,1513.125,1027.5,4200.0,36,4.5,1626,24.785522,46.72788,High,HOT_00037,High
+16865982,Le Méridien Riyadh,2302.5,873.75,5351.25,50,4.5,78,,,High,HOT_00038,High
+17154823,"Crowne Plaza Riyadh al Waha, an IHG hotel",1053.75,633.75,1605.0,23,4.5,214,24.742296,46.725163,High,HOT_00039,Medium
+23569851,Fairmont Ramla Serviced Residences,2229.375,1293.75,6232.5,12,4.5,121,,,High,HOT_00040,High
+23623900,The Valley Resort,2280.0,2280.0,2280.0,1,5.0,1,,,High,HOT_00041,High
+23673791,"Mansard Riyadh, A Radisson Collection Hotel",1736.25,1736.25,1736.25,1,4.5,127,,,High,HOT_00042,High
+23999395,Voyage Hotel,881.25,881.25,881.25,1,3.5,3,,,Medium,HOT_00043,Medium
+24001761,Warwick Riyadh,483.75,401.25,495.0,30,2.5,5,,,Low,HOT_00044,Low
+24143026,Joudyan Hotel,755.625,543.75,963.75,28,5.0,317,24.713552,46.675297,Medium,HOT_00045,Medium
+25280776,Ramada By wyndham,828.75,663.75,1676.25,30,4.0,7,,,Medium,HOT_00046,Medium
+26059301,Damac Tower Riyadh Luxury Apartments,506.25,502.5,1248.75,25,5.0,1,24.709423,46.67273,Low,HOT_00047,Low
+26366466,Erfad Hotel,620.625,588.75,652.5,2,4.5,2,,,Low,HOT_00048,Low
+26451032,The St. Regis Riyadh,3506.25,2220.0,7327.5,22,5.0,54,,,High,HOT_00049,High
+27131550,Sands Inn Hostel,82.5,71.25,90.0,30,5.0,2,,,Low,HOT_00050,Low
+27143516,Ross Hotel,633.75,633.75,633.75,1,5.0,1,,,Medium,HOT_00051,Medium
+27175878,Mena Hotel Nasiriah Riyadh,427.5,427.5,427.5,2,5.0,1,,,Low,HOT_00052,Low
+27514929,The Land Resort,2066.25,2066.25,2066.25,1,5.0,1,,,High,HOT_00053,High
+27729005,Novotel Riyadh Sahafa,705.0,705.0,705.0,1,5.0,5,,,Medium,HOT_00054,Medium
+28054092,Nova M Hotel Edge By Rotana,783.75,438.75,1031.25,31,4.5,2,24.779217,46.642143,Medium,HOT_00055,Medium

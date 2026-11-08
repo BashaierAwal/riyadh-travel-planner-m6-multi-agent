@@ -1,0 +1,314 @@
+{
+  "title": "M5 Baseline V2 Implementation Reference",
+  "created_at_utc": "2026-11-03T13:21:58.606450+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "temperature": 0,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "architecture": "Single-Agent Baseline",
+  "golden_set": [
+    {
+      "case_id": "G01",
+      "trip_duration": 1,
+      "interests": [
+        "Shopping"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G02",
+      "trip_duration": 2,
+      "interests": [
+        "Entertainment"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G03",
+      "trip_duration": 3,
+      "interests": [
+        "Culture & History"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G04",
+      "trip_duration": 4,
+      "interests": [
+        "Nature & Outdoors"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G05",
+      "trip_duration": 5,
+      "interests": [
+        "Religious"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G06",
+      "trip_duration": 1,
+      "interests": [
+        "Sports"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G07",
+      "trip_duration": 2,
+      "interests": [
+        "Landmarks & Sightseeing"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G08",
+      "trip_duration": 3,
+      "interests": [
+        "Sports"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G09",
+      "trip_duration": 4,
+      "interests": [
+        "Shopping",
+        "Entertainment"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G10",
+      "trip_duration": 5,
+      "interests": [
+        "Culture & History",
+        "Religious"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G11",
+      "trip_duration": 1,
+      "interests": [
+        "Nature & Outdoors",
+        "Sports"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G12",
+      "trip_duration": 2,
+      "interests": [
+        "Shopping",
+        "Landmarks & Sightseeing"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G13",
+      "trip_duration": 3,
+      "interests": [
+        "Entertainment",
+        "Culture & History"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G14",
+      "trip_duration": 4,
+      "interests": [
+        "Religious",
+        "Nature & Outdoors"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G15",
+      "trip_duration": 5,
+      "interests": [
+        "Sports",
+        "Landmarks & Sightseeing"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G16",
+      "trip_duration": 1,
+      "interests": [
+        "Shopping",
+        "Culture & History",
+        "Sports"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G17",
+      "trip_duration": 2,
+      "interests": [
+        "Entertainment",
+        "Religious",
+        "Nature & Outdoors"
+      ],
+      "budget_level": "Medium"
+    },
+    {
+      "case_id": "G18",
+      "trip_duration": 3,
+      "interests": [
+        "Shopping",
+        "Entertainment",
+        "Landmarks & Sightseeing"
+      ],
+      "budget_level": "High"
+    },
+    {
+      "case_id": "G19",
+      "trip_duration": 4,
+      "interests": [
+        "Culture & History",
+        "Religious",
+        "Sports"
+      ],
+      "budget_level": "Low"
+    },
+    {
+      "case_id": "G20",
+      "trip_duration": 5,
+      "interests": [
+        "Shopping",
+        "Entertainment",
+        "Nature & Outdoors"
+      ],
+      "budget_level": "Medium"
+    }
+  ],
+  "golden_set_sha256": "eea56657043abd78bb5288415eb6d20fea6e54fba1ccd16ccf2c45749ffb0af9",
+  "datasets": {
+    "activities": {
+      "rows": 1125,
+      "columns": [
+        "name",
+        "category",
+        "latitude",
+        "longitude",
+        "rating",
+        "number_of_ratings",
+        "has_rating",
+        "wikidata_id",
+        "article_tier",
+        "wikidata_pagerank",
+        "sitelinks",
+        "url_en",
+        "source",
+        "interest_group",
+        "place_id"
+      ],
+      "sha256": "c4a6420190dc949b1b6daba7550bd71809ef9f03b3bd8582f134c56c3296ea70"
+    },
+    "restaurants": {
+      "rows": 19345,
+      "columns": [
+        "name",
+        "lat",
+        "lng",
+        "categories",
+        "address",
+        "price",
+        "likes",
+        "photos",
+        "tips",
+        "rating",
+        "ratingSignals",
+        "has_rating",
+        "budget_level",
+        "place_id"
+      ],
+      "sha256": "2d53972ef3b35a6283a2c8ef491d66f1ce5f4c90badfc3d82e00e0aa92f67ec7"
+    },
+    "hotels": {
+      "rows": 55,
+      "columns": [
+        "hotel_id",
+        "hotel_name",
+        "median_price",
+        "min_price",
+        "max_price",
+        "price_observations",
+        "rating",
+        "count",
+        "latitude",
+        "longitude",
+        "budget_level",
+        "place_id",
+        "original_budget_level"
+      ],
+      "sha256": "ab28eaa83991c9ad13807ff518f18ce9c60e3478ad1d16bba2ab0ebf56371259"
+    }
+  },
+  "function_sources": {
+    "generate_baseline_itinerary": {
+      "source": "def generate_baseline_itinerary(\n    trip_duration,\n    interests,\n    budget_level\n):\n    # Validate user inputs\n    allowed_interests = [\n        \"Shopping\",\n        \"Entertainment\",\n        \"Culture & History\",\n        \"Nature & Outdoors\",\n        \"Religious\",\n        \"Sports\",\n        \"Landmarks & Sightseeing\"\n    ]\n\n    if type(trip_duration) is not int or trip_duration < 1:\n        raise ValueError(\"Trip duration must be a positive integer\")\n\n    if (\n        not isinstance(interests, list)\n        or not interests\n        or any(i not in allowed_interests for i in interests)\n    ):\n        raise ValueError(\"Invalid interests\")\n\n    if budget_level not in [\"Low\", \"Medium\", \"High\"]:\n        raise ValueError(\"Invalid budget level\")\n\n    # Same standardized prompt as before\n    prompt = (\n        \"You are a single-agent Riyadh travel planner. \"\n        f\"Plan a {trip_duration}-day trip. \"\n        f\"User interests: {json.dumps(interests)}. \"\n        f\"Budget level: {budget_level}. \"\n        \"Use all three tools: find_activities, \"\n        \"find_restaurants, and find_hotels. \"\n        \"Select exactly one hotel for the whole trip. \"\n        \"Select exactly two activities and two restaurants per day. \"\n        \"Do not repeat activities. \"\n        \"Only select place_ids returned by the tools. \"\n        \"Use the requested budget level for hotels and restaurants. \"\n        \"Prioritize activities matching the user's interests. \"\n        \"Return ONLY valid JSON with keys hotel_id and days. \"\n        \"Each day must contain day, activities, and restaurants. \"\n        \"Activities and restaurants must each contain exactly two IDs. \"\n        \"Do not include markdown or explanations.\"\n    )\n\n    # Updated: API call with bounded retries\n    response = call_gemini_with_retry(prompt)\n\n    # Fixed: strip markdown code fences (```json...```) that LLMs sometimes wrap around JSON output\n    raw_text = response.text.strip()\n    if raw_text.startswith(\"```\"):\n        # Remove opening fence (```json or ```) and closing fence (```)\n        raw_text = raw_text.split(\"\\n\", 1)[-1]  # remove first line\n        raw_text = raw_text.rsplit(\"```\", 1)[0]  # remove last ```\n        raw_text = raw_text.strip()\n\n    itinerary = json.loads(raw_text)\n\n    # Validate itinerary structure and IDs\n    is_valid, validation_errors = validate_itinerary(\n        itinerary,\n        trip_duration\n    )\n\n    # Record actual tool calls\n    tool_calls = []\n\n    for message in (\n        response.automatic_function_calling_history or []\n    ):\n        for part in message.parts:\n            if part.function_call:\n                tool_calls.append(part.function_call.name)\n\n    return {\n        \"itinerary\": itinerary,\n        \"is_valid\": is_valid,\n        \"validation_errors\": validation_errors,\n        \"tool_calls\": tool_calls,\n        \"model\": TEST_MODEL\n    }\n",
+      "sha256": "4e0fb62e3f4816d57c0edafd4367639100ba1c28cae3b9937055c09cf4f40373"
+    },
+    "original_generate_baseline_with_safe_tools": {
+      "source": "def generate_baseline_with_safe_tools(\n    trip_duration,\n    interests,\n    budget_level,\n    seed\n):\n    \"\"\"\n    Reuse the original M4 baseline generation,\n    with seeded Gemini calls and JSON-safe tools.\n    \"\"\"\n\n    def safe_seeded_call(prompt, max_attempts=3):\n        return call_gemini_with_safe_tools(\n            prompt=prompt,\n            seed=seed,\n            max_attempts=max_attempts\n        )\n\n    # Temporarily replace only the Gemini call\n    # used by the original baseline function.\n    with patch.dict(\n        generate_baseline_itinerary.__globals__,\n        {\n            \"call_gemini_with_retry\": safe_seeded_call\n        }\n    ):\n        return generate_baseline_itinerary(\n            trip_duration=trip_duration,\n            interests=interests,\n            budget_level=budget_level\n        )\n",
+      "sha256": "30f50efea9e017f2b035476238ba101afe5019e52610bd096c2bea8e43829a4a"
+    },
+    "generate_baseline_with_parser_fix": {
+      "source": "def generate_baseline_with_parser_fix(\n    trip_duration,\n    interests,\n    budget_level,\n    seed\n):\n    \"\"\"\n    Reuse the original baseline generator and\n    JSON-safe tools, with minimal response-text\n    normalization before original M4 parsing.\n    \"\"\"\n\n    original_safe_call = call_gemini_with_safe_tools\n\n    def normalized_safe_call(prompt, seed, max_attempts=3):\n\n        response = original_safe_call(\n            prompt=prompt,\n            seed=seed,\n            max_attempts=max_attempts\n        )\n\n        text = getattr(response, \"text\", None)\n\n        if not isinstance(text, str):\n            return response\n\n        raw_text = text.strip()\n\n        if raw_text.startswith(\"json\\n\"):\n            candidate = raw_text[len(\"json\\n\"):].lstrip()\n\n            if candidate.startswith(\"{\"):\n                # Return an object preserving tool history\n                return SimpleNamespace(\n                    text=candidate,\n                    automatic_function_calling_history=(\n                        response.automatic_function_calling_history\n                    )\n                )\n\n        return response\n\n    with patch.dict(\n        original_generate_baseline_with_safe_tools.__globals__,\n        {\n            \"call_gemini_with_safe_tools\":\n                normalized_safe_call\n        }\n    ):\n        return original_generate_baseline_with_safe_tools(\n            trip_duration=trip_duration,\n            interests=interests,\n            budget_level=budget_level,\n            seed=seed\n        )\n",
+      "sha256": "5a95e9a8bad8781e55c54bc58aa20cc6286d47d338970e9b7795fd3ea2d09d46"
+    },
+    "call_gemini_with_seed": {
+      "source": "def call_gemini_with_seed(prompt, seed, max_attempts=3):\n    if type(seed) is not int:\n        raise ValueError(\"Seed must be an integer\")\n\n    for attempt in range(1, max_attempts + 1):\n        try:\n            response = client.models.generate_content(\n                model=TEST_MODEL,\n                contents=prompt,\n                config=types.GenerateContentConfig(\n                    tools=[\n                        find_activities,\n                        find_restaurants,\n                        find_hotels\n                    ],\n                    temperature=0,\n                    seed=seed\n                )\n            )\n\n            return response\n\n        except errors.ServerError as e:\n            if e.code not in [500, 502, 503, 504]:\n                raise\n\n            print(\n                f\"Temporary API error {e.code} \"\n                f\"(attempt {attempt}/{max_attempts})\"\n            )\n\n            if attempt == max_attempts:\n                raise\n\n            time.sleep(5 * attempt)\n\n        except errors.ClientError as e:\n            if e.code != 429:\n                raise\n\n            print(\n                f\"Rate limited (429) \"\n                f\"(attempt {attempt}/{max_attempts})\"\n            )\n\n            if attempt == max_attempts:\n                raise\n\n            time.sleep(5 * attempt)\n",
+      "sha256": "e4e7b65c1283969a94e7f60ab735f1abca2c736fe546b8885c6f9b00b59d6cb5"
+    },
+    "call_gemini_with_safe_tools": {
+      "source": "def call_gemini_with_safe_tools(\n    prompt,\n    seed,\n    max_attempts=3\n):\n    \"\"\"\n    Reuse the existing seeded Gemini call,\n    but replace the three tools with\n    JSON-safe versions.\n\n    The original M4 prompt and generation\n    settings remain unchanged.\n    \"\"\"\n\n    original_tools = [\n        find_activities,\n        find_restaurants,\n        find_hotels\n    ]\n\n    safe_tools = [\n        m5_find_activities,\n        m5_find_restaurants,\n        m5_find_hotels\n    ]\n\n    original_generate = client.models.generate_content\n\n    def safe_generate_content(*args, **kwargs):\n        config = kwargs.get(\"config\")\n\n        if config is None:\n            raise RuntimeError(\n                \"Gemini generation config is missing.\"\n            )\n\n        # Create a copy so the original config\n        # is not modified.\n        safe_config = config.model_copy(deep=True)\n\n        # Replace the tools in the generation config\n        # while preserving other settings.\n        safe_config.tools = safe_tools\n\n        kwargs[\"config\"] = safe_config\n\n        return original_generate(*args, **kwargs)\n\n    with patch.object(\n        client.models,\n        \"generate_content\",\n        side_effect=safe_generate_content\n    ):\n        return call_gemini_with_seed(\n            prompt=prompt,\n            seed=seed,\n            max_attempts=max_attempts\n        )\n",
+      "sha256": "83e9bc6955b0acf4287ba9835829d45a465f729fb4663972b6f678f8297d065d"
+    },
+    "evaluate_m5_itinerary": {
+      "source": "def evaluate_m5_itinerary(\n    itinerary,\n    trip_duration,\n    interests,\n    budget_level\n):\n    apm = score_activity_preference(\n        itinerary=itinerary,\n        trip_duration=trip_duration,\n        interests=interests\n    )\n\n    rbm = score_restaurant_budget(\n        itinerary=itinerary,\n        trip_duration=trip_duration,\n        budget_level=budget_level\n    )\n\n    hbm = score_hotel_budget(\n        itinerary=itinerary,\n        budget_level=budget_level\n    )\n\n    ifr_result = score_itinerary_feasibility(\n        itinerary=itinerary,\n        trip_duration=trip_duration\n    )\n\n    return {\n        \"APM\": apm,\n        \"RBM\": rbm,\n        \"HBM\": hbm,\n        \"IFR\": ifr_result[\"ifr_score\"],\n        \"feasible\": ifr_result[\"feasible\"],\n        \"validation_errors\": ifr_result[\"validation_errors\"]\n    }\n",
+      "sha256": "6bf95a5a9a6a5745bab92896ce65409afc4ff7c7e56b26c310483a6b176fef66"
+    },
+    "score_activity_preference": {
+      "source": "def score_activity_preference(itinerary, trip_duration, interests):\n    required = 2 * trip_duration\n\n    if not isinstance(itinerary, dict):\n        return 0.0\n\n    days = itinerary.get(\"days\", [])\n\n    if not isinstance(days, list):\n        return 0.0\n\n    activity_lookup = activities.set_index(\"place_id\")[\"interest_group\"]\n\n    matching_count = 0\n    seen_ids = set()\n\n    # Only evaluate the requested number of days\n    for day in days[:trip_duration]:\n        if not isinstance(day, dict):\n            continue\n\n        day_activities = day.get(\"activities\", [])\n\n        if not isinstance(day_activities, list):\n            continue\n\n        # Only the first two activity slots per day count\n        for pid in day_activities[:2]:\n            if not isinstance(pid, str):\n                continue\n\n            if pid in seen_ids:\n                continue\n\n            seen_ids.add(pid)\n\n            if pid not in activity_lookup.index:\n                continue\n\n            if activity_lookup.loc[pid] in interests:\n                matching_count += 1\n\n    score = 100 * matching_count / required\n\n    return round(score, 2)\n",
+      "sha256": "af9db7162f47aed198faeac51abb61241fc797a6d8fb2add1c23fe483e02f6f0"
+    },
+    "score_restaurant_budget": {
+      "source": "def score_restaurant_budget(itinerary, trip_duration, budget_level):\n    required = 2 * trip_duration\n\n    if not isinstance(itinerary, dict):\n        return 0.0\n\n    days = itinerary.get(\"days\", [])\n\n    if not isinstance(days, list):\n        return 0.0\n\n    restaurant_lookup = restaurants.set_index(\"place_id\")[\"budget_level\"]\n\n    matching_count = 0\n\n    # Evaluate only the requested number of days\n    for day in days[:trip_duration]:\n        if not isinstance(day, dict):\n            continue\n\n        day_restaurants = day.get(\"restaurants\", [])\n\n        if not isinstance(day_restaurants, list):\n            continue\n\n        # Only the first two restaurant slots per day count\n        for pid in day_restaurants[:2]:\n            if not isinstance(pid, str):\n                continue\n\n            if pid not in restaurant_lookup.index:\n                continue\n\n            if restaurant_lookup.loc[pid] == budget_level:\n                matching_count += 1\n\n    score = 100 * matching_count / required\n\n    return round(score, 2)\n",
+      "sha256": "640653e4be1395ad6b67f95090d01e1738795c065e6889ac11826e45b02014bd"
+    },
+    "score_hotel_budget": {
+      "source": "def score_hotel_budget(itinerary, budget_level):\n    if not isinstance(itinerary, dict):\n        return 0.0\n\n    hotel_id = itinerary.get(\"hotel_id\")\n\n    if not isinstance(hotel_id, str):\n        return 0.0\n\n    hotel_lookup = hotels.set_index(\"place_id\")[\"budget_level\"]\n\n    if hotel_id not in hotel_lookup.index:\n        return 0.0\n\n    if hotel_lookup.loc[hotel_id] == budget_level:\n        return 100.0\n\n    return 0.0\n",
+      "sha256": "e7299ed69a80e28221765e2fe233756daedeac301c35a14035304822ac18e736"
+    },
+    "score_itinerary_feasibility": {
+      "source": "def score_itinerary_feasibility(itinerary, trip_duration):\n    try:\n        is_valid, errors = validate_itinerary(\n            itinerary=itinerary,\n            trip_duration=trip_duration\n        )\n\n        return {\n            \"ifr_score\": 100.0 if is_valid else 0.0,\n            \"feasible\": bool(is_valid),\n            \"validation_errors\": errors\n        }\n\n    except Exception as e:\n        return {\n            \"ifr_score\": 0.0,\n            \"feasible\": False,\n            \"validation_errors\": [\n                f\"Validation exception: {type(e).__name__}: {e}\"\n            ]\n        }\n",
+      "sha256": "b3f4b27a9d37908228cebadd4ae3c05410da45b835bd4effc58d0b3b719649ce"
+    },
+    "calculate_tool_coverage": {
+      "source": "def calculate_tool_coverage(tool_calls):\n    if not isinstance(tool_calls, list):\n        return 0.0\n\n    called_tools = {\n        name for name in tool_calls\n        if isinstance(name, str)\n    }\n\n    matched_tools = called_tools & REQUIRED_TOOLS\n\n    return round(\n        len(matched_tools) / len(REQUIRED_TOOLS) * 100,\n        2\n    )\n",
+      "sha256": "56dbd3d6cd31f21fdac4650798e1a428faa6a91b40387ead5fe8259353e1195e"
+    },
+    "validate_itinerary": {
+      "source": "def validate_itinerary(itinerary, trip_duration):\n    errors = []\n\n    hotel_ids = set(hotels[\"place_id\"])\n    activity_ids = set(activities[\"place_id\"])\n    restaurant_ids = set(restaurants[\"place_id\"])\n\n    if not isinstance(itinerary, dict):\n        return False, [\"Itinerary must be a dictionary\"]\n\n    hotel_id = itinerary.get(\"hotel_id\")\n\n    if not isinstance(hotel_id, str) or hotel_id not in hotel_ids:\n        errors.append(\"Invalid hotel ID\")\n\n    days = itinerary.get(\"days\")\n\n    if not isinstance(days, list):\n        return False, errors + [\"Days must be a list\"]\n\n    if len(days) != trip_duration:\n        errors.append(\"Incorrect number of days\")\n\n    all_activities = []\n\n    for index, day in enumerate(days, start=1):\n        if not isinstance(day, dict):\n            errors.append(f\"Day {index}: invalid structure\")\n            continue\n\n        if day.get(\"day\") != index:\n            errors.append(f\"Day {index}: incorrect day number\")\n\n        day_activities = day.get(\"activities\")\n        day_restaurants = day.get(\"restaurants\")\n\n        if not isinstance(day_activities, list):\n            errors.append(f\"Day {index}: activities must be a list\")\n        else:\n            if len(day_activities) != 2:\n                errors.append(f\"Day {index}: must have 2 activities\")\n\n            for pid in day_activities:\n                if not isinstance(pid, str) or pid not in activity_ids:\n                    errors.append(f\"Day {index}: invalid activity ID\")\n\n            all_activities.extend(day_activities)\n\n        if not isinstance(day_restaurants, list):\n            errors.append(f\"Day {index}: restaurants must be a list\")\n        else:\n            if len(day_restaurants) != 2:\n                errors.append(f\"Day {index}: must have 2 restaurants\")\n\n            for pid in day_restaurants:\n                if not isinstance(pid, str) or pid not in restaurant_ids:\n                    errors.append(f\"Day {index}: invalid restaurant ID\")\n\n    if len(all_activities) != len(set(all_activities)):\n        errors.append(\"Repeated activities found\")\n\n    return len(errors) == 0, errors\n",
+      "sha256": "b74c3bb43514fa0cba8e765c20d43c2c5bd12f25858af234f2f749d174a31474"
+    }
+  },
+  "comparison_constraints": {
+    "same_model": true,
+    "same_generation_settings": true,
+    "same_structured_inputs": true,
+    "same_datasets": true,
+    "same_output_requirements": true,
+    "same_evaluation_metrics": true,
+    "same_json_safety_and_parser_policy": true,
+    "controlled_factor": "Agent Architecture and Task Organization"
+  }
+}
