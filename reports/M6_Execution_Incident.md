@@ -25,3 +25,7 @@ Formal-v2 made five HTTP requests: the baseline G01/seed11 completed with two re
 The shared retry policy entered that long provider-directed wait. Once identified, execution was interrupted at 2026-11-08T20:09:12Z (23:09 Riyadh), before another request. No purchase, plan change or model substitution occurred. One complete baseline record and one interrupted treatment journal are preserved directly in Drive and in the downloaded M6_Formal_V2_Stopped.zip (SHA256 bcdb357b2a93138ce2b90b5db4adbd0d6d19b1d8a723ad2edac40a020caae44d). The archive CRC and local/download hash match.
 
 The interrupted treatment has no completed record and must not be scored as a completed run or silently retried. No further automatic live execution is enabled. A full 120-record comparison remains unfinished; all pilot and formal versions stay separate. The daily quota prevented completing the comparison that evening.
+
+## Subsequent completion — 9 November 2026
+
+Formal-v3 completed a fresh 120-record cohort with 484 requests after quota reset. Direct Drive storage and checkpoint ZIPs preserved all records. The complete archive passed local CRC and independent scoring/integrity verification. Earlier incomplete attempts remain separate and are not pooled. See M6_Report.md for completed results.

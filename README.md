@@ -1,3 +1,5 @@
+**Updated 9 November 2026: formal-v3 completed and verified — 120 live records, 484 HTTP requests. See reports/M6_Report.md for the completed comparison. Earlier incomplete versions are preserved separately.**
+
 # M6 — Riyadh Travel Planner
 
 مشروع M6 مستقل عن M5، بدفتر Colab وتسليم مستقلين.
@@ -8,7 +10,7 @@ Start with [M6_README.md](M6_README.md), [the protocol](docs/M6_Experiment_Proto
 
 Notebook: [M6_Colab_Run.ipynb](notebooks/M6_Colab_Run.ipynb). All live flags are false by default.
 
-Status: offline implementation/tests and the two-record live pilot complete; formal comparison pending. Mock results are not research evidence. See [the pilot report](reports/M6_Pilot_Report.md).
+Status: offline implementation/tests and the two-record live pilot complete; formal comparison complete. Mock results are not research evidence. See [the pilot report](reports/M6_Pilot_Report.md).
 
 Working Drive notebook: [M6_Colab_Run.ipynb](https://colab.research.google.com/drive/1q633AqPjDEXYOWSFh70txF9yJooBnG-O).
 
@@ -16,4 +18,4 @@ The frozen scorer, search tools, data and golden cases are copied from verified 
 
 Detailed pilot prompts, responses and tool traces are preserved in the separate local evidence archive. This repository publishes the implementation, reports and aggregate audit only. To verify raw pilot evidence, extract M6_Pilot_Evidence.zip under m6_runs/.
 
-Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are recovered despite a 114-record progress log. See [the execution incident](reports/M6_Execution_Incident.md). No complete formal comparison is claimed; formal-v2 then stopped after five requests because the provider reported its daily free-tier quota exhausted. Its one complete record and interrupted journal are preserved in Drive and locally.
+Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are recovered despite a 114-record progress log. See [the execution incident](reports/M6_Execution_Incident.md). No complete formal-v1 comparison is claimed; formal-v2 then stopped after five requests because the provider reported its daily free-tier quota exhausted. Its one complete record and interrupted journal are preserved in Drive and locally.

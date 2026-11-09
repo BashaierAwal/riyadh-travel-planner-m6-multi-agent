@@ -1,6 +1,8 @@
+**Updated 9 November 2026: formal-v3 completed and verified — 120 live records, 484 HTTP requests. See reports/M6_Report.md for the completed comparison. Earlier incomplete versions are preserved separately.**
+
 # M6 — Riyadh Travel Planner
 
-**Status, 8 November 2026:** implementation, offline validation and the live paired pilot are complete. A live paired G01/seed11 pilot completed with 2 records and 9 HTTP requests. Formal-v1 was attempted but its evidence is incomplete after runtime-storage loss. Only 12 raw records are durably recovered; the progress log reaches 114. The approved formal-v2 recovery used verified Drive storage, then stopped after five requests when the daily free-tier quota was exhausted. One complete baseline and one interrupted treatment journal are preserved. No complete formal comparison is reported. See reports/M6_Execution_Incident.md. Mock records are software fixtures, not research results. M6 submission is not complete until the approved live comparison and failure analysis are recorded.
+**Status, 8 November 2026:** implementation, offline validation and the live paired pilot are complete. A live paired G01/seed11 pilot completed with 2 records and 9 HTTP requests. Formal-v1 was attempted but its evidence is incomplete after runtime-storage loss. Only 12 raw records are durably recovered; the progress log reaches 114. The approved formal-v2 recovery used verified Drive storage, then stopped after five requests when the daily free-tier quota was exhausted. One complete baseline and one interrupted treatment journal are preserved. No complete comparison is reported for those earlier versions. See reports/M6_Execution_Incident.md. Mock records are software fixtures, not research results. The completed formal-v3 comparison and failure analysis are now recorded.
 
 Start with `docs/M6_Experiment_Protocol.md` and `M6_Team_Guide.html`. M5 remains unchanged in its separate repository. This M6 project contains only its runtime dependencies and new M6 work.
 
@@ -53,7 +55,7 @@ Full-cohort comparison refuses incomplete/extra records. `analysis/M6_Results.cs
 - `m6planner/`: model workflow, shared policy, paired runner, analysis and mock service.
 - `notebooks/M6_Colab_Run.ipynb`: safe default Colab entry point.
 - `docs/M6_Experiment_Protocol.md`: frozen design and execution/measurement policy.
-- `reports/M6_Report.md`: implementation report with formal comparative results explicitly pending.
+- `reports/M6_Report.md`: implementation report with completed formal-v3 comparative results.
 - `M6_Team_Guide.html`: Arabic/English guide, opens locally without internet.
 - `reports/M6_Verification.json`: executed verification checks and their scope.
 - `m6_runs/`: separate validation/pilot/formal output versions. The original 120 mocked records remain in the validation archive; regenerate them with the command above.

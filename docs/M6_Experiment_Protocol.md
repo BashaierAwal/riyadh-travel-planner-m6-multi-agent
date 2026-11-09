@@ -1,6 +1,6 @@
 # M6 Experiment Protocol — m6-shared-v1
 
-Status: implementation/offline checks and the separately approved G01/seed11 paired live pilot are complete. Formal experiments require separate project-lead approval. Date: 8 November 2026.
+Status: implementation/offline checks and the separately approved G01/seed11 paired live pilot are complete. Formal-v1 was subsequently approved and attempted; its evidence is incomplete after runtime-storage loss. Recovery requires fresh approval; see reports/M6_Execution_Incident.md. Date: 8 November 2026.
 
 ## Research question and controlled factor
 
@@ -69,3 +69,11 @@ Each version saves a manifest of source/data/policy/cases/dependency hashes. Eac
 ## Required final evidence, still pending
 
 Real 120 records; comparative means/SD/seedmeans; actual measured system latency and observable usage/cost status; trace-supported failure analysis; updated `M6_Report.md`; saved outputs/errors/traces; reproducible ZIP and bilingual guide. Only the two-record live pilot is complete; no formal comparative or treatment-improvement claim is currently supported.
+
+## Prepared recovery storage (not activated)
+
+Formal-v1 is retained with its available 12 records and notebook progress output. Proposed formal-v2 keeps the same model, cases, seeds, prompts and scorer, but records events directly on authorized persistent Drive storage and verifies checkpoints there. It must pass a real cloud write/readback check before any new API call. A fresh cohort is not substituted silently into v1. The prepared request budget reserves 652 prior/unknown requests including the pilot and allows up to 2948 new ones, within 3600 combined. This reservation is not measured actual usage.
+
+## Completed execution version
+
+On 9 November 2026, formal-v3 completed the frozen 20-case × 3-seed × 2-condition grid, with 484 HTTP requests. The version and controller request reservation changed; core model workflow, prompts, datasets, parser, scoring and policy did not. Direct private Drive storage was used symmetrically for both conditions. formal-v1 and formal-v2 remain separate incomplete attempts and are excluded from the primary comparison. The final controller is scripts/M6_Run_Resumed.py (2943 remaining HTTP ceiling; 657 prior-use conservative reservation). No billing upgrade occurred.

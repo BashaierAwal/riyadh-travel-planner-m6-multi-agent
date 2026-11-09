@@ -1,5 +1,5 @@
 {
-  "status": "PASS_OFFLINE_CHECKS",
+  "status": "PASS_FORMAL_V3_SAVED_EVIDENCE",
   "M6_integration_tests": {
     "passed": 17,
     "failed": 0,
@@ -112,5 +112,15 @@
     "provider_retry_delay_seconds": 43404,
     "stopped_at_utc": "2026-11-08T20:09:12.277136+00:00",
     "archive_sha256": "bcdb357b2a93138ce2b90b5db4adbd0d6d19b1d8a723ad2edac40a020caae44d"
+  },
+  "formal_v3": {
+    "records": 120,
+    "records_per_condition": 60,
+    "http_requests": 484,
+    "complete": true,
+    "local_verifier_exit": 0,
+    "colab_verifier_exit": 0,
+    "archive_sha256": "baf9f76a6b13cfdee360ea1a7331413269e0e0eab4987719bd3ddbe5f4b8e53e",
+    "earlier_versions_pooled": false
   }
 }

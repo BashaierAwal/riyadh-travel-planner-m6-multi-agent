@@ -1,0 +1,178 @@
+{
+  "status": "PASS_SAVED_INTEGRITY_WITH_REPORTED_TASK_VIOLATION",
+  "version": "formal-v3",
+  "evidence_mode": "live",
+  "records": 120,
+  "archive_sha256": "baf9f76a6b13cfdee360ea1a7331413269e0e0eab4987719bd3ddbe5f4b8e53e",
+  "archive_crc": "PASS",
+  "http_requests": 484,
+  "http_statuses": {
+    "200": 484
+  },
+  "reported_model_versions": {
+    "gemini-3.5-flash-lite": 484
+  },
+  "minimum_global_http_start_gap_seconds": 12.003111,
+  "parsed_itineraries_checked_for_final_attempt_tool_membership": 114,
+  "source_files_verified": 20,
+  "datasets_verified": 3,
+  "conditions": {
+    "baseline": {
+      "records": 60,
+      "parsed_outputs": 59,
+      "structurally_valid": 50,
+      "http_requests": 120,
+      "metrics": {
+        "APM": {
+          "mean": 95.16683333333333,
+          "sample_sd": 15.087932487634362
+        },
+        "RBM": {
+          "mean": 98.33333333333333,
+          "sample_sd": 12.909944487358056
+        },
+        "HBM": {
+          "mean": 98.33333333333333,
+          "sample_sd": 12.909944487358056
+        },
+        "IFR": {
+          "mean": 83.33333333333333,
+          "sample_sd": 37.58230140014144
+        },
+        "RTC": {
+          "mean": 100.0,
+          "sample_sd": 0.0
+        }
+      },
+      "mean_system_wall_seconds": 23.818232554500028,
+      "observed_total_tokens": 172166,
+      "failure_counts": {
+        "structural_output": 9,
+        "final_parse": 1
+      },
+      "actual_cost_usd": null
+    },
+    "treatment": {
+      "records": 60,
+      "parsed_outputs": 55,
+      "structurally_valid": 48,
+      "http_requests": 364,
+      "metrics": {
+        "APM": {
+          "mean": 88.8335,
+          "sample_sd": 28.209633937086224
+        },
+        "RBM": {
+          "mean": 91.66666666666667,
+          "sample_sd": 27.871780678530218
+        },
+        "HBM": {
+          "mean": 91.66666666666667,
+          "sample_sd": 27.871780678530218
+        },
+        "IFR": {
+          "mean": 80.0,
+          "sample_sd": 40.33755872716886
+        },
+        "RTC": {
+          "mean": 100.0,
+          "sample_sd": 0.0
+        }
+      },
+      "mean_system_wall_seconds": 72.77705468539996,
+      "observed_total_tokens": 541612,
+      "failure_counts": {
+        "structural_output": 7,
+        "coordination_message": 5
+      },
+      "actual_cost_usd": null
+    }
+  },
+  "generation_failures": [
+    {
+      "run_id": "baseline_G07_seed22",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "baseline",
+        "message": "Final output failed the preserved M5 JSON parser"
+      }
+    },
+    {
+      "run_id": "treatment_G06_seed33",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "budget",
+        "message": "Invalid budget JSON"
+      }
+    },
+    {
+      "run_id": "treatment_G11_seed33",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "budget",
+        "message": "Invalid budget JSON"
+      }
+    },
+    {
+      "run_id": "treatment_G15_seed33",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "budget",
+        "message": "Invalid budget JSON"
+      }
+    },
+    {
+      "run_id": "treatment_G18_seed33",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "budget",
+        "message": "Invalid budget JSON"
+      }
+    },
+    {
+      "run_id": "treatment_G19_seed33",
+      "error": {
+        "type": "MessageError",
+        "code": null,
+        "stage": "budget",
+        "message": "Invalid budget JSON"
+      }
+    }
+  ],
+  "tool_grounding_violations": [
+    {
+      "run_id": "treatment_G05_seed11",
+      "outside_final_attempt_tool_results": [
+        {
+          "field": "activities",
+          "id": "ACT_00073"
+        }
+      ],
+      "frozen_scores_unchanged": true
+    }
+  ],
+  "checks": [
+    "complete unchanged20case/3seed/2condition grid",
+    "source/data/manifest/record hashes",
+    "journals, independent scoring and final-attempt RTC",
+    "role/attempt/record request caps",
+    "usage sums and timing decomposition",
+    "all run/case/seed summary levels and paired differences",
+    "global HTTP pacing and model request config",
+    "audited final-attempt tool membership for every parsed itinerary; exceptions reported"
+  ],
+  "interpretation": "This cohort does not support a treatment improvement: observed treatment means are lower and measured latency and observed token use are higher. This is descriptive, not a statistical significance claim.",
+  "limits": [
+    "Billing amount remains unknown; observed tokens are not a monetary cost.",
+    "IFR is structural/dataset feasibility only.",
+    "All five treatment message failures occur at seed33 budget stage; this does not establish seed causality.",
+    "Model alias and seed effectiveness are not independently authenticated.",
+    "formal-v1,formal-v2,pilot and mock evidence are not pooled.",
+    "Checksums/logs provide saved-data integrity, not provider attestation."
+  ]
+}
