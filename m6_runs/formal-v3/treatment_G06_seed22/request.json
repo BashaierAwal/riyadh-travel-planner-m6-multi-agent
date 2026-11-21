@@ -1,0 +1,14 @@
+{
+  "case": {
+    "case_id": "G06",
+    "trip_duration": 1,
+    "interests": [
+      "Sports"
+    ],
+    "budget_level": "High"
+  },
+  "seed": 22,
+  "condition": "treatment",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T10:20:56.811515+00:00"
+}

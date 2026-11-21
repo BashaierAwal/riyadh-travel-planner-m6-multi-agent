@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "G16",
+    "trip_duration": 1,
+    "interests": [
+      "Shopping",
+      "Culture & History",
+      "Sports"
+    ],
+    "budget_level": "Low"
+  },
+  "seed": 11,
+  "condition": "baseline",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T11:09:46.643073+00:00"
+}

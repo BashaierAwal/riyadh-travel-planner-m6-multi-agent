@@ -1,0 +1,1372 @@
+{
+  "evidence_mode": "live",
+  "study_kind": "formal",
+  "is_formal_experimental_evidence": true,
+  "generation_policy": "m6-shared-v1",
+  "conditions": {
+    "baseline": {
+      "records": 60,
+      "parsed_outputs": 59,
+      "structurally_valid": 50,
+      "metrics": {
+        "APM": {
+          "mean": 95.16683333333333,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 15.087932487634362
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 2.8867513459481287,
+            "means": {
+              "11": 96.8335,
+              "22": 91.8335,
+              "33": 96.8335
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 10.89376936977607
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 90.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G08": {
+              "mean": 66.67,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 80.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "RBM": {
+          "mean": 98.33333333333333,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 12.909944487358056
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 2.8867513459481287,
+            "means": {
+              "11": 100.0,
+              "22": 95.0,
+              "33": 100.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 7.453559924999298
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "HBM": {
+          "mean": 98.33333333333333,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 12.909944487358056
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 2.8867513459481287,
+            "means": {
+              "11": 100.0,
+              "22": 95.0,
+              "33": 100.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 7.453559924999298
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "IFR": {
+          "mean": 83.33333333333333,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 37.58230140014144
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 2.8867513459481287,
+            "means": {
+              "11": 85.0,
+              "22": 80.0,
+              "33": 85.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 36.67464028134539
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 0.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G08": {
+              "mean": 0.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 0.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "RTC": {
+          "mean": 100.0,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 0.0
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 0.0,
+            "means": {
+              "11": 100.0,
+              "22": 100.0,
+              "33": 100.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 0.0
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        }
+      },
+      "latency": {
+        "system_wall_ms": {
+          "n": 60,
+          "mean": 23818.232554500028,
+          "sample_sd": 470.8310117975058
+        },
+        "processing_ms": {
+          "n": 60,
+          "mean": 2464.9533766001487,
+          "sample_sd": 653.8285440056541
+        },
+        "retry_wait_ms": {
+          "n": 60,
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "pacing_wait_ms": {
+          "n": 60,
+          "mean": 21353.27917789988,
+          "sample_sd": 754.0800669629868
+        }
+      },
+      "observed_usage": {
+        "promptTokenCount": {
+          "sum_observed": 153816,
+          "records_with_observation": 60
+        },
+        "candidatesTokenCount": {
+          "sum_observed": 18350,
+          "records_with_observation": 60
+        },
+        "totalTokenCount": {
+          "sum_observed": 172166,
+          "records_with_observation": 60
+        },
+        "thoughtsTokenCount": {
+          "sum_observed": null,
+          "records_with_observation": 0
+        },
+        "cachedContentTokenCount": {
+          "sum_observed": null,
+          "records_with_observation": 0
+        }
+      },
+      "http_requests": 120,
+      "actual_cost_usd": null,
+      "estimated_cost_usd": null,
+      "failure_counts": {
+        "structural_output": 9,
+        "final_parse": 1
+      }
+    },
+    "treatment": {
+      "records": 60,
+      "parsed_outputs": 55,
+      "structurally_valid": 48,
+      "metrics": {
+        "APM": {
+          "mean": 88.8335,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 28.209633937086224
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 13.856406460551018,
+            "means": {
+              "11": 96.8335,
+              "22": 96.8335,
+              "33": 72.8335
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 16.763520351961972
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 90.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 66.67,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 53.333333333333336,
+              "n": 3,
+              "sample_sd": 46.18802153517006
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G19": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "RBM": {
+          "mean": 91.66666666666667,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 27.871780678530218
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 14.433756729740644,
+            "means": {
+              "11": 100.0,
+              "22": 100.0,
+              "33": 75.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 14.808721943977307
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G19": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "HBM": {
+          "mean": 91.66666666666667,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 27.871780678530218
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 14.433756729740644,
+            "means": {
+              "11": 100.0,
+              "22": 100.0,
+              "33": 75.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 14.808721943977307
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G19": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "IFR": {
+          "mean": 80.0,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 40.33755872716886
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 13.228756555322953,
+            "means": {
+              "11": 90.0,
+              "22": 85.0,
+              "33": 65.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 33.15743061032266
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 33.333333333333336,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G06": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 0.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 0.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G19": {
+              "mean": 66.66666666666667,
+              "n": 3,
+              "sample_sd": 57.735026918962575
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        },
+        "RTC": {
+          "mean": 100.0,
+          "across_runs": {
+            "n": 60,
+            "sample_sd": 0.0
+          },
+          "between_seed_means": {
+            "n": 3,
+            "sample_sd": 0.0,
+            "means": {
+              "11": 100.0,
+              "22": 100.0,
+              "33": 100.0
+            }
+          },
+          "between_case_means": {
+            "n": 20,
+            "sample_sd": 0.0
+          },
+          "per_case": {
+            "G01": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G02": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G03": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G04": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G05": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G06": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G07": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G08": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G09": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G10": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G11": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G12": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G13": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G14": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G15": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G16": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G17": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G18": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G19": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            },
+            "G20": {
+              "mean": 100.0,
+              "n": 3,
+              "sample_sd": 0.0
+            }
+          }
+        }
+      },
+      "latency": {
+        "system_wall_ms": {
+          "n": 60,
+          "mean": 72777.05468539995,
+          "sample_sd": 5461.713180940072
+        },
+        "processing_ms": {
+          "n": 60,
+          "mean": 6831.933958283591,
+          "sample_sd": 1659.9397930516445
+        },
+        "retry_wait_ms": {
+          "n": 60,
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "pacing_wait_ms": {
+          "n": 60,
+          "mean": 65945.12072711636,
+          "sample_sd": 5091.077390204887
+        }
+      },
+      "observed_usage": {
+        "promptTokenCount": {
+          "sum_observed": 498959,
+          "records_with_observation": 60
+        },
+        "candidatesTokenCount": {
+          "sum_observed": 42653,
+          "records_with_observation": 60
+        },
+        "totalTokenCount": {
+          "sum_observed": 541612,
+          "records_with_observation": 60
+        },
+        "thoughtsTokenCount": {
+          "sum_observed": null,
+          "records_with_observation": 0
+        },
+        "cachedContentTokenCount": {
+          "sum_observed": null,
+          "records_with_observation": 0
+        }
+      },
+      "http_requests": 364,
+      "actual_cost_usd": null,
+      "estimated_cost_usd": null,
+      "failure_counts": {
+        "structural_output": 7,
+        "coordination_message": 5
+      }
+    }
+  },
+  "interpretation": "Mock/pilot results are validation only. Architecture benefit is not assumed. IFR is structural only.",
+  "paired_treatment_minus_baseline": {
+    "APM": {
+      "n": 60,
+      "mean": -6.333333333333333,
+      "sample_sd": 30.251301508164126
+    },
+    "RBM": {
+      "n": 60,
+      "mean": -6.666666666666667,
+      "sample_sd": 31.172927556284773
+    },
+    "HBM": {
+      "n": 60,
+      "mean": -6.666666666666667,
+      "sample_sd": 31.172927556284773
+    },
+    "IFR": {
+      "n": 60,
+      "mean": -3.3333333333333335,
+      "sample_sd": 31.71198066211135
+    },
+    "RTC": {
+      "n": 60,
+      "mean": 0.0,
+      "sample_sd": 0.0
+    }
+  }
+}

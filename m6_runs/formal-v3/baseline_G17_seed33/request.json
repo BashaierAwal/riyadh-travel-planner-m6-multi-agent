@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "G17",
+    "trip_duration": 2,
+    "interests": [
+      "Entertainment",
+      "Religious",
+      "Nature & Outdoors"
+    ],
+    "budget_level": "Medium"
+  },
+  "seed": 33,
+  "condition": "baseline",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T11:17:06.385402+00:00"
+}

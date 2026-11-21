@@ -16,6 +16,6 @@ Working Drive notebook: [M6_Colab_Run.ipynb](https://colab.research.google.com/d
 
 The frozen scorer, search tools, data and golden cases are copied from verified M5 commit e59f1b49c0c6d7d695a885df6cf9fafe4113ab61. See M6_Provenance.json.
 
-GitHub includes the [formal comparison, per-case scores and cost estimates](reports/formal-v3/) and the [saved-evidence audit](reports/M6_Formal_Audit.json). The full prompts, responses and tool journals are held with the experiment evidence. See [run storage and verification](m6_runs/README.md) for the archive layout and offline audit command.
+GitHub includes the [120 complete formal-v3 records and tool journals](m6_runs/formal-v3/), [comparison, per-record scores and cost estimates](reports/formal-v3/), and [saved-evidence audit](reports/M6_Formal_Audit.json). No separate archive or model key is needed to verify the formal results. See [run storage and verification](m6_runs/README.md).
 
 Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are recovered despite a 114-record progress log. See [the execution incident](reports/M6_Execution_Incident.md). No complete formal-v1 comparison is claimed; formal-v2 then stopped after five requests because the provider reported its daily free-tier quota exhausted. Its one complete record and interrupted journal are preserved in Drive and locally.

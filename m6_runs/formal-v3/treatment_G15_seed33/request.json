@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "G15",
+    "trip_duration": 5,
+    "interests": [
+      "Sports",
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "High"
+  },
+  "seed": 33,
+  "condition": "treatment",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T11:07:28.344938+00:00"
+}

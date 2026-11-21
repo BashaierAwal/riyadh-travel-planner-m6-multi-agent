@@ -1,0 +1,14 @@
+{
+  "case": {
+    "case_id": "G07",
+    "trip_duration": 2,
+    "interests": [
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "Low"
+  },
+  "seed": 22,
+  "condition": "baseline",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T10:26:25.223742+00:00"
+}

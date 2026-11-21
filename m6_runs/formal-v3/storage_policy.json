@@ -1,0 +1,11 @@
+{
+  "storage": "All journals and records written directly to persistent destination",
+  "destination": "/content/drive/MyDrive/Riyadh_Travel_Planner_M6/experiments",
+  "checkpoint": "Separate ZIP after each batch",
+  "formal_v1": "Preserved separately as an incomplete run with unavailable later raw evidence",
+  "recovery_http_cap": 2943,
+  "reserved_prior_request_upper_bound_including_pilot": 657,
+  "combined_request_cap": 3600,
+  "version": "formal-v3",
+  "evidence_mode": "live"
+}

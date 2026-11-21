@@ -1,0 +1,14 @@
+{
+  "case": {
+    "case_id": "G03",
+    "trip_duration": 3,
+    "interests": [
+      "Culture & History"
+    ],
+    "budget_level": "High"
+  },
+  "seed": 33,
+  "condition": "baseline",
+  "identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+  "created_at_utc": "2026-11-09T10:07:33.213323+00:00"
+}

@@ -68,11 +68,13 @@ Each version saves a manifest of source/data/policy/cases/dependency hashes. Eac
 
 ## Completed evidence
 
-Formal-v3 contains 120 saved records, including failed generations. The [published results](../reports/formal-v3/) include comparative means and sample standard deviations, per-seed results, measured system latency, observed usage and estimated cost. The [M6 report](../reports/M6_Report.md) documents failure modes and the tool-grounding exception. See [run storage and verification](../m6_runs/README.md) for offline access instructions.
+Formal-v3 contains 120 saved records, including failed generations. The [published results](../reports/formal-v3/) include comparative means and sample standard deviations, per-seed results, measured system latency, observed usage and estimated cost. The [M6 report](../reports/M6_Report.md) documents failure modes and the tool-grounding exception. The complete records and journals are included under `m6_runs/formal-v3/`. See [run storage and verification](../m6_runs/README.md) for offline instructions; no external archive or model key is needed.
 
-## Prepared recovery storage (not activated)
+## Historical recovery preparation and execution
 
-Formal-v1 is retained with its available 12 records and notebook progress output. Proposed formal-v2 keeps the same model, cases, seeds, prompts and scorer, but records events directly on authorized persistent Drive storage and verifies checkpoints there. It must pass a real cloud write/readback check before any new API call. A fresh cohort is not substituted silently into v1. The prepared request budget reserves 652 prior/unknown requests including the pilot and allows up to 2948 new ones, within 3600 combined. This reservation is not measured actual usage.
+The following describes the recovery preparation after formal-v1. Formal-v2 was subsequently attempted and stopped at the daily quota, as documented in the execution incident report; formal-v3 later completed.
+
+Formal-v1 is retained with its available 12 records and notebook progress output. The formal-v2 recovery design kept the same model, cases, seeds, prompts and scorer, but records events directly on authorized persistent Drive storage and verifies checkpoints there. It must pass a real cloud write/readback check before any new API call. A fresh cohort is not substituted silently into v1. The prepared request budget reserves 652 prior/unknown requests including the pilot and allows up to 2948 new ones, within 3600 combined. This reservation is not measured actual usage.
 
 ## Completed execution version
 

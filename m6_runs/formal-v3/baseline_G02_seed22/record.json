@@ -1,0 +1,1582 @@
+{
+  "run_id": "baseline_G02_seed22",
+  "experiment_version": "formal-v3",
+  "case_id": "G02",
+  "seed": 22,
+  "user_input": {
+    "case_id": "G02",
+    "trip_duration": 2,
+    "interests": [
+      "Entertainment"
+    ],
+    "budget_level": "Medium"
+  },
+  "recorded_at_utc": "2026-11-09T10:01:30.098161+00:00",
+  "generation_success": true,
+  "generation_result": {
+    "generation_success": true,
+    "itinerary": {
+      "hotel_id": "HOT_00045",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00084",
+            "ACT_00106"
+          ],
+          "restaurants": [
+            "RES_16991",
+            "RES_09956"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00060",
+            "ACT_00909"
+          ],
+          "restaurants": [
+            "RES_10973",
+            "RES_10766"
+          ]
+        }
+      ]
+    },
+    "raw_text": "{\n  \"hotel_id\": \"HOT_00045\",\n  \"days\": [\n    {\n      \"day\": 1,\n      \"activities\": [\n        \"ACT_00084\",\n        \"ACT_00106\"\n      ],\n      \"restaurants\": [\n        \"RES_16991\",\n        \"RES_09956\"\n      ]\n    },\n    {\n      \"day\": 2,\n      \"activities\": [\n        \"ACT_00060\",\n        \"ACT_00909\"\n      ],\n      \"restaurants\": [\n        \"RES_10973\",\n        \"RES_10766\"\n      ]\n    }\n  ]\n}",
+    "normalized_text": "{\n  \"hotel_id\": \"HOT_00045\",\n  \"days\": [\n    {\n      \"day\": 1,\n      \"activities\": [\n        \"ACT_00084\",\n        \"ACT_00106\"\n      ],\n      \"restaurants\": [\n        \"RES_16991\",\n        \"RES_09956\"\n      ]\n    },\n    {\n      \"day\": 2,\n      \"activities\": [\n        \"ACT_00060\",\n        \"ACT_00909\"\n      ],\n      \"restaurants\": [\n        \"RES_10973\",\n        \"RES_10766\"\n      ]\n    }\n  ]\n}",
+    "condition": "baseline",
+    "provider_mode": "live",
+    "trace": [
+      {
+        "kind": "attempt_started",
+        "started_at_utc": "2026-11-09T10:01:06.683535+00:00",
+        "event_number": 1,
+        "attempt": 1,
+        "stage": null
+      },
+      {
+        "kind": "agent_started",
+        "prompt": "You are a single-agent Riyadh travel planner. Plan a 2-day trip. User interests: [\"Entertainment\"]. Budget level: Medium. Use all three tools: find_activities, find_restaurants, and find_hotels. Select exactly one hotel for the whole trip. Select exactly two activities and two restaurants per day. Do not repeat activities. Only select place_ids returned by the tools. Use the requested budget level for hotels and restaurants. Prioritize activities matching the user's interests. Return ONLY valid JSON with keys hotel_id and days. Each day must contain day, activities, and restaurants. Activities and restaurants must each contain exactly two IDs. Do not include markdown or explanations.",
+        "prompt_sha256": "fead6c787da3b34c784ea59582422ac45d9c40b9ecfb019acc2840b8c8da0286",
+        "http_budget": 10,
+        "tools": [
+          "find_activities",
+          "find_restaurants",
+          "find_hotels"
+        ],
+        "event_number": 2,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "pacing_wait",
+        "requested_ms": 10074.89095100027,
+        "elapsed_ms": 10075.058079999508,
+        "event_number": 3,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "http_request",
+        "request_number": 9,
+        "method": "POST",
+        "path": "/v1beta/models/gemini-3.5-flash-lite:generateContent",
+        "body": {
+          "contents": [
+            {
+              "parts": [
+                {
+                  "text": "You are a single-agent Riyadh travel planner. Plan a 2-day trip. User interests: [\"Entertainment\"]. Budget level: Medium. Use all three tools: find_activities, find_restaurants, and find_hotels. Select exactly one hotel for the whole trip. Select exactly two activities and two restaurants per day. Do not repeat activities. Only select place_ids returned by the tools. Use the requested budget level for hotels and restaurants. Prioritize activities matching the user's interests. Return ONLY valid JSON with keys hotel_id and days. Each day must contain day, activities, and restaurants. Activities and restaurants must each contain exactly two IDs. Do not include markdown or explanations."
+                }
+              ],
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "functionDeclarations": [
+                {
+                  "description": "Search Riyadh activities matching the user's interests.\n\nArgs:\n    interests: Selected interest groups.\n    limit: Maximum number of activities to return.\n\nReturns:\n    A list of matching activities from the dataset.",
+                  "name": "find_activities",
+                  "parameters": {
+                    "properties": {
+                      "interests": {
+                        "items": {
+                          "type": "STRING"
+                        },
+                        "type": "ARRAY"
+                      },
+                      "limit": {
+                        "default": 30,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "interests"
+                    ],
+                    "type": "OBJECT"
+                  }
+                },
+                {
+                  "description": "Search Riyadh restaurants by budget level.\n\nArgs:\n    budget_level: Low, Medium, or High.\n    limit: Maximum number of restaurants.\n\nReturns:\n    Matching restaurants from the dataset.",
+                  "name": "find_restaurants",
+                  "parameters": {
+                    "properties": {
+                      "budget_level": {
+                        "type": "STRING"
+                      },
+                      "limit": {
+                        "default": 10,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "budget_level"
+                    ],
+                    "type": "OBJECT"
+                  }
+                },
+                {
+                  "description": "Search Riyadh hotels matching the user's budget.\n\nArgs:\n    budget_level: Low, Medium, or High.\n    limit: Maximum number of hotels to return.\n\nReturns:\n    Matching hotels from the dataset.",
+                  "name": "find_hotels",
+                  "parameters": {
+                    "properties": {
+                      "budget_level": {
+                        "type": "STRING"
+                      },
+                      "limit": {
+                        "default": 5,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "budget_level"
+                    ],
+                    "type": "OBJECT"
+                  }
+                }
+              ]
+            }
+          ],
+          "generationConfig": {
+            "temperature": 0.0,
+            "seed": 22
+          }
+        },
+        "started_at_utc": "2026-11-09T10:01:16.994618+00:00",
+        "event_number": 4,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "http_response",
+        "request_number": 9,
+        "status_code": 200,
+        "body": {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "functionCall": {
+                      "name": "find_hotels",
+                      "args": {
+                        "budget_level": "Medium",
+                        "limit": 5
+                      },
+                      "id": "call_12272762299349467435"
+                    },
+                    "thoughtSignature": "EmAKXgFpFH0TFqMI14lxnTEPJlLpVGy2e8B0RPmmaDqByvMbzIAhwcHi8PqVjuu79D6uGR383rlnA250gw+C+bUcI5MbEBc9rmP2UqXeIlw+cx/HzZb5phvxq/6Gsb3VBdA="
+                  },
+                  {
+                    "functionCall": {
+                      "name": "find_restaurants",
+                      "args": {
+                        "budget_level": "Medium",
+                        "limit": 10
+                      },
+                      "id": "call_12272762299349469514"
+                    }
+                  },
+                  {
+                    "functionCall": {
+                      "name": "find_activities",
+                      "args": {
+                        "limit": 10,
+                        "interests": [
+                          "Entertainment"
+                        ]
+                      },
+                      "id": "call_12272762299349467497"
+                    }
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "finishMessage": "Model generated function call(s)."
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 444,
+            "candidatesTokenCount": 66,
+            "totalTokenCount": 510,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 444
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "modelVersion": "gemini-3.5-flash-lite",
+          "responseId": "7Znxav7HEf-5sOIPnoDnOA"
+        },
+        "elapsed_ms": 724.1840050000974,
+        "retry_after": null,
+        "finished_at_utc": "2026-11-09T10:01:17.723577+00:00",
+        "event_number": 5,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_call",
+        "name": "find_hotels",
+        "arguments": {
+          "budget_level": "Medium",
+          "limit": 5
+        },
+        "started_at_utc": "2026-11-09T10:01:17.732218+00:00",
+        "event_number": 6,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_result",
+        "name": "find_hotels",
+        "result": [
+          {
+            "place_id": "HOT_00045",
+            "hotel_name": "Joudyan Hotel",
+            "budget_level": "Medium",
+            "median_price": 755.625,
+            "rating": 5.0,
+            "count": 317
+          },
+          {
+            "place_id": "HOT_00054",
+            "hotel_name": "Novotel Riyadh Sahafa",
+            "budget_level": "Medium",
+            "median_price": 705.0,
+            "rating": 5.0,
+            "count": 5
+          },
+          {
+            "place_id": "HOT_00051",
+            "hotel_name": "Ross Hotel",
+            "budget_level": "Medium",
+            "median_price": 633.75,
+            "rating": 5.0,
+            "count": 1
+          },
+          {
+            "place_id": "HOT_00006",
+            "hotel_name": "Holiday Inn Riyadh - al Qasr, an IHG hotel",
+            "budget_level": "Medium",
+            "median_price": 907.5,
+            "rating": 4.5,
+            "count": 1073
+          },
+          {
+            "place_id": "HOT_00005",
+            "hotel_name": "Continent Al Waha Hotel",
+            "budget_level": "Medium",
+            "median_price": 750.0,
+            "rating": 4.5,
+            "count": 407
+          }
+        ],
+        "status": "success",
+        "finished_at_utc": "2026-11-09T10:01:17.745751+00:00",
+        "event_number": 7,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_call",
+        "name": "find_restaurants",
+        "arguments": {
+          "budget_level": "Medium",
+          "limit": 10
+        },
+        "started_at_utc": "2026-11-09T10:01:17.752536+00:00",
+        "event_number": 8,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_result",
+        "name": "find_restaurants",
+        "result": [
+          {
+            "place_id": "RES_16991",
+            "name": "كبابجي محمود",
+            "budget_level": "Medium",
+            "rating": 9.5,
+            "ratingSignals": 430.0
+          },
+          {
+            "place_id": "RES_09956",
+            "name": "Starbucks (ستاربكس)",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 2145.0
+          },
+          {
+            "place_id": "RES_10973",
+            "name": "Tokyo",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 2002.0
+          },
+          {
+            "place_id": "RES_10766",
+            "name": "The Cheesecake Factory",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 760.0
+          },
+          {
+            "place_id": "RES_01025",
+            "name": "Anoosh (انوش)",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 674.0
+          },
+          {
+            "place_id": "RES_04247",
+            "name": "FROZ (فروز)",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 317.0
+          },
+          {
+            "place_id": "RES_00503",
+            "name": "Al Ennabi Grill /المشوي العنابي",
+            "budget_level": "Medium",
+            "rating": 9.3,
+            "ratingSignals": 90.0
+          },
+          {
+            "place_id": "RES_06419",
+            "name": "LA RUSTICA Pizzeria (لاروستيكا بيتزاريا)",
+            "budget_level": "Medium",
+            "rating": 9.2,
+            "ratingSignals": 3520.0
+          },
+          {
+            "place_id": "RES_10032",
+            "name": "Starbucks (ستاربكس)",
+            "budget_level": "Medium",
+            "rating": 9.2,
+            "ratingSignals": 2671.0
+          },
+          {
+            "place_id": "RES_10031",
+            "name": "Starbucks (ستاربكس)",
+            "budget_level": "Medium",
+            "rating": 9.2,
+            "ratingSignals": 2219.0
+          }
+        ],
+        "status": "success",
+        "finished_at_utc": "2026-11-09T10:01:17.780837+00:00",
+        "event_number": 9,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_call",
+        "name": "find_activities",
+        "arguments": {
+          "interests": [
+            "Entertainment"
+          ],
+          "limit": 10
+        },
+        "started_at_utc": "2026-11-09T10:01:17.787651+00:00",
+        "event_number": 10,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "tool_result",
+        "name": "find_activities",
+        "result": [
+          {
+            "place_id": "ACT_00084",
+            "name": "The Box Escape Experience",
+            "interest_group": "Entertainment",
+            "rating": 5.0,
+            "number_of_ratings": 202.0
+          },
+          {
+            "place_id": "ACT_00106",
+            "name": "Squares Arena",
+            "interest_group": "Entertainment",
+            "rating": 5.0,
+            "number_of_ratings": 23.0
+          },
+          {
+            "place_id": "ACT_00060",
+            "name": "Twisted Labs | تويستد لابز",
+            "interest_group": "Entertainment",
+            "rating": 5.0,
+            "number_of_ratings": 22.0
+          },
+          {
+            "place_id": "ACT_00909",
+            "name": "فـنـتـورا أطياف مول",
+            "interest_group": "Entertainment",
+            "rating": 5.0,
+            "number_of_ratings": 9.0
+          },
+          {
+            "place_id": "ACT_00007",
+            "name": "مفاجأه للترفيه",
+            "interest_group": "Entertainment",
+            "rating": 5.0,
+            "number_of_ratings": 6.0
+          },
+          {
+            "place_id": "ACT_00188",
+            "name": "LAST HOUR",
+            "interest_group": "Entertainment",
+            "rating": 4.9,
+            "number_of_ratings": 1576.0
+          },
+          {
+            "place_id": "ACT_00158",
+            "name": "Pixels Games | بكسلز",
+            "interest_group": "Entertainment",
+            "rating": 4.9,
+            "number_of_ratings": 691.0
+          },
+          {
+            "place_id": "ACT_00086",
+            "name": "وقت القفز | Jump Time",
+            "interest_group": "Entertainment",
+            "rating": 4.9,
+            "number_of_ratings": 359.0
+          },
+          {
+            "place_id": "ACT_00195",
+            "name": "Legends Gaming - العاب الاساطير",
+            "interest_group": "Entertainment",
+            "rating": 4.9,
+            "number_of_ratings": 103.0
+          },
+          {
+            "place_id": "ACT_00154",
+            "name": "ODYSSEY VR",
+            "interest_group": "Entertainment",
+            "rating": 4.9,
+            "number_of_ratings": 82.0
+          }
+        ],
+        "status": "success",
+        "finished_at_utc": "2026-11-09T10:01:17.803390+00:00",
+        "event_number": 11,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "pacing_wait",
+        "requested_ms": 11178.330104999986,
+        "elapsed_ms": 11178.534419000243,
+        "event_number": 12,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "http_request",
+        "request_number": 10,
+        "method": "POST",
+        "path": "/v1beta/models/gemini-3.5-flash-lite:generateContent",
+        "body": {
+          "contents": [
+            {
+              "parts": [
+                {
+                  "text": "You are a single-agent Riyadh travel planner. Plan a 2-day trip. User interests: [\"Entertainment\"]. Budget level: Medium. Use all three tools: find_activities, find_restaurants, and find_hotels. Select exactly one hotel for the whole trip. Select exactly two activities and two restaurants per day. Do not repeat activities. Only select place_ids returned by the tools. Use the requested budget level for hotels and restaurants. Prioritize activities matching the user's interests. Return ONLY valid JSON with keys hotel_id and days. Each day must contain day, activities, and restaurants. Activities and restaurants must each contain exactly two IDs. Do not include markdown or explanations."
+                }
+              ],
+              "role": "user"
+            },
+            {
+              "parts": [
+                {
+                  "thoughtSignature": "EmAKXgFpFH0TFqMI14lxnTEPJlLpVGy2e8B0RPmmaDqByvMbzIAhwcHi8PqVjuu79D6uGR383rlnA250gw-C-bUcI5MbEBc9rmP2UqXeIlw-cx_HzZb5phvxq_6Gsb3VBdA=",
+                  "functionCall": {
+                    "id": "call_12272762299349467435",
+                    "args": {
+                      "budget_level": "Medium",
+                      "limit": 5
+                    },
+                    "name": "find_hotels"
+                  }
+                },
+                {
+                  "functionCall": {
+                    "id": "call_12272762299349469514",
+                    "args": {
+                      "budget_level": "Medium",
+                      "limit": 10
+                    },
+                    "name": "find_restaurants"
+                  }
+                },
+                {
+                  "functionCall": {
+                    "id": "call_12272762299349467497",
+                    "args": {
+                      "limit": 10,
+                      "interests": [
+                        "Entertainment"
+                      ]
+                    },
+                    "name": "find_activities"
+                  }
+                }
+              ],
+              "role": "model"
+            },
+            {
+              "parts": [
+                {
+                  "functionResponse": {
+                    "name": "find_hotels",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "HOT_00045",
+                          "hotel_name": "Joudyan Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 755.625,
+                          "rating": 5.0,
+                          "count": 317
+                        },
+                        {
+                          "place_id": "HOT_00054",
+                          "hotel_name": "Novotel Riyadh Sahafa",
+                          "budget_level": "Medium",
+                          "median_price": 705.0,
+                          "rating": 5.0,
+                          "count": 5
+                        },
+                        {
+                          "place_id": "HOT_00051",
+                          "hotel_name": "Ross Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 633.75,
+                          "rating": 5.0,
+                          "count": 1
+                        },
+                        {
+                          "place_id": "HOT_00006",
+                          "hotel_name": "Holiday Inn Riyadh - al Qasr, an IHG hotel",
+                          "budget_level": "Medium",
+                          "median_price": 907.5,
+                          "rating": 4.5,
+                          "count": 1073
+                        },
+                        {
+                          "place_id": "HOT_00005",
+                          "hotel_name": "Continent Al Waha Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 750.0,
+                          "rating": 4.5,
+                          "count": 407
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "functionResponse": {
+                    "name": "find_restaurants",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "RES_16991",
+                          "name": "كبابجي محمود",
+                          "budget_level": "Medium",
+                          "rating": 9.5,
+                          "ratingSignals": 430.0
+                        },
+                        {
+                          "place_id": "RES_09956",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 2145.0
+                        },
+                        {
+                          "place_id": "RES_10973",
+                          "name": "Tokyo",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 2002.0
+                        },
+                        {
+                          "place_id": "RES_10766",
+                          "name": "The Cheesecake Factory",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 760.0
+                        },
+                        {
+                          "place_id": "RES_01025",
+                          "name": "Anoosh (انوش)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 674.0
+                        },
+                        {
+                          "place_id": "RES_04247",
+                          "name": "FROZ (فروز)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 317.0
+                        },
+                        {
+                          "place_id": "RES_00503",
+                          "name": "Al Ennabi Grill /المشوي العنابي",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 90.0
+                        },
+                        {
+                          "place_id": "RES_06419",
+                          "name": "LA RUSTICA Pizzeria (لاروستيكا بيتزاريا)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 3520.0
+                        },
+                        {
+                          "place_id": "RES_10032",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 2671.0
+                        },
+                        {
+                          "place_id": "RES_10031",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 2219.0
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "functionResponse": {
+                    "name": "find_activities",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "ACT_00084",
+                          "name": "The Box Escape Experience",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 202.0
+                        },
+                        {
+                          "place_id": "ACT_00106",
+                          "name": "Squares Arena",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 23.0
+                        },
+                        {
+                          "place_id": "ACT_00060",
+                          "name": "Twisted Labs | تويستد لابز",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 22.0
+                        },
+                        {
+                          "place_id": "ACT_00909",
+                          "name": "فـنـتـورا أطياف مول",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 9.0
+                        },
+                        {
+                          "place_id": "ACT_00007",
+                          "name": "مفاجأه للترفيه",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 6.0
+                        },
+                        {
+                          "place_id": "ACT_00188",
+                          "name": "LAST HOUR",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 1576.0
+                        },
+                        {
+                          "place_id": "ACT_00158",
+                          "name": "Pixels Games | بكسلز",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 691.0
+                        },
+                        {
+                          "place_id": "ACT_00086",
+                          "name": "وقت القفز | Jump Time",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 359.0
+                        },
+                        {
+                          "place_id": "ACT_00195",
+                          "name": "Legends Gaming - العاب الاساطير",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 103.0
+                        },
+                        {
+                          "place_id": "ACT_00154",
+                          "name": "ODYSSEY VR",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 82.0
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "role": "user"
+            }
+          ],
+          "tools": [
+            {
+              "functionDeclarations": [
+                {
+                  "description": "Search Riyadh activities matching the user's interests.\n\nArgs:\n    interests: Selected interest groups.\n    limit: Maximum number of activities to return.\n\nReturns:\n    A list of matching activities from the dataset.",
+                  "name": "find_activities",
+                  "parameters": {
+                    "properties": {
+                      "interests": {
+                        "items": {
+                          "type": "STRING"
+                        },
+                        "type": "ARRAY"
+                      },
+                      "limit": {
+                        "default": 30,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "interests"
+                    ],
+                    "type": "OBJECT"
+                  }
+                },
+                {
+                  "description": "Search Riyadh restaurants by budget level.\n\nArgs:\n    budget_level: Low, Medium, or High.\n    limit: Maximum number of restaurants.\n\nReturns:\n    Matching restaurants from the dataset.",
+                  "name": "find_restaurants",
+                  "parameters": {
+                    "properties": {
+                      "budget_level": {
+                        "type": "STRING"
+                      },
+                      "limit": {
+                        "default": 10,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "budget_level"
+                    ],
+                    "type": "OBJECT"
+                  }
+                },
+                {
+                  "description": "Search Riyadh hotels matching the user's budget.\n\nArgs:\n    budget_level: Low, Medium, or High.\n    limit: Maximum number of hotels to return.\n\nReturns:\n    Matching hotels from the dataset.",
+                  "name": "find_hotels",
+                  "parameters": {
+                    "properties": {
+                      "budget_level": {
+                        "type": "STRING"
+                      },
+                      "limit": {
+                        "default": 5,
+                        "type": "INTEGER"
+                      }
+                    },
+                    "required": [
+                      "budget_level"
+                    ],
+                    "type": "OBJECT"
+                  }
+                }
+              ]
+            }
+          ],
+          "generationConfig": {
+            "temperature": 0.0,
+            "seed": 22
+          }
+        },
+        "started_at_utc": "2026-11-09T10:01:28.999044+00:00",
+        "event_number": 13,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "http_response",
+        "request_number": 10,
+        "status_code": 200,
+        "body": {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "text": "{\n  \"hotel_id\": \"HOT_00045\",\n  \"days\": [\n    {\n      \"day\": 1,\n      \"activities\": [\n        \"ACT_00084\",\n        \"ACT_00106\"\n      ],\n      \"restaurants\": [\n        \"RES_16991\",\n        \"RES_09956\"\n      ]\n    },\n    {\n      \"day\": 2,\n      \"activities\": [\n        \"ACT_00060\",\n        \"ACT_00909\"\n      ],\n      \"restaurants\": [\n        \"RES_10973\",\n        \"RES_10766\"\n      ]\n    }\n  ]\n}",
+                    "thoughtSignature": "EmAKXgFpFH0TvyWhDA0THbMFRKCQJUvFEHdoIn4wSP3ipSlJY07z1Iav79u6tMcFC9KHOZjmsUEI3bBePOwpDmm+C3cpmt0kc12UFndpbqD7veO511uXK0SNp/H/t2baxXc="
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 1761,
+            "candidatesTokenCount": 180,
+            "totalTokenCount": 1941,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1761
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "modelVersion": "gemini-3.5-flash-lite",
+          "responseId": "-Znxav-4E8yv_PUP_7LrwAI"
+        },
+        "elapsed_ms": 1070.6929640000453,
+        "retry_after": null,
+        "finished_at_utc": "2026-11-09T10:01:30.076280+00:00",
+        "event_number": 14,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "agent_response",
+        "raw_text": "{\n  \"hotel_id\": \"HOT_00045\",\n  \"days\": [\n    {\n      \"day\": 1,\n      \"activities\": [\n        \"ACT_00084\",\n        \"ACT_00106\"\n      ],\n      \"restaurants\": [\n        \"RES_16991\",\n        \"RES_09956\"\n      ]\n    },\n    {\n      \"day\": 2,\n      \"activities\": [\n        \"ACT_00060\",\n        \"ACT_00909\"\n      ],\n      \"restaurants\": [\n        \"RES_10973\",\n        \"RES_10766\"\n      ]\n    }\n  ]\n}",
+        "response": {
+          "sdk_http_response": {
+            "headers": {
+              "x-gemini-service-tier": "standard",
+              "content-type": "application/json; charset=UTF-8",
+              "vary": "Origin, X-Origin, Referer",
+              "content-encoding": "gzip",
+              "date": "Mon, 09 Nov 2026 10:01:30 GMT",
+              "server": "scaffolding on HTTPServer2",
+              "x-xss-protection": "0",
+              "x-frame-options": "SAMEORIGIN",
+              "x-content-type-options": "nosniff",
+              "server-timing": "gfet4t7; dur=1056",
+              "transfer-encoding": "chunked"
+            }
+          },
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "thought_signature": "EmAKXgFpFH0TvyWhDA0THbMFRKCQJUvFEHdoIn4wSP3ipSlJY07z1Iav79u6tMcFC9KHOZjmsUEI3bBePOwpDmm-C3cpmt0kc12UFndpbqD7veO511uXK0SNp_H_t2baxXc=",
+                    "text": "{\n  \"hotel_id\": \"HOT_00045\",\n  \"days\": [\n    {\n      \"day\": 1,\n      \"activities\": [\n        \"ACT_00084\",\n        \"ACT_00106\"\n      ],\n      \"restaurants\": [\n        \"RES_16991\",\n        \"RES_09956\"\n      ]\n    },\n    {\n      \"day\": 2,\n      \"activities\": [\n        \"ACT_00060\",\n        \"ACT_00909\"\n      ],\n      \"restaurants\": [\n        \"RES_10973\",\n        \"RES_10766\"\n      ]\n    }\n  ]\n}"
+                  }
+                ],
+                "role": "model"
+              },
+              "finish_reason": "STOP",
+              "index": 0
+            }
+          ],
+          "model_version": "gemini-3.5-flash-lite",
+          "response_id": "-Znxav-4E8yv_PUP_7LrwAI",
+          "usage_metadata": {
+            "candidates_token_count": 180,
+            "prompt_token_count": 1761,
+            "prompt_tokens_details": [
+              {
+                "modality": "TEXT",
+                "token_count": 1761
+              }
+            ],
+            "total_token_count": 1941
+          },
+          "automatic_function_calling_history": [
+            {
+              "parts": [
+                {
+                  "text": "You are a single-agent Riyadh travel planner. Plan a 2-day trip. User interests: [\"Entertainment\"]. Budget level: Medium. Use all three tools: find_activities, find_restaurants, and find_hotels. Select exactly one hotel for the whole trip. Select exactly two activities and two restaurants per day. Do not repeat activities. Only select place_ids returned by the tools. Use the requested budget level for hotels and restaurants. Prioritize activities matching the user's interests. Return ONLY valid JSON with keys hotel_id and days. Each day must contain day, activities, and restaurants. Activities and restaurants must each contain exactly two IDs. Do not include markdown or explanations."
+                }
+              ],
+              "role": "user"
+            },
+            {
+              "parts": [
+                {
+                  "thought_signature": "EmAKXgFpFH0TFqMI14lxnTEPJlLpVGy2e8B0RPmmaDqByvMbzIAhwcHi8PqVjuu79D6uGR383rlnA250gw-C-bUcI5MbEBc9rmP2UqXeIlw-cx_HzZb5phvxq_6Gsb3VBdA=",
+                  "function_call": {
+                    "id": "call_12272762299349467435",
+                    "args": {
+                      "budget_level": "Medium",
+                      "limit": 5
+                    },
+                    "name": "find_hotels"
+                  }
+                },
+                {
+                  "function_call": {
+                    "id": "call_12272762299349469514",
+                    "args": {
+                      "budget_level": "Medium",
+                      "limit": 10
+                    },
+                    "name": "find_restaurants"
+                  }
+                },
+                {
+                  "function_call": {
+                    "id": "call_12272762299349467497",
+                    "args": {
+                      "limit": 10,
+                      "interests": [
+                        "Entertainment"
+                      ]
+                    },
+                    "name": "find_activities"
+                  }
+                }
+              ],
+              "role": "model"
+            },
+            {
+              "parts": [
+                {
+                  "function_response": {
+                    "name": "find_hotels",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "HOT_00045",
+                          "hotel_name": "Joudyan Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 755.625,
+                          "rating": 5.0,
+                          "count": 317
+                        },
+                        {
+                          "place_id": "HOT_00054",
+                          "hotel_name": "Novotel Riyadh Sahafa",
+                          "budget_level": "Medium",
+                          "median_price": 705.0,
+                          "rating": 5.0,
+                          "count": 5
+                        },
+                        {
+                          "place_id": "HOT_00051",
+                          "hotel_name": "Ross Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 633.75,
+                          "rating": 5.0,
+                          "count": 1
+                        },
+                        {
+                          "place_id": "HOT_00006",
+                          "hotel_name": "Holiday Inn Riyadh - al Qasr, an IHG hotel",
+                          "budget_level": "Medium",
+                          "median_price": 907.5,
+                          "rating": 4.5,
+                          "count": 1073
+                        },
+                        {
+                          "place_id": "HOT_00005",
+                          "hotel_name": "Continent Al Waha Hotel",
+                          "budget_level": "Medium",
+                          "median_price": 750.0,
+                          "rating": 4.5,
+                          "count": 407
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "function_response": {
+                    "name": "find_restaurants",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "RES_16991",
+                          "name": "كبابجي محمود",
+                          "budget_level": "Medium",
+                          "rating": 9.5,
+                          "ratingSignals": 430.0
+                        },
+                        {
+                          "place_id": "RES_09956",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 2145.0
+                        },
+                        {
+                          "place_id": "RES_10973",
+                          "name": "Tokyo",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 2002.0
+                        },
+                        {
+                          "place_id": "RES_10766",
+                          "name": "The Cheesecake Factory",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 760.0
+                        },
+                        {
+                          "place_id": "RES_01025",
+                          "name": "Anoosh (انوش)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 674.0
+                        },
+                        {
+                          "place_id": "RES_04247",
+                          "name": "FROZ (فروز)",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 317.0
+                        },
+                        {
+                          "place_id": "RES_00503",
+                          "name": "Al Ennabi Grill /المشوي العنابي",
+                          "budget_level": "Medium",
+                          "rating": 9.3,
+                          "ratingSignals": 90.0
+                        },
+                        {
+                          "place_id": "RES_06419",
+                          "name": "LA RUSTICA Pizzeria (لاروستيكا بيتزاريا)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 3520.0
+                        },
+                        {
+                          "place_id": "RES_10032",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 2671.0
+                        },
+                        {
+                          "place_id": "RES_10031",
+                          "name": "Starbucks (ستاربكس)",
+                          "budget_level": "Medium",
+                          "rating": 9.2,
+                          "ratingSignals": 2219.0
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "function_response": {
+                    "name": "find_activities",
+                    "response": {
+                      "result": [
+                        {
+                          "place_id": "ACT_00084",
+                          "name": "The Box Escape Experience",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 202.0
+                        },
+                        {
+                          "place_id": "ACT_00106",
+                          "name": "Squares Arena",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 23.0
+                        },
+                        {
+                          "place_id": "ACT_00060",
+                          "name": "Twisted Labs | تويستد لابز",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 22.0
+                        },
+                        {
+                          "place_id": "ACT_00909",
+                          "name": "فـنـتـورا أطياف مول",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 9.0
+                        },
+                        {
+                          "place_id": "ACT_00007",
+                          "name": "مفاجأه للترفيه",
+                          "interest_group": "Entertainment",
+                          "rating": 5.0,
+                          "number_of_ratings": 6.0
+                        },
+                        {
+                          "place_id": "ACT_00188",
+                          "name": "LAST HOUR",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 1576.0
+                        },
+                        {
+                          "place_id": "ACT_00158",
+                          "name": "Pixels Games | بكسلز",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 691.0
+                        },
+                        {
+                          "place_id": "ACT_00086",
+                          "name": "وقت القفز | Jump Time",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 359.0
+                        },
+                        {
+                          "place_id": "ACT_00195",
+                          "name": "Legends Gaming - العاب الاساطير",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 103.0
+                        },
+                        {
+                          "place_id": "ACT_00154",
+                          "name": "ODYSSEY VR",
+                          "interest_group": "Entertainment",
+                          "rating": 4.9,
+                          "number_of_ratings": 82.0
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "role": "user"
+            }
+          ]
+        },
+        "history": [
+          {
+            "parts": [
+              {
+                "text": "You are a single-agent Riyadh travel planner. Plan a 2-day trip. User interests: [\"Entertainment\"]. Budget level: Medium. Use all three tools: find_activities, find_restaurants, and find_hotels. Select exactly one hotel for the whole trip. Select exactly two activities and two restaurants per day. Do not repeat activities. Only select place_ids returned by the tools. Use the requested budget level for hotels and restaurants. Prioritize activities matching the user's interests. Return ONLY valid JSON with keys hotel_id and days. Each day must contain day, activities, and restaurants. Activities and restaurants must each contain exactly two IDs. Do not include markdown or explanations."
+              }
+            ],
+            "role": "user"
+          },
+          {
+            "parts": [
+              {
+                "thought_signature": "EmAKXgFpFH0TFqMI14lxnTEPJlLpVGy2e8B0RPmmaDqByvMbzIAhwcHi8PqVjuu79D6uGR383rlnA250gw-C-bUcI5MbEBc9rmP2UqXeIlw-cx_HzZb5phvxq_6Gsb3VBdA=",
+                "function_call": {
+                  "id": "call_12272762299349467435",
+                  "args": {
+                    "budget_level": "Medium",
+                    "limit": 5
+                  },
+                  "name": "find_hotels"
+                }
+              },
+              {
+                "function_call": {
+                  "id": "call_12272762299349469514",
+                  "args": {
+                    "budget_level": "Medium",
+                    "limit": 10
+                  },
+                  "name": "find_restaurants"
+                }
+              },
+              {
+                "function_call": {
+                  "id": "call_12272762299349467497",
+                  "args": {
+                    "limit": 10,
+                    "interests": [
+                      "Entertainment"
+                    ]
+                  },
+                  "name": "find_activities"
+                }
+              }
+            ],
+            "role": "model"
+          },
+          {
+            "parts": [
+              {
+                "function_response": {
+                  "name": "find_hotels",
+                  "response": {
+                    "result": [
+                      {
+                        "place_id": "HOT_00045",
+                        "hotel_name": "Joudyan Hotel",
+                        "budget_level": "Medium",
+                        "median_price": 755.625,
+                        "rating": 5.0,
+                        "count": 317
+                      },
+                      {
+                        "place_id": "HOT_00054",
+                        "hotel_name": "Novotel Riyadh Sahafa",
+                        "budget_level": "Medium",
+                        "median_price": 705.0,
+                        "rating": 5.0,
+                        "count": 5
+                      },
+                      {
+                        "place_id": "HOT_00051",
+                        "hotel_name": "Ross Hotel",
+                        "budget_level": "Medium",
+                        "median_price": 633.75,
+                        "rating": 5.0,
+                        "count": 1
+                      },
+                      {
+                        "place_id": "HOT_00006",
+                        "hotel_name": "Holiday Inn Riyadh - al Qasr, an IHG hotel",
+                        "budget_level": "Medium",
+                        "median_price": 907.5,
+                        "rating": 4.5,
+                        "count": 1073
+                      },
+                      {
+                        "place_id": "HOT_00005",
+                        "hotel_name": "Continent Al Waha Hotel",
+                        "budget_level": "Medium",
+                        "median_price": 750.0,
+                        "rating": 4.5,
+                        "count": 407
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function_response": {
+                  "name": "find_restaurants",
+                  "response": {
+                    "result": [
+                      {
+                        "place_id": "RES_16991",
+                        "name": "كبابجي محمود",
+                        "budget_level": "Medium",
+                        "rating": 9.5,
+                        "ratingSignals": 430.0
+                      },
+                      {
+                        "place_id": "RES_09956",
+                        "name": "Starbucks (ستاربكس)",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 2145.0
+                      },
+                      {
+                        "place_id": "RES_10973",
+                        "name": "Tokyo",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 2002.0
+                      },
+                      {
+                        "place_id": "RES_10766",
+                        "name": "The Cheesecake Factory",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 760.0
+                      },
+                      {
+                        "place_id": "RES_01025",
+                        "name": "Anoosh (انوش)",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 674.0
+                      },
+                      {
+                        "place_id": "RES_04247",
+                        "name": "FROZ (فروز)",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 317.0
+                      },
+                      {
+                        "place_id": "RES_00503",
+                        "name": "Al Ennabi Grill /المشوي العنابي",
+                        "budget_level": "Medium",
+                        "rating": 9.3,
+                        "ratingSignals": 90.0
+                      },
+                      {
+                        "place_id": "RES_06419",
+                        "name": "LA RUSTICA Pizzeria (لاروستيكا بيتزاريا)",
+                        "budget_level": "Medium",
+                        "rating": 9.2,
+                        "ratingSignals": 3520.0
+                      },
+                      {
+                        "place_id": "RES_10032",
+                        "name": "Starbucks (ستاربكس)",
+                        "budget_level": "Medium",
+                        "rating": 9.2,
+                        "ratingSignals": 2671.0
+                      },
+                      {
+                        "place_id": "RES_10031",
+                        "name": "Starbucks (ستاربكس)",
+                        "budget_level": "Medium",
+                        "rating": 9.2,
+                        "ratingSignals": 2219.0
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function_response": {
+                  "name": "find_activities",
+                  "response": {
+                    "result": [
+                      {
+                        "place_id": "ACT_00084",
+                        "name": "The Box Escape Experience",
+                        "interest_group": "Entertainment",
+                        "rating": 5.0,
+                        "number_of_ratings": 202.0
+                      },
+                      {
+                        "place_id": "ACT_00106",
+                        "name": "Squares Arena",
+                        "interest_group": "Entertainment",
+                        "rating": 5.0,
+                        "number_of_ratings": 23.0
+                      },
+                      {
+                        "place_id": "ACT_00060",
+                        "name": "Twisted Labs | تويستد لابز",
+                        "interest_group": "Entertainment",
+                        "rating": 5.0,
+                        "number_of_ratings": 22.0
+                      },
+                      {
+                        "place_id": "ACT_00909",
+                        "name": "فـنـتـورا أطياف مول",
+                        "interest_group": "Entertainment",
+                        "rating": 5.0,
+                        "number_of_ratings": 9.0
+                      },
+                      {
+                        "place_id": "ACT_00007",
+                        "name": "مفاجأه للترفيه",
+                        "interest_group": "Entertainment",
+                        "rating": 5.0,
+                        "number_of_ratings": 6.0
+                      },
+                      {
+                        "place_id": "ACT_00188",
+                        "name": "LAST HOUR",
+                        "interest_group": "Entertainment",
+                        "rating": 4.9,
+                        "number_of_ratings": 1576.0
+                      },
+                      {
+                        "place_id": "ACT_00158",
+                        "name": "Pixels Games | بكسلز",
+                        "interest_group": "Entertainment",
+                        "rating": 4.9,
+                        "number_of_ratings": 691.0
+                      },
+                      {
+                        "place_id": "ACT_00086",
+                        "name": "وقت القفز | Jump Time",
+                        "interest_group": "Entertainment",
+                        "rating": 4.9,
+                        "number_of_ratings": 359.0
+                      },
+                      {
+                        "place_id": "ACT_00195",
+                        "name": "Legends Gaming - العاب الاساطير",
+                        "interest_group": "Entertainment",
+                        "rating": 4.9,
+                        "number_of_ratings": 103.0
+                      },
+                      {
+                        "place_id": "ACT_00154",
+                        "name": "ODYSSEY VR",
+                        "interest_group": "Entertainment",
+                        "rating": 4.9,
+                        "number_of_ratings": 82.0
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "role": "user"
+          }
+        ],
+        "event_number": 15,
+        "attempt": 1,
+        "stage": "baseline"
+      },
+      {
+        "kind": "attempt_completed",
+        "finished_at_utc": "2026-11-09T10:01:30.093360+00:00",
+        "event_number": 16,
+        "attempt": 1,
+        "stage": "baseline"
+      }
+    ],
+    "attempts": [
+      {
+        "number": 1,
+        "status": "completed"
+      }
+    ],
+    "generation_error": null,
+    "parser_policy": "Preserved M5 normalization and m5-offline-v3 strict final parser",
+    "parse_errors": [],
+    "tool_calls": [
+      "find_hotels",
+      "find_restaurants",
+      "find_activities"
+    ],
+    "all_attempt_tool_calls": [
+      "find_hotels",
+      "find_restaurants",
+      "find_activities"
+    ],
+    "executed_tool_calls": [
+      "find_hotels",
+      "find_restaurants",
+      "find_activities"
+    ],
+    "tool_coverage_scope": "Distinct required names in first-candidate HTTP responses, across all agents in final workflow attempt",
+    "timing": {
+      "system_wall_ms": 23414.118429000155,
+      "pacing_wait_ms": 21253.59249899975,
+      "retry_wait_ms": 0,
+      "processing_ms": 2160.5259300004036,
+      "scope": "Once per case/seed/condition; includes tools, logging, attempts and scheduled waits; excludes setup/download"
+    },
+    "usage": {
+      "observed_tokens": {
+        "promptTokenCount": 2205,
+        "candidatesTokenCount": 246,
+        "totalTokenCount": 2451,
+        "thoughtsTokenCount": null,
+        "cachedContentTokenCount": null
+      },
+      "http_responses": 2,
+      "responses_with_usage": 2,
+      "scope": "Observed usage across all agents/attempts; missing provider usage is unknown, not zero.",
+      "actual_cost_usd": null,
+      "estimated_cost_usd": null
+    },
+    "http_requests": 2
+  },
+  "evaluation": {
+    "scorer_version": "m5-offline-v3",
+    "APM": 100.0,
+    "RBM": 100.0,
+    "HBM": 100.0,
+    "IFR": 100.0,
+    "feasible": true,
+    "validation_errors": []
+  },
+  "RTC": 100.0,
+  "metadata": {
+    "condition": "baseline",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0,
+    "code_commit": null,
+    "base_commit": "e59f1b49c0c6d7d695a885df6cf9fafe4113ab61",
+    "source_sha256": {
+      "m5eval/__init__.py": "007b773981ab0b88611eb030bb5c6e765030ca3e97fff347167948f32247ffb3",
+      "m5eval/__main__.py": "fa93afceb72b559c9ec91a1f4a1b8ac81f2c1fe10867027addf155ae49c502e2",
+      "m5eval/baseline_tools.py": "f9fa6c9210385b613bc8e4b5b76c27030f5def6f602f51b3a7a75570d04ea1bc",
+      "m5eval/components.py": "42d5bb1c826bd25b94893c615e35155cf6cac612d66fd4922673140f1567f0a8",
+      "m5eval/demo.py": "a6e3c8161fde33b9f12349dff1ebe33f46e668cee0512cc282f4fcefa348d50a",
+      "m5eval/evaluate.py": "783d38e783060d585bce8f6d7cfd2eec896289597c082ae964c84baab02c283f",
+      "m5eval/experiment.py": "f5783fce81b04f39cc34a03b54853dcc1a20a3f4618775c433676ba5c5f022f9",
+      "m5eval/generation.py": "0ac6cc92a151d61f1fb0673c422f7f00ae5c7d1a59dd65ea71666cbc7bc7af47",
+      "m5eval/records.py": "2007ae0adc9840d32589f4d2b7f71e0fcf8e5904914fc4e1a4840645d50ecf74",
+      "m5eval/scoring.py": "d2fb4c3985b34c2b8245ac6fed2b6142b050f6b4a3f6002cf1998790fa40180d",
+      "m5eval/statistics.py": "6418d76abb06238f6e3a01a03910e0ac96c886e6fe67d88c297d1c6981729830",
+      "m6planner/__init__.py": "2aa0c5f7195e8d4728e90f0f3b304f4ec8d07be0c0f550cc1996b84ffdfc226d",
+      "m6planner/__main__.py": "bdd093ecb1749045a693184a588aa21c62e238a6988552945eadcbd002c65ce9",
+      "m6planner/analysis.py": "4ecd5d862c90dac9f83b020598a0a3267746ce6bda63a70a5f5ddaf9cc9f18c4",
+      "m6planner/experiment.py": "1606737380b07a2ad5efb85601e908013a1ae779f550079334613e8d0c287de6",
+      "m6planner/mock_service.py": "39eead4bf3308afb2321b130bc90997b8fc921b0d5682fdf184f2441313c7479",
+      "m6planner/policy.py": "c3535063324830bca6cd2f29a05f2875c4e2064ba32f9d717eeea44793a0b6d1",
+      "m6planner/workflow.py": "30701262c8ff4e03e1004f48a0e6add0440da81624892fb212096149c6a45df1",
+      "requirements.txt": "50bd36afe0a4a4950f51db01fddfedc5d16814a1664c8a21a02e7c247b481bda",
+      "requirements-gemini.txt": "17a6c00a64cf6071ed0140d8db15a3a8ba031ec1da6c20275c04e66132ba76cf"
+    },
+    "dataset_sha256": {
+      "activities": "df5abb1fbb5fe13e0e8f20776fc83f707f2d7bf5e610a36acedb06cffa76d01f",
+      "restaurants": "2f808d6007d026b3c11b38ea9c922560b97920f3da82020b3662b24313c63cbc",
+      "hotels": "910e7b6055b37fd76c0aec254e4e8f5cf9a6028735096a112f512f3c715ae878"
+    },
+    "experiment_identity_sha256": "0d8300074a8de748933547c77cee72282cee9397269b5498858291f187bdeb07",
+    "policy": {
+      "model": "gemini-3.5-flash-lite",
+      "temperature": 0,
+      "timeout_ms": 30000,
+      "max_attempts": 3,
+      "http_per_attempt": 10,
+      "coordinator_dispatch": 1,
+      "activities": 4,
+      "budget": 4,
+      "coordinator_final": 1,
+      "pacing_seconds": 12,
+      "sdk_retry_attempts": 1
+    },
+    "generation_policy": "m6-shared-v1",
+    "evidence_mode": "live",
+    "study_kind": "formal",
+    "seed_support_verified": false,
+    "actual_cost_usd": null,
+    "estimated_cost_usd": null,
+    "live_http_requests": 2,
+    "session_http_cap": 180,
+    "code_provenance": "Source snapshot identified by file hashes; base commit is M5, not a claim of an M6 commit"
+  },
+  "trace_available": true
+}
