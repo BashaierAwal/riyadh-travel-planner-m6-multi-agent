@@ -20,6 +20,12 @@ The preserved M5 V3 cohort has 60 records, 58 parsed outputs and 49 structurally
 
 V3's scheduling differs materially from the shared M6 policy, so it is retained for context rather than used as a perfectly controlled primary comparison. The new M6 baseline used the same policy as the treatment. V3 is not overwritten or repaired.
 
+### Compatibility with the final M5 submission
+
+The formal-v3 run used the M5 snapshot recorded in its manifest (`e59f1b49c0c6d7d695a885df6cf9fafe4113ab61`). We compared it with the [final M5 submission at commit `1a08093`](https://github.com/BashaierAwal/riyadh-travel-planner-m5-final/tree/1a080931e181007ed98726031a5f3fc9a7f5419d). The scorer, baseline generation code, search tools, three datasets and dependency pins match byte for byte. All 20 golden case definitions match the M6 run manifest. The later M5 changes moved the golden cases into a standalone file and narrowed the M5 import check to the three dataset files. These changes leave the experimental inputs and scoring intact.
+
+The offline verifier rechecked all 120 saved M6 records and reproduced the saved comparison. The original run provenance and reported tool-grounding exception still apply. The supplementary M5 judge scored 58 of 60 historical outputs and is outside the matched M6 comparison.
+
 ## Verification actually performed
 
 - 17 new adversarial integration tests passed with the actual pinned SDK and mocked HTTP.
@@ -54,7 +60,7 @@ Baseline failures: 1 final-parse failure and 9 structural-output failures. Treat
 
 The treatment did not improve the observed mean scores: APM, RBM, HBM and IFR were lower; RTC remained 100% in both. Its mean wall time was about 3.06 times the baseline and observed total tokens were 541,612 versus 172,166 (about 3.15 times). These descriptive findings do not establish statistical significance or a universal ranking. Role-message failures are an added failure surface; the unchanged data ceilings also limit attainable preference matching.
 
-Complete run/case/seed variation, seed means and paired differences are in `m6_runs/formal-v3/analysis/M6_Comparison.json`; per-record results are in `M6_Results.csv`. Cost estimates are separate in `M6_Cost_Estimates.json`: standard uncached list-price equivalents of observed usage, not a receipt. Actual monetary billing remains unknown.
+The [comparison summary](formal-v3/M6_Comparison.json) contains run, case and seed variation, seed means and paired differences. See the [per-record results](formal-v3/M6_Results.csv) and [cost estimates](formal-v3/M6_Cost_Estimates.json). The estimated cost per record averaged USD 0.00153 for the baseline and USD 0.00427 for the treatment, using the standard uncached list price for observed usage. Actual billing remains unknown.
 
 ## Tool-grounding exception found by independent review
 
