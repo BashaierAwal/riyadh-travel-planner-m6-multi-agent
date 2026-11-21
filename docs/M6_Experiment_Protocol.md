@@ -1,6 +1,6 @@
 # M6 Experiment Protocol — m6-shared-v1
 
-Status: implementation/offline checks and the separately approved G01/seed11 paired live pilot are complete. Formal-v1 was subsequently approved and attempted; its evidence is incomplete after runtime-storage loss. Recovery requires fresh approval; see reports/M6_Execution_Incident.md. Date: 8 November 2026.
+Formal-v3 completed on 9 November 2026 with 120 records, 60 per condition. The [M6 report](../reports/M6_Report.md) presents the results. The pilot and incomplete formal-v1 and formal-v2 attempts are documented in the [execution incident report](../reports/M6_Execution_Incident.md).
 
 ## Research question and controlled factor
 
@@ -48,7 +48,7 @@ The same caps are a resource-controlled design choice; fixed role allocation can
 
 ## Baseline decision, cohort and ordering
 
-V3 remains immutable historical evidence. The new 12 second **per-HTTP** scheduler differs materially from V3's initially unpaced chunks and later 12 second **inter-record** pauses. Therefore the primary M6 comparison requires a separately versioned baseline generated under this shared policy; V3 is not labelled a perfectly controlled comparator. No formal M6 baseline cohort has been run yet; the single pilot baseline is stored separately. Architecture change alone is not a reason to regenerate it.
+V3 remains immutable historical evidence. The new 12 second **per-HTTP** scheduler differs materially from V3's initially unpaced chunks and later 12 second **inter-record** pauses. Therefore the primary M6 comparison requires a separately versioned baseline generated under this shared policy; V3 is not labelled a perfectly controlled comparator. Formal-v3 includes the matched 60-record baseline under the shared M6 policy. The pilot baseline remains in its own version.
 
 Formal grid:20 unchanged cases ×3 requested seeds ×2 conditions =120 records (60 each). Case-major/seed-minor order; within each consecutive pair alternate baseline→treatment and treatment→baseline to reduce one-sided order effects. Scheduling is determined before outcomes. Temporal provider variability remains a limitation.
 
@@ -66,9 +66,9 @@ Sum observed HTTP response usage across every agent and retry; retain missing ob
 
 Each version saves a manifest of source/data/policy/cases/dependency hashes. Each run saves request, append-only JSONL events, record and checksum. Resume checks identity, checksum, journal linkage and scores; interrupted folders block automatic reruns. Analysis refuses partial or extra cohort folders. Independent verification recomputes scores/RTC/usage/statistics without the main scorer. Checksums provide integrity, not independent provider authentication.
 
-## Required final evidence, still pending
+## Completed evidence
 
-Real 120 records; comparative means/SD/seedmeans; actual measured system latency and observable usage/cost status; trace-supported failure analysis; updated `M6_Report.md`; saved outputs/errors/traces; reproducible ZIP and bilingual guide. Only the two-record live pilot is complete; no formal comparative or treatment-improvement claim is currently supported.
+Formal-v3 contains 120 saved records, including failed generations. The [published results](../reports/formal-v3/) include comparative means and sample standard deviations, per-seed results, measured system latency, observed usage and estimated cost. The [M6 report](../reports/M6_Report.md) documents failure modes and the tool-grounding exception. See [run storage and verification](../m6_runs/README.md) for offline access instructions.
 
 ## Prepared recovery storage (not activated)
 

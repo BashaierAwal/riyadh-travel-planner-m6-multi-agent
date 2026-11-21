@@ -1,7 +1,17 @@
-# M6 run storage
+# M6 run storage and verification
 
-`validation-*` contains OFFLINE SDK/HTTP fixtures. Its token counts and fake-clock timings are not measurements of Gemini. `pilot-*` and `formal-*` are separate live versions and do not exist until separately approved runs occur.
+Formal-v3 is the completed experiment. It contains 120 records from 20 cases and three requested seeds under each of the two conditions. The public repository contains the [comparison data](../reports/formal-v3/), the [report](../reports/M6_Report.md), and the [audit summary](../reports/M6_Formal_Audit.json).
 
-The earlier validation archive retains `validation-v1` (120 fixture records). This independent M6 source export stores the generator and audit summary; reproduce the fixtures with `python -m m6planner mock-smoke --version validation-reproduction`. Do not commit or upload credentials. Real experiment evidence must be retained and independently verified before reporting results.
+## Verify the full saved experiment offline
 
-Never replace M5/V3 or silently rerun a failed saved record. Download each live version after every approved chunk. See `docs/M6_Experiment_Protocol.md` and `M6_README.md`.
+Use the full formal-v3 evidence archive held by the project team. From the root of a checkout of this branch, place the extracted `formal-v3` directory under `m6_runs/`. The directory must contain `manifest.json`, 120 run folders with `record.json`, `record.sha256`, and `events.jsonl`, and `analysis/M6_Comparison.json`. The published comparison JSON can also be copied from `reports/formal-v3/` into that `analysis/` directory.
+
+```sh
+python3 scripts/verify_m6.py m6_runs/formal-v3
+```
+
+The verifier uses the Python standard library and requires no model credentials. A successful audit reports `PASS_SAVED_EVIDENCE`, 120 records, and `saved_comparison_verified: true`. It checks experiment identity, record hashes, journals and score arithmetic. The [audit summary](../reports/M6_Formal_Audit.json) separately records the tool-grounding exception. A GitHub-only checkout includes the published results, but full verification requires the archive.
+
+## Other runs
+
+The pilot and the incomplete formal-v1 and formal-v2 attempts are documented in the [execution incident report](../reports/M6_Execution_Incident.md). Formal-v3 alone supplies the primary results. Offline validation fixtures can be regenerated with `python3 -m m6planner mock-smoke --version validation-reproduction`. Their timings and token counts are fixture values.
