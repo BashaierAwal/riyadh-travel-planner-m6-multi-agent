@@ -19,3 +19,7 @@ The frozen scorer, search tools, data and golden cases are copied from verified 
 GitHub includes the [120 complete formal-v3 records and tool journals](m6_runs/formal-v3/), [comparison, per-record scores and cost estimates](reports/formal-v3/), and [saved-evidence audit](reports/M6_Formal_Audit.json). No separate archive or model key is needed to verify the formal results. See [run storage and verification](m6_runs/README.md).
 
 Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are recovered despite a 114-record progress log. See [the execution incident](reports/M6_Execution_Incident.md). No complete formal-v1 comparison is claimed; formal-v2 then stopped after five requests because the provider reported its daily free-tier quota exhausted. Its one complete record and interrupted journal are preserved in Drive and locally.
+
+## Supplementary itinerary judge
+
+A separate [LLM-judge workflow](evaluation/llm_judge/README.md) and [Colab notebook](evaluation/llm_judge/M6_Judge_Evaluation.ipynb) are prepared for evaluating the saved baseline and treatment plans. **Prepared and tested offline; not yet executed on Gemini.** The original formal-v3 results and evidence remain unchanged.
