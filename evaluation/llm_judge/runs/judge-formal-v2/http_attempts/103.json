@@ -1,0 +1,9 @@
+{
+  "request_number": 103,
+  "run_id": "baseline_G05_seed33",
+  "attempt": 1,
+  "started_at_utc": "2026-11-25T06:44:45.573115+00:00",
+  "status": "provider_error",
+  "error_type": "ServerError",
+  "provider_code": 504
+}

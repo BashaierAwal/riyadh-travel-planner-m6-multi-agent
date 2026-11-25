@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:26:56 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1304",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfROOa0i2om8UzP5nhtftVpEFDHUyew7OuatUqRxgfRg6-poIH3w5zjWlRU_qFUwDApFiVJjCuRRAFAeg5mJVJi02jUhfymTDWz_CTlfqHetO4eCeQA5KaWB3gIvgfxr-bRtL1bQY57NZdr2LGHShL9cuHSY1Pposek_93jj1VF03H4l92LJ55hOpbnaPTvyIxWFdBBCvZTwS7XepkkLqHOSreA==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites, with two activities per day dedicated to these categories.\",\n    \"budget_alignment\": \"All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with a consistent daily flow of two activities and two restaurants, and there is no repetition of activities throughout the trip.\",\n    \"itinerary_feasibility\": \"The itinerary uses valid dataset IDs, includes one hotel, and covers the requested five-day duration with two distinct activities and two restaurant slots per day. Operational feasibility (travel times, opening hours) is unknown.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.\",\n    \"Geographic proximity of activities and restaurants is not assessed for travel efficiency.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "r38Ga8rwHuH9-sAP5pDesAM",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 266,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2195,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2195
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2461,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

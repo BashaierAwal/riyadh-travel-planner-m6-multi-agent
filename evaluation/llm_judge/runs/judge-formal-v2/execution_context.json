@@ -1,0 +1,12 @@
+{
+  "source_commit": "769d466dbb033becd39ce7f428f3754678706f6a",
+  "python": "3.13.18",
+  "google_genai": "1.30.0",
+  "judge_model": "gemini-3.1-flash-lite",
+  "input_fingerprint": "eeaad1b95f5e24e4cd79cb3931e947f7530fdcbb9abd263152a310305f3a9533",
+  "http_requests": 121,
+  "previous_attempt_requests": 2,
+  "combined_requests": 123,
+  "original_generation_version": "formal-v3",
+  "prior_judge_attempt_pooled": false
+}

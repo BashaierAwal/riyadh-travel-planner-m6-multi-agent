@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:22:31 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=925",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRMvuI24BHz_MSSDNcuZSxe6APyEb3-TP1pApx21sJ47wCBcTkVdy1SIi3bwM5SY69L1pYC5ApTJb-GqvG4cl_5s0eb7aAiui6I7IGtlR0MKvG3EPV1nkICe2iz7LdaPmvhxSVtyk-wwvjvZ8VpTSD8g-xVt673xPsZZVMP9HP9fzG_ZNFED1RGePKDYD6-PsXkAJ6uVul50Sn99deA2bSVYfQ==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary perfectly aligns with the requested interests of Nature & Outdoors (AlFanar Park) and Sports (Prince Faisal Bin Fahd Sports City).\",\n    \"budget_alignment\": \"The hotel and both restaurants are categorized as Medium, matching the user's budget request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured for a single day with a logical variety of activities and no repetitions.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility regarding travel times, opening hours, and booking availability cannot be verified with the provided dataset.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "pn4Ga_2cL7S639IP0NCh8Ao",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 882,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 882
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1110,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

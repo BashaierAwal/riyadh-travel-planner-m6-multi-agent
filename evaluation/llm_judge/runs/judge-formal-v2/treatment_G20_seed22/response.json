@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:39:47 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1104",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRMr7_X6kgptT5k8ceqJ5kkNs1lkBKZuBTuuc2bdpsTR50cyp7pFy1N-_Wkk6r29WiIrf7I3oVQjheFRXcNDN3KCEue-KogYFY1HEFTsHpJKXn83qdd3yj6-v_0kVofAe5WDuQUusIpZ2ideZ88okfGUWrMciBKjTqg-CdsHNIsizgSPtvwnF8P85q8g_tNTOeKRHMXXTcV-mInSgfgVBOeQig==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 3,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 4,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary covers Shopping and Entertainment well, but completely lacks the requested 'Nature & Outdoors' interest.\",\n    \"budget_alignment\": \"All selected hotels and restaurants are labeled as 'Medium' budget, matching the request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities across the trip.\",\n    \"itinerary_feasibility\": \"The itinerary follows all structural requirements, including a single hotel, five days, and valid dataset IDs for all entries.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility (e.g., travel times between locations, opening hours, and booking requirements) is unknown and not assumed.\",\n    \"The model judge cannot verify the actual geographic proximity or travel logic between the provided coordinates.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "soIGa9y6D8vXjMcP14HPgQM",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 242,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2227,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2227
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2469,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

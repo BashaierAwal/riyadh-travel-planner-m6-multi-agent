@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:30:15 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1131",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRP8jE8_9OPP1LYD3nBMN-rCWPYwdXY9TOBTy9LMAa6TZs-ob9yeYqRn9nwFmlgwFvB2L-5YKfSo7RGR4UKdDLsm3pNP0T6_1I0rzPiN-Kce3v960Plr2LpYDByuRYyiDM3lzAgcFAXgbNPndt2kyXgGc2gBFXoYaA-pKqMg_v0Ch3xbl6MvD5Uey3LxksJFxKy2DuVELVbWglD346LEdacpwg==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"All activities selected align with the requested 'Nature & Outdoors' interest.\",\n    \"budget_alignment\": \"The hotel and all selected restaurants are categorized as 'Low' budget, matching the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements, including a single hotel, four days, and valid dataset IDs for all entries.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, such as travel times between locations, opening hours, and actual availability, cannot be verified.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "dYAGa7T6PLOb_uMPhqOV4QQ",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 214,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1885,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1885
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2099,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

@@ -1,0 +1,2717 @@
+{
+  "baseline_G09_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers both requested interests (Shopping and Entertainment) across all four days, providing a good variety of activities.",
+        "budget_alignment": "The hotel and all selected restaurants are consistently labeled as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. However, operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:17:44.622909+00:00",
+    "elapsed_s": 14.766518523000059
+  },
+  "treatment_G12_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Shopping, completely ignoring the requested interest of Landmarks & Sightseeing.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements. It is penalized slightly because the dataset evidence lacks specific operational details like opening hours or travel times, making real-world feasibility unknown."
+      },
+      "limitations": [
+        "The dataset does not provide travel times between locations, so the feasibility of the daily schedule is unknown.",
+        "The dataset does not provide opening hours for activities or restaurants.",
+        "The dataset does not provide specific geographic context to confirm if the daily activity clusters are logistically efficient."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:17:57.869053+00:00",
+    "elapsed_s": 1.2161374669999532
+  },
+  "baseline_G19_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Culture & History and Sports interests well. Religious interests were requested but are not represented in the provided activities.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, maintains a single hotel, and meets the daily activity and restaurant requirements."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified.",
+        "Religious interest category was not fulfilled by the available dataset activities."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:18:11.053670+00:00",
+    "elapsed_s": 1.1367716180000116
+  },
+  "treatment_G02_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, matching the user's interest request perfectly.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as Medium, aligning with the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets all structural requirements for a 2-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:18:24.107088+00:00",
+    "elapsed_s": 1.0164355169999908
+  },
+  "treatment_G19_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History, Religious, and Sports, covering all three across the four days.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the structural requirements of two activities and two restaurants per day for all four days."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:18:41.011622+00:00",
+    "elapsed_s": 4.856148035999922
+  },
+  "treatment_G20_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks the requested Nature & Outdoors interest.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as Medium budget, aligning perfectly with the request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow, no repeated activities, and a good variety of locations.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, five days, two activities and two restaurants per day, and no activity repetition. All IDs are valid."
+      },
+      "limitations": [
+        "Operational feasibility (e.g., travel times between locations, opening hours, and booking requirements) is unknown and not assumed.",
+        "The dataset does not provide information to verify if the selected activities are actually outdoors, so the gap in the 'Nature & Outdoors' interest is based on the provided interest_group labels."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:18:54.268029+00:00",
+    "elapsed_s": 1.2253689269999768
+  },
+  "treatment_G04_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All selected activities align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Low' budget, matching the request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets all structural requirements for a 4-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:19:23.143747+00:00",
+    "elapsed_s": 16.825037141000053
+  },
+  "baseline_G01_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary includes two shopping activities, perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:19:36.180950+00:00",
+    "elapsed_s": 1.0089428630000157
+  },
+  "baseline_G18_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks Landmarks & Sightseeing, which was a requested interest.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. Operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "The model judge cannot confirm if the selected activities are currently open or accessible."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:19:52.676444+00:00",
+    "elapsed_s": 4.446842273000016
+  },
+  "baseline_G05_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively focuses on religious sites, perfectly aligning with the user's requested interest.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured, but it repeats the activity 'ACT_00813' (Mosque) on both Day 1 and Day 5.",
+        "itinerary_feasibility": "The itinerary follows the required structure of one hotel, five days, and two activities/restaurants per day. Operational feasibility (travel times between locations) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, is not verified.",
+        "The model judge cannot confirm if the locations are currently accessible or open to the public."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:20:06.016648+00:00",
+    "elapsed_s": 1.3041976839999734
+  },
+  "baseline_G02_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Entertainment', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity between locations is not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:20:19.262708+00:00",
+    "elapsed_s": 1.1809800219999715
+  },
+  "baseline_G09_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers both requested interests (Shopping and Entertainment) across all four days, providing a good variety of activities.",
+        "budget_alignment": "The hotel and all selected restaurants are consistently labeled as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. However, operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:20:32.595952+00:00",
+    "elapsed_s": 1.2878026270000191
+  },
+  "baseline_G06_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interest in Sports by including two sports-related activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:20:45.721148+00:00",
+    "elapsed_s": 1.072762197999964
+  },
+  "baseline_G15_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 3
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Sports and Landmarks & Sightseeing, with a good variety of locations across both categories.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition; both ACT_01108 and ACT_01114 are visited twice during the five-day trip.",
+        "itinerary_feasibility": "The itinerary includes valid dataset IDs and meets the requirement for two activities and two restaurants per day. However, the repetition of activities violates the constraint against activity repetition. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "The model judge does not have access to real-world geographic distance data to confirm the feasibility of daily travel between the selected locations."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:20:59.170241+00:00",
+    "elapsed_s": 1.4161770130000377
+  },
+  "treatment_G08_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested 'Sports' interest throughout the trip.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary repeats the exact same two activities on day 1 and day 3, failing to provide variety.",
+        "itinerary_feasibility": "The itinerary violates the requirement to avoid activity repetition across the trip by repeating ACT_01114 and ACT_01117 on day 3."
+      },
+      "limitations": [
+        "Operational feasibility regarding travel times, opening hours, and booking availability is unknown.",
+        "Geographic proximity between activities and restaurants was not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:21:12.609115+00:00",
+    "elapsed_s": 1.3915678640000806
+  },
+  "treatment_G20_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks Nature & Outdoors activities, which was one of the three requested interests.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as Medium, perfectly aligning with the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary follows the required structure of one hotel, five days, two activities, and two restaurants per day using valid dataset IDs. Operational feasibility (travel times/opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified with the provided data.",
+        "The dataset does not provide information on whether specific activities are suitable for the requested 'Nature & Outdoors' interest, but none of the selected activities are categorized as such."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:21:26.079678+00:00",
+    "elapsed_s": 1.4342597950000027
+  },
+  "treatment_G18_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks Landmarks & Sightseeing, which was a requested interest.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, covers the requested 3 days, and includes a single hotel. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity between activities and restaurants was not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:21:39.376949+00:00",
+    "elapsed_s": 1.2486860479999677
+  },
+  "treatment_G13_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, perfectly matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements, uses valid dataset IDs, and covers the requested three-day duration."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:21:52.560485+00:00",
+    "elapsed_s": 1.1474102629999834
+  },
+  "treatment_G09_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Shopping and Entertainment, providing two activities per day that alternate between these categories.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily pattern of two activities and two restaurants, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the requirement of two activities and two restaurants per day for all four days."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:22:05.621437+00:00",
+    "elapsed_s": 1.030126369999948
+  },
+  "baseline_G01_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary includes two shopping activities, perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:22:18.643708+00:00",
+    "elapsed_s": 0.9888763510000445
+  },
+  "baseline_G11_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Nature & Outdoors (AlFanar Park) and Sports (Prince Faisal Bin Fahd Sports City).",
+        "budget_alignment": "The hotel and both restaurants are categorized as Medium, matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with a logical variety of activities and no repetitions.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility regarding travel times, opening hours, and booking availability cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:22:31.652289+00:00",
+    "elapsed_s": 0.9771443810000164
+  },
+  "treatment_G07_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Landmarks & Sightseeing', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Low' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over two days with a variety of unique landmarks and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:22:44.746116+00:00",
+    "elapsed_s": 1.0554892950000294
+  },
+  "treatment_G03_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over three days with a logical flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and no repeated activities."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity between activities and restaurants is not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:22:58.001667+00:00",
+    "elapsed_s": 1.2209299510000164
+  },
+  "baseline_G04_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All selected activities align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all restaurants are categorized as 'Low' budget, matching the user request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary follows the required structure, uses valid dataset IDs, and avoids activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.",
+        "Geographic proximity between activities and restaurants on the same day is not assessed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:23:11.080165+00:00",
+    "elapsed_s": 1.0320488720000185
+  },
+  "baseline_G16_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports as requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as Low budget, aligning perfectly with the user's request.",
+        "itinerary_coherence": "The itinerary is limited to a single day and lacks variety by focusing exclusively on shopping activities.",
+        "itinerary_feasibility": "The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration. No activity repetition occurred."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of the selected activities and restaurants is unknown as no route analysis was performed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:23:24.390484+00:00",
+    "elapsed_s": 1.273891486000025
+  },
+  "baseline_G11_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Nature & Outdoors (AlFanar Park) and Sports (Prince Faisal Bin Fahd Sports City).",
+        "budget_alignment": "The hotel and both restaurants are categorized as Medium, matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with a logical variety of activities and no repetitions.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:23:37.431372+00:00",
+    "elapsed_s": 0.9903009249999286
+  },
+  "baseline_G20_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely fails to include any activities related to the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary follows all structural requirements: one hotel, five days, two distinct activities and two restaurants per day, and uses valid dataset IDs. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations and opening hours cannot be verified.",
+        "The dataset does not provide information on whether the selected activities are actually open or accessible during the trip dates.",
+        "Geographic proximity of activities and restaurants within a single day is not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:23:50.675037+00:00",
+    "elapsed_s": 1.206003514000031
+  },
+  "baseline_G07_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Landmarks & Sightseeing', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Low' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over two days with a variety of unique landmarks and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:24:03.935878+00:00",
+    "elapsed_s": 1.2038334939999231
+  },
+  "baseline_G13_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:24:16.995573+00:00",
+    "elapsed_s": 1.021366554999986
+  },
+  "baseline_G18_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks Landmarks & Sightseeing, which was a requested interest.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. Operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "The model judge cannot confirm if the selected activities are currently open or accessible."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:24:30.300083+00:00",
+    "elapsed_s": 1.2687604159999637
+  },
+  "treatment_G17_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Religious interests, but fails to include any activities from the requested Nature & Outdoors category.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Medium' budget, perfectly aligning with the request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the requirement of two activities and two restaurants per day without repetition."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.",
+        "Geographic proximity of the selected activities and restaurants was not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:24:43.459862+00:00",
+    "elapsed_s": 1.122775739000076
+  },
+  "baseline_G18_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but lacks any activities categorized under Landmarks & Sightseeing.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary follows the required structure and uses valid dataset IDs. Operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times and opening hours, cannot be verified.",
+        "Geographic proximity between activities and restaurants was not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:24:56.629859+00:00",
+    "elapsed_s": 1.1321510699999635
+  },
+  "baseline_G10_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites throughout the 5-day trip.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, 5 days, two distinct activities and two restaurants per day, and valid dataset IDs. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:25:09.776195+00:00",
+    "elapsed_s": 1.111701579000055
+  },
+  "treatment_G13_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, perfectly matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements, uses valid dataset IDs, and covers the requested three-day duration."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:25:22.995026+00:00",
+    "elapsed_s": 1.1848303219999252
+  },
+  "treatment_G06_seed33": {
+    "status": "generation_failed"
+  },
+  "treatment_G04_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All selected activities align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all restaurants are categorized as 'Low' budget, matching the user request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary follows the required structure, uses valid dataset IDs, and avoids activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.",
+        "Geographic proximity between activities and restaurants on the same day is not assessed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:25:36.352700+00:00",
+    "elapsed_s": 1.2867914769999516
+  },
+  "treatment_G14_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with two activities per day covering these categories throughout the 4-day trip.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow of two activities and two restaurants, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, four days, two distinct activities and two restaurants per day, and all IDs are valid within the provided dataset."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and actual booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:26:03.818601+00:00",
+    "elapsed_s": 15.425167148000128
+  },
+  "treatment_G10_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under Culture & History and Religious, perfectly aligning with the user's requested interests.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities across the five days.",
+        "itinerary_feasibility": "The itinerary follows the required structure, uses valid dataset IDs, and avoids activity repetition. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified with the provided dataset.",
+        "Geographic proximity of activities and restaurants within a single day is not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:26:17.019674+00:00",
+    "elapsed_s": 1.156434832000059
+  },
+  "treatment_G16_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include Culture & History or Sports, which were requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as Low budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is limited to one day and lacks variety by focusing exclusively on shopping activities.",
+        "itinerary_feasibility": "The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration, though operational feasibility is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times, opening hours, and geographic proximity between locations, cannot be verified.",
+        "The dataset does not provide information on whether the selected activities align with the requested Culture & History or Sports interests."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:26:30.189388+00:00",
+    "elapsed_s": 1.1336561670000265
+  },
+  "baseline_G03_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over three days with a logical flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and no repeated activities. All IDs are valid."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:26:43.358825+00:00",
+    "elapsed_s": 1.1327685670000847
+  },
+  "treatment_G10_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites, with two activities per day dedicated to these categories.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow of two activities and two restaurants, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and covers the requested five-day duration with two distinct activities and two restaurant slots per day. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity of activities and restaurants is not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:26:56.771952+00:00",
+    "elapsed_s": 1.3806952469999487
+  },
+  "baseline_G04_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All activities selected align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Low' budget, matching the user request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and no activities are repeated.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, covers the requested 4-day duration, and includes a single hotel."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and actual geographic proximity, cannot be verified with the provided data.",
+        "The dataset does not provide specific location coordinates for the hotel, preventing a full spatial analysis of the route."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:27:10.021101+00:00",
+    "elapsed_s": 1.210092313999894
+  },
+  "treatment_G02_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Entertainment', perfectly aligning with the user's request.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over two days with a variety of unique entertainment activities and no repetitions.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations, opening hours, and booking availability, is unknown and not assumed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:27:23.296284+00:00",
+    "elapsed_s": 1.223524444999839
+  },
+  "baseline_G13_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:27:36.539656+00:00",
+    "elapsed_s": 1.2022306049998406
+  },
+  "baseline_G16_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports as requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as Low budget, aligning perfectly with the user's request.",
+        "itinerary_coherence": "The itinerary is limited to a single day and lacks variety by focusing exclusively on shopping activities.",
+        "itinerary_feasibility": "The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration. No activity repetition occurred."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of the selected activities and restaurants is unknown as no route analysis was performed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:28:41.145113+00:00",
+    "elapsed_s": 52.55633071700004
+  },
+  "baseline_G09_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers both requested interests (Shopping and Entertainment) across all four days, providing a good variety of activities.",
+        "budget_alignment": "The hotel and all selected restaurants are consistently labeled as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. However, operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:28:54.374664+00:00",
+    "elapsed_s": 1.1977063439999256
+  },
+  "baseline_G20_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks Nature & Outdoors activities, which was one of the three requested interests.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as Medium, perfectly aligning with the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary follows the required structure of one hotel, five days, two activities, and two restaurants per day using valid dataset IDs. Operational feasibility (travel times/opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified with the provided data.",
+        "The dataset does not provide information on whether specific activities are suitable for the requested 'Nature & Outdoors' interest, but none of the selected activities are categorized as such."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:29:08.477322+00:00",
+    "elapsed_s": 2.067770951999819
+  },
+  "baseline_G17_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Religious interests, but lacks any activities categorized under Nature & Outdoors.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as Medium budget, perfectly aligning with the request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking requirements cannot be verified.",
+        "Geographic proximity between selected locations was not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:29:21.688911+00:00",
+    "elapsed_s": 1.1761569860000236
+  },
+  "treatment_G07_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Landmarks & Sightseeing', perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two activities and two restaurants per day, and no repeated activities."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:29:34.712179+00:00",
+    "elapsed_s": 0.9912228970001706
+  },
+  "baseline_G01_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary includes two shopping activities, perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:29:48.656653+00:00",
+    "elapsed_s": 1.897030070000028
+  },
+  "treatment_G15_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Sports and Landmarks & Sightseeing throughout the trip.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition, as activities ACT_01114 and ACT_01117 are repeated on day 5.",
+        "itinerary_feasibility": "The itinerary fails the requirement to avoid activity repetition across the trip, as two activities are repeated on the final day."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, is unknown and not assessed.",
+        "Geographic proximity of activities and restaurants was not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:30:01.809944+00:00",
+    "elapsed_s": 1.1059493259999726
+  },
+  "treatment_G04_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All activities selected align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements, including a single hotel, four days, and valid dataset IDs for all entries."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and actual availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:30:15.050404+00:00",
+    "elapsed_s": 1.1814008730000296
+  },
+  "treatment_G17_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Religious interests well, but fails to include any activities from the requested Nature & Outdoors category.",
+        "budget_alignment": "All selected hotels and restaurants match the requested Medium budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities, though there is a heavy focus on Entertainment.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements (one hotel, two days, two activities/restaurants per day, no activity repetition). Operational feasibility regarding travel times and opening hours is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and specific opening hours, cannot be verified.",
+        "The dataset does not provide information to confirm if the selected activities are currently open or accessible."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:30:28.277927+00:00",
+    "elapsed_s": 1.1951940129999912
+  },
+  "baseline_G04_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All activities selected align with the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Low' budget, matching the user request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and no activities are repeated.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, covers the requested 4-day duration, and includes a single hotel."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and actual geographic proximity, cannot be verified with the provided data.",
+        "The dataset does not provide specific location coordinates for the hotel, preventing a full spatial analysis of the route."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:31:51.393251+00:00",
+    "elapsed_s": 71.081481403
+  },
+  "baseline_G17_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Religious interests, but lacks any activities categorized under Nature & Outdoors.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as Medium budget, perfectly aligning with the request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking requirements cannot be verified.",
+        "Geographic proximity between selected locations was not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:32:04.686070+00:00",
+    "elapsed_s": 1.244153598999901
+  },
+  "baseline_G12_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on shopping and ignores the requested interest in Landmarks & Sightseeing.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with a logical day-by-day flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times, opening hours, and geographic proximity between locations, cannot be verified.",
+        "The dataset does not provide information on whether the selected activities are landmarks or sightseeing spots."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:32:17.754308+00:00",
+    "elapsed_s": 1.0318153640000673
+  },
+  "treatment_G14_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with two activities per day alternating between these categories.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily pattern of two activities and two restaurants, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, covers the requested 4-day duration, and includes two distinct activities and two restaurant slots per day."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking requirements cannot be verified.",
+        "Geographic proximity between selected locations was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:32:31.172299+00:00",
+    "elapsed_s": 1.3887090860000626
+  },
+  "treatment_G06_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interest in Sports by including two sports-related activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:32:44.194465+00:00",
+    "elapsed_s": 0.99125019600001
+  },
+  "baseline_G13_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:32:57.407371+00:00",
+    "elapsed_s": 1.176042513000084
+  },
+  "treatment_G06_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interest in Sports by including two sports-related activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:33:10.474613+00:00",
+    "elapsed_s": 1.0143347650000578
+  },
+  "treatment_G01_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested interest of Shopping with two distinct activities.",
+        "budget_alignment": "The hotel and both restaurants are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots."
+      },
+      "limitations": [
+        "Operational feasibility regarding travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:33:23.858789+00:00",
+    "elapsed_s": 1.346695198000134
+  },
+  "baseline_G12_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on shopping and ignores the requested interest in Landmarks & Sightseeing.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with a logical day-by-day flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times, opening hours, and geographic proximity between locations, cannot be verified.",
+        "The dataset does not provide information on whether the selected activities are landmarks or sightseeing spots."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:33:37.026798+00:00",
+    "elapsed_s": 1.1172254529999464
+  },
+  "baseline_G15_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 3
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Sports and Landmarks & Sightseeing, with a good variety of locations across both categories.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition; both ACT_01108 and ACT_01114 are visited twice during the five-day trip.",
+        "itinerary_feasibility": "The itinerary includes valid dataset IDs and meets the requirement for two activities and two restaurants per day. However, the repetition of activities violates the constraint against activity repetition. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "The model judge does not have access to real-world geographic distance data to confirm the feasibility of daily travel between the selected locations."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:33:50.361231+00:00",
+    "elapsed_s": 1.2993912990000354
+  },
+  "baseline_G14_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with a balanced distribution across all four days.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with a logical flow, no repeated activities, and a good variety of locations.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, four days, two distinct activities and two restaurants per day, and no activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and real-world traffic conditions between locations cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:34:03.517576+00:00",
+    "elapsed_s": 1.118890803000113
+  },
+  "treatment_G13_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Entertainment, providing a balanced mix across all three days.",
+        "budget_alignment": "All selected restaurants and the hotel are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two distinct activities and two restaurants per day, and uses valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:34:19.858711+00:00",
+    "elapsed_s": 4.298851265999929
+  },
+  "baseline_G03_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'High' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over three days with no repeated activities and a logical flow of cultural sites.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, with no activity repetition and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and specific booking requirements cannot be verified with the provided data.",
+        "Geographic proximity between selected locations is not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:34:33.023786+00:00",
+    "elapsed_s": 1.1230670120000923
+  },
+  "baseline_G19_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers all requested interests (Culture & History, Religious, Sports) with a good variety of activities.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and covers the requested four days with two activities and two restaurants per day."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:35:57.685261+00:00",
+    "elapsed_s": 72.61050000700016
+  },
+  "baseline_G05_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively focuses on religious sites, perfectly aligning with the user's requested interest.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured, but it repeats the activity 'ACT_00813' (Mosque) on both Day 1 and Day 5.",
+        "itinerary_feasibility": "The itinerary follows the required structure of one hotel, five days, and two activities/restaurants per day. Operational feasibility (travel times between locations) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, is not verified.",
+        "The model judge cannot confirm if the locations are currently accessible or open to the public."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:36:11.021306+00:00",
+    "elapsed_s": 1.2968548100000135
+  },
+  "baseline_G14_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with a balanced distribution across all four days.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets all structural requirements for a 4-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:36:24.069345+00:00",
+    "elapsed_s": 1.0128743079999367
+  },
+  "baseline_G08_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested 'Sports' interest, providing a good variety of sports venues.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition, as both activities on day 3 were already visited on days 1 and 2.",
+        "itinerary_feasibility": "The itinerary fails the requirement to avoid activity repetition, as ACT_01114 and ACT_01120 are repeated on day 3."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified with the provided data.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:36:37.228478+00:00",
+    "elapsed_s": 1.1045766659999572
+  },
+  "treatment_G17_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers all requested interests: Entertainment (ACT_00084, ACT_00188), Religious (ACT_00813), and Nature & Outdoors (ACT_00190).",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Medium' budget, aligning perfectly with the request.",
+        "itinerary_coherence": "The itinerary is well-structured over two days with no repeated activities and a good variety of interests.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, and valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:36:50.333608+00:00",
+    "elapsed_s": 1.0682814460001282
+  },
+  "baseline_G06_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interest in Sports by including two sports-related activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with a variety of activities and no repetitions.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots with valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and specific opening hours, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:38:14.903964+00:00",
+    "elapsed_s": 72.50937193000004
+  },
+  "treatment_G03_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over three days with a logical flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and no repeated activities. All IDs are valid."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:38:28.030815+00:00",
+    "elapsed_s": 1.0727634059999218
+  },
+  "treatment_G16_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 3
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports, which were requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as 'Low' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is limited to one day and includes two activities, both of which are categorized as 'Shopping', resulting in a lack of variety.",
+        "itinerary_feasibility": "The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration, but lacks geographic proximity data to confirm feasibility."
+      },
+      "limitations": [
+        "Geographic proximity and travel times between the selected activities and restaurants cannot be verified due to missing or incomplete location data.",
+        "Operational hours and booking requirements for the selected venues are unknown.",
+        "The dataset does not provide enough variety to fulfill all interest categories within the requested budget."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:38:41.342264+00:00",
+    "elapsed_s": 1.2712144320000789
+  },
+  "baseline_G19_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers all requested interests (Culture & History, Religious, Sports) with a good variety of activities.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the daily activity and restaurant requirements."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified.",
+        "Geographic proximity of activities and restaurants within each day was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:38:54.670728+00:00",
+    "elapsed_s": 1.277099023000119
+  },
+  "baseline_G08_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Sports', perfectly aligning with the user's interest.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition, as Ksu Stadium and Prince Faisal Bin Fahd Sports City are visited twice each.",
+        "itinerary_feasibility": "The itinerary fails the requirement to avoid activity repetition across the trip, as two activities are repeated on day 3."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, is unknown.",
+        "The model judge cannot verify if the physical locations are accessible or currently open."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:39:07.752240+00:00",
+    "elapsed_s": 1.0464013789999171
+  },
+  "treatment_G19_seed33": {
+    "status": "generation_failed"
+  },
+  "baseline_G17_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Religious interests, but fails to include any activities from the requested Nature & Outdoors category.",
+        "budget_alignment": "All selected hotels and restaurants match the requested Medium budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets the structural requirements of one hotel and two activities/restaurants per day. Operational feasibility regarding travel times and opening hours is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "The model judge cannot confirm if the selected activities are currently open or accessible."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:39:20.949518+00:00",
+    "elapsed_s": 1.139046406000034
+  },
+  "baseline_G02_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Entertainment', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity between locations is not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:39:34.090060+00:00",
+    "elapsed_s": 1.0771428460000152
+  },
+  "treatment_G20_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely lacks the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary follows all structural requirements, including a single hotel, five days, and valid dataset IDs for all entries."
+      },
+      "limitations": [
+        "Operational feasibility (e.g., travel times between locations, opening hours, and booking requirements) is unknown and not assumed.",
+        "The model judge cannot verify the actual geographic proximity or travel logic between the provided coordinates."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:39:47.280879+00:00",
+    "elapsed_s": 1.153194115999895
+  },
+  "baseline_G15_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 3
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Sports and Landmarks & Sightseeing, with a good variety of locations across both categories.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition; both ACT_01108 and ACT_01114 are visited twice during the five-day trip.",
+        "itinerary_feasibility": "The itinerary includes valid dataset IDs and meets the requirement for two activities and two restaurants per day. However, the repetition of activities violates the constraint against activity repetition. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "The model judge does not have access to real-world geographic distance data to confirm the feasibility of daily travel between the selected locations."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:40:00.608103+00:00",
+    "elapsed_s": 1.2781866729999365
+  },
+  "treatment_G11_seed33": {
+    "status": "generation_failed"
+  },
+  "baseline_G12_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on shopping and ignores the requested interest in Landmarks & Sightseeing.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with a logical day-by-day flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, with no activity repetition."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times, opening hours, and geographic proximity between locations, cannot be verified.",
+        "The dataset does not provide information on whether the selected activities are landmarks or sightseeing spots."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:40:13.774462+00:00",
+    "elapsed_s": 1.1127908270000262
+  },
+  "treatment_G02_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on Entertainment, matching the user's interest request perfectly.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as Medium, aligning with the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets all structural requirements for a 2-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:40:26.825631+00:00",
+    "elapsed_s": 1.0141309979999278
+  },
+  "baseline_G03_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "All selected activities align perfectly with the requested 'Culture & History' interest.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the daily activity and restaurant requirements."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:40:39.917959+00:00",
+    "elapsed_s": 1.0379699810000602
+  },
+  "baseline_G14_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, providing two activities per day that alternate between these categories.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow of two activities and two restaurants, with no repeated activities throughout the four days.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, covers the requested four days, and maintains a consistent structure of two activities and two restaurants per day."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking requirements cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:40:52.995232+00:00",
+    "elapsed_s": 1.0389264989998992
+  },
+  "treatment_G01_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested interest of Shopping with two distinct activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Low' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary includes one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:41:06.030493+00:00",
+    "elapsed_s": 0.9819935220000389
+  },
+  "treatment_G16_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports, which were requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as 'Low' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is logically structured for a single day, but it lacks variety by focusing exclusively on shopping activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements (one hotel, two activities, two restaurants). It is penalized slightly because the dataset does not provide operational hours or travel times to confirm feasibility."
+      },
+      "limitations": [
+        "Operational feasibility (opening hours, travel times, and transit) cannot be verified with the provided dataset.",
+        "Geographic proximity between the selected activities and restaurants is not evaluated."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:41:19.286595+00:00",
+    "elapsed_s": 1.221595675999879
+  },
+  "treatment_G15_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Sports and Landmarks & Sightseeing, providing a balanced mix throughout the trip.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition, as activities ACT_01114 and ACT_01110 are repeated on day 5, violating the requirement to avoid repeated activities.",
+        "itinerary_feasibility": "The itinerary fails the feasibility requirement due to the repetition of activities on day 5. Operational feasibility regarding travel times and opening hours is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "The model judge is not human ground truth and cannot verify real-world geographic accessibility."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:41:32.565037+00:00",
+    "elapsed_s": 1.2462518319998708
+  },
+  "treatment_G07_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Landmarks & Sightseeing', perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two activities and two restaurants per day, and no repeated activities."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:41:45.624592+00:00",
+    "elapsed_s": 1.025257709000016
+  },
+  "treatment_G19_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers all requested interests (Culture & History, Religious, Sports) with a good variety of activities across the four days.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary follows all structural requirements, including a single hotel, four days, and valid dataset IDs for all activities and restaurants."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and actual booking availability, cannot be verified.",
+        "Geographic proximity of activities and restaurants within a single day is not assessed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:41:58.953008+00:00",
+    "elapsed_s": 1.2918566700000156
+  },
+  "baseline_G07_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Landmarks & Sightseeing', perfectly aligning with the user's interest.",
+        "budget_alignment": "The hotel and all selected restaurants are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two activities and two restaurants per day, and no repeated activities."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:42:12.401797+00:00",
+    "elapsed_s": 1.3950660090004021
+  },
+  "baseline_G07_seed22": {
+    "status": "generation_failed"
+  },
+  "treatment_G08_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested 'Sports' interest, providing good coverage of available sports venues.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary suffers from significant repetition, as the activities for Day 1 are identical to those on Day 3.",
+        "itinerary_feasibility": "The itinerary fails the requirement to avoid activity repetition across the trip, as ACT_01114 and ACT_01117 are visited twice."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times, opening hours, and booking availability, is unknown.",
+        "Geographic proximity between activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:42:25.871574+00:00",
+    "elapsed_s": 1.4063719159998982
+  },
+  "treatment_G05_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features religious activities, perfectly aligning with the user's requested interest.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary suffers from a repeated activity (ACT_00813) on Day 2 and Day 5, which violates the requirement for variety and avoidance of repetition.",
+        "itinerary_feasibility": "The itinerary fails the feasibility requirement due to the repetition of activity ACT_00813 across the trip. Operational feasibility regarding travel times between these locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times and opening hours, is not verified.",
+        "The model judge cannot confirm if the locations are accessible or currently open.",
+        "Geographic proximity between activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:42:39.233071+00:00",
+    "elapsed_s": 1.3199864379998871
+  },
+  "baseline_G06_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interest in Sports by including two sports-related activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:42:52.164969+00:00",
+    "elapsed_s": 0.8932417549999627
+  },
+  "treatment_G10_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites throughout the 5-day trip.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, 5 days, two distinct activities and two restaurants per day, and valid dataset IDs. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:43:27.371048+00:00",
+    "elapsed_s": 23.164766790000158
+  },
+  "treatment_G11_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Nature & Outdoors but fails to include any activities related to the requested Sports interest.",
+        "budget_alignment": "The hotel and both restaurants are correctly labeled as Medium budget, aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day, though it lacks variety by focusing exclusively on parks for the Nature & Outdoors interest.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements (one hotel, two activities, two restaurants). Operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times and opening hours, cannot be verified.",
+        "The dataset does not provide information on whether the selected activities satisfy the Sports interest requirement."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:43:40.536798+00:00",
+    "elapsed_s": 1.1199001479999424
+  },
+  "treatment_G05_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features religious activities, perfectly aligning with the user's requested interest.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary repeats the activity 'Mosque' (ACT_00813) on both Day 1 and Day 5, violating the requirement to avoid repeated activities.",
+        "itinerary_feasibility": "The itinerary is structurally valid with a single hotel, 5 days, and two activities/restaurants per day. However, operational feasibility regarding travel times between these locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times and opening hours, cannot be verified.",
+        "The model judge does not have access to real-world traffic or distance data to confirm the feasibility of the daily routes."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:43:54.112364+00:00",
+    "elapsed_s": 1.5374243119999846
+  },
+  "treatment_G14_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with a balanced distribution across all four days.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets all structural requirements for a 4-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:44:07.153407+00:00",
+    "elapsed_s": 0.9966448010000022
+  },
+  "treatment_G08_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested 'Sports' interest throughout the trip.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary repeats the exact same two activities on day 1 and day 3, failing to provide variety.",
+        "itinerary_feasibility": "The itinerary violates the requirement to avoid activity repetition across the trip by repeating ACT_01114 and ACT_01117 on day 3."
+      },
+      "limitations": [
+        "Operational feasibility regarding travel times, opening hours, and booking availability is unknown.",
+        "Geographic proximity between activities and restaurants was not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:44:20.276546+00:00",
+    "elapsed_s": 1.0686395279999488
+  },
+  "treatment_G12_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 3
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on shopping, completely ignoring the requested 'Landmarks & Sightseeing' interest.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with no repeated activities and a logical daily flow.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements (one hotel, two days, two activities and two restaurants per day, no activity repetition). However, operational feasibility regarding travel times and opening hours is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and specific opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:44:33.517385+00:00",
+    "elapsed_s": 1.202858655
+  },
+  "baseline_G05_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively focuses on religious sites, perfectly aligning with the user's requested interest.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured, but it repeats the activity 'ACT_00813' (Mosque) on both Day 1 and Day 5.",
+        "itinerary_feasibility": "The itinerary follows the required structure of one hotel, five days, and two activities/restaurants per day. Operational feasibility (travel times between locations) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, is not verified.",
+        "The model judge cannot confirm if the locations are currently accessible or open to the public."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:46:23.072122+00:00",
+    "elapsed_s": 97.50135985099996
+  },
+  "baseline_G20_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping and Entertainment well, but completely fails to include any activities related to the requested 'Nature & Outdoors' interest.",
+        "budget_alignment": "All selected hotels and restaurants are labeled as 'Medium' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow. There is no repetition of activities across the trip.",
+        "itinerary_feasibility": "The itinerary follows all structural requirements: one hotel, five days, two distinct activities and two restaurants per day, and uses valid dataset IDs. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations and opening hours cannot be verified.",
+        "The dataset does not provide information on whether the selected activities are actually open or accessible during the trip dates.",
+        "Geographic proximity of activities and restaurants within a single day is not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:46:36.381329+00:00",
+    "elapsed_s": 1.2614764540003307
+  },
+  "treatment_G01_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested interest of Shopping with two distinct activities.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Low' budget, perfectly aligning with the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities.",
+        "itinerary_feasibility": "The itinerary includes one hotel, one day, two distinct activities, and two restaurant slots, all using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and geographic proximity between locations cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:46:49.406830+00:00",
+    "elapsed_s": 0.9894847700002174
+  },
+  "treatment_G09_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Shopping and Entertainment, providing a balanced mix of both across all four days.",
+        "budget_alignment": "All selected restaurants and the hotel are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, four days, two distinct activities and two restaurant slots per day, and all IDs are valid within the provided dataset."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:47:02.634942+00:00",
+    "elapsed_s": 1.1704493100000946
+  },
+  "treatment_G12_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Shopping and Landmarks & Sightseeing, with two activities for each category across the two days.",
+        "budget_alignment": "All selected hotels and restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the requirement of two activities and two restaurants per day."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified from the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:47:15.783717+00:00",
+    "elapsed_s": 1.1078210220002802
+  },
+  "baseline_G16_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 2,
+        "budget_alignment": 5,
+        "itinerary_coherence": 3,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports as requested.",
+        "budget_alignment": "The hotel and both restaurants are labeled as Low budget, aligning perfectly with the user's request.",
+        "itinerary_coherence": "The itinerary is limited to a single day and lacks variety by focusing exclusively on shopping activities.",
+        "itinerary_feasibility": "The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration. No activity repetition occurred."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of the selected activities and restaurants is unknown as no route analysis was performed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:47:28.960064+00:00",
+    "elapsed_s": 1.1410546410002098
+  },
+  "baseline_G10_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites.",
+        "budget_alignment": "All selected restaurants and the hotel are categorized as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two distinct activities per day and no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the daily activity and restaurant requirements. Operational feasibility (travel times, opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity of activities and restaurants within a single day is not assessed."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:47:42.230828+00:00",
+    "elapsed_s": 1.2331314399998519
+  },
+  "treatment_G18_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary covers Entertainment and Shopping well, but completely lacks Landmarks & Sightseeing, which was a requested interest.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'High' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements, uses valid dataset IDs, and maintains a consistent hotel throughout the 3-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants within each day was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:47:55.286023+00:00",
+    "elapsed_s": 1.0031198249998852
+  },
+  "treatment_G15_seed33": {
+    "status": "generation_failed"
+  },
+  "baseline_G11_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Nature & Outdoors (AlFanar Park) and Sports (Prince Faisal Bin Fahd Sports City).",
+        "budget_alignment": "The hotel and both restaurants are categorized as Medium, matching the user's budget request.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with a logical variety of activities and no repetitions.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, one day, two distinct activities, and two restaurant slots using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times between locations, opening hours, and booking availability cannot be verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:50:31.795660+00:00",
+    "elapsed_s": 144.44345957199994
+  },
+  "treatment_G18_seed33": {
+    "status": "generation_failed"
+  },
+  "baseline_G10_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Culture & History and Religious sites, with two activities per day covering these categories.",
+        "budget_alignment": "All selected hotel and restaurant options are labeled as 'Low' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily flow, no repeated activities, and a good variety of locations.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, five days, two distinct activities and two restaurants per day, and no activity repetition. Operational feasibility (travel times/opening hours) is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and specific opening hours, cannot be verified with the provided data.",
+        "Geographic proximity of activities and restaurants is not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:51:11.385175+00:00",
+    "elapsed_s": 27.542671274999975
+  },
+  "treatment_G09_seed33": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary perfectly aligns with the requested interests of Shopping and Entertainment, providing two activities per day that alternate between these categories.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with a consistent daily pattern of two activities and two restaurants, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs, includes one hotel, and meets the requirement of two activities and two restaurants per day for all four days."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations, opening hours, and booking availability, cannot be verified with the provided data."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:51:52.228565+00:00",
+    "elapsed_s": 28.78887157300005
+  },
+  "treatment_G11_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 3,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers the 'Nature & Outdoors' interest well, but fails to include any activities related to the requested 'Sports' interest.",
+        "budget_alignment": "The hotel and both restaurants are categorized as 'Medium', perfectly aligning with the requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured for a single day with no repeated activities, though it lacks variety in interest coverage.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements including one hotel, two activities, and two restaurants. Operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Travel times between the hotel, activities, and restaurants are not provided and cannot be verified.",
+        "Opening hours and booking requirements for the selected venues are unknown."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:52:05.370573+00:00",
+    "elapsed_s": 1.0999939660000564
+  },
+  "baseline_G02_seed22": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Entertainment', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'Medium' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, two days, two distinct activities and two restaurants per day, using valid dataset IDs."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified.",
+        "Geographic proximity between locations is not assessed for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:52:18.952959+00:00",
+    "elapsed_s": 1.5332450400001107
+  },
+  "treatment_G03_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.",
+        "budget_alignment": "The hotel and all selected restaurants are categorized as 'High' budget, matching the user's requested budget level.",
+        "itinerary_coherence": "The itinerary is well-structured over three days with a logical flow and no repeated activities.",
+        "itinerary_feasibility": "The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and no repeated activities. All IDs are valid."
+      },
+      "limitations": [
+        "Operational feasibility such as travel times, opening hours, and booking availability cannot be verified with the provided dataset."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:52:38.418948+00:00",
+    "elapsed_s": 7.41664948000016
+  },
+  "treatment_G05_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 5
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses heavily on religious sites as requested, though one activity (ACT_00073) is categorized as Entertainment rather than Religious.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities.",
+        "itinerary_feasibility": "The itinerary follows all structural requirements, uses valid dataset IDs, and maintains a consistent hotel throughout the 5-day trip."
+      },
+      "limitations": [
+        "Operational feasibility, such as travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity between activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:53:49.390130+00:00",
+    "elapsed_s": 58.92779746899987
+  },
+  "baseline_G08_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 5,
+        "budget_alignment": 5,
+        "itinerary_coherence": 2,
+        "itinerary_feasibility": 2
+      },
+      "reasons": {
+        "personalization": "The itinerary focuses exclusively on the requested 'Sports' interest throughout the trip.",
+        "budget_alignment": "All selected hotels and restaurants match the requested 'Medium' budget level.",
+        "itinerary_coherence": "The itinerary repeats the exact same two activities on day 1 and day 3, failing to provide variety.",
+        "itinerary_feasibility": "The itinerary violates the requirement to avoid activity repetition across the trip by repeating ACT_01114 and ACT_01117 on day 3."
+      },
+      "limitations": [
+        "Operational feasibility regarding travel times, opening hours, and booking availability is unknown.",
+        "Geographic proximity between activities and restaurants was not verified."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:54:13.475778+00:00",
+    "elapsed_s": 12.039981094999803
+  }
+}

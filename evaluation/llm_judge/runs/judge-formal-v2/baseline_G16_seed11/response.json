@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:47:28 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1096",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfROUyK3EyigWYrA2zLeuCGl1lBzcFrMGlTf78_dvLRfLiueldYAzE8gupMCQQ5t4GlH_ykhFocRUbp8FioEvZb7z9JBtbmi5e1sUjtlRxbCtO8wkq77gEIMQkeHdsJDOnTd4-qc9WwZ5AAje2SCNbAORfV90eUGcCY-qIk0QN2effknjNK3WyWNhZKHj3R0EZnrDrepNg_TFkXe7DyiD2hHD7A==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 2,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 3,\n    \"itinerary_feasibility\": 4\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports as requested.\",\n    \"budget_alignment\": \"The hotel and both restaurants are labeled as Low budget, aligning perfectly with the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is limited to a single day and lacks variety by focusing exclusively on shopping activities.\",\n    \"itinerary_feasibility\": \"The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration. No activity repetition occurred.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, such as travel times between locations and opening hours, cannot be verified.\",\n    \"Geographic proximity of the selected activities and restaurants is unknown as no route analysis was performed.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "f4QGa7vgN6yc_uMP7dyt2Q4",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 234,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 872,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 872
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1106,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

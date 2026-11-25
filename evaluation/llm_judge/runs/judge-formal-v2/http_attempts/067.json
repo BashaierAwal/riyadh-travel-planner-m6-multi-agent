@@ -1,0 +1,9 @@
+{
+  "request_number": 67,
+  "run_id": "baseline_G19_seed22",
+  "attempt": 1,
+  "started_at_utc": "2026-11-25T06:34:45.077157+00:00",
+  "status": "provider_error",
+  "error_type": "ServerError",
+  "provider_code": 504
+}

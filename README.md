@@ -22,4 +22,4 @@ Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are reco
 
 ## Supplementary itinerary judge
 
-A separate [LLM-judge workflow](evaluation/llm_judge/README.md) and [Colab notebook](evaluation/llm_judge/M6_Judge_Evaluation.ipynb) are prepared for evaluating the saved baseline and treatment plans. **Prepared and tested offline; not yet executed on Gemini.** The original formal-v3 results and evidence remain unchanged.
+The [supplementary judge evaluation](evaluation/llm_judge/JUDGE_REPORT.md) completed on 25 November 2026: all 114 readable plans were graded (59 baseline, 55 three-agent), with six generation failures reported separately. Mean quality scores were **4.496/5** and **4.532/5**. The small conditional difference does not establish overall superiority. [Grades, reasons and saved evidence](evaluation/llm_judge/) and an offline verifier are included. The original formal-v3 results and evidence remain unchanged.

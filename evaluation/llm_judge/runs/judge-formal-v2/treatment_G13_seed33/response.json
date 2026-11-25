@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:21:52 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1088",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRNUUmr-ZFvCDmWCU1lXtYKPP_x6W1RJQvxF5K_QfvUKYRPoMiftCUu_M9cBq3SLZfTfWo2RnLWBPIjIJ1oH-CPDOh8lm4rRJWT4RYVR_iD7skIFNfHJ7b6ojYm3L_DmB8bdVALPYzf7gHR_fadStiwEBSy2Zd_KPHl6aPckIGLL4kQAdj1mPiTKJI2kiU1HJ97ZXMyHIuJMiHlPw9LDc3wKrA==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 2,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary focuses exclusively on Entertainment, completely ignoring the requested Culture & History interest.\",\n    \"budget_alignment\": \"All selected hotel and restaurant options are labeled as 'Low' budget, perfectly matching the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements, uses valid dataset IDs, and covers the requested three-day duration.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.\",\n    \"Geographic proximity of activities and restaurants was not evaluated for travel efficiency.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "f34Ga8P3IauU_uMPsdOoiQw",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 230,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1537,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1537
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1767,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

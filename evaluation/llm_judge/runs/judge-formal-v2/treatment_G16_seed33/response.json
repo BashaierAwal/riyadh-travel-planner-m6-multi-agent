@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:38:41 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1220",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRN4hgjo3vuVURI83Pr35aAO7zHHNyKtm6LBogVJ2yiaS1ckSMHUqAdfsHBUGyx-6__XYLG05NQi7C6gahCC6duSF5lWniNuzleFE0mcO9nwKLgUOhs7FF8rWdF1eP2LWKIm9JeoiqzctISRzc96qdL_66-x6S7UuYCTjoy3imh4l80nRk5XvgcPMhPPpT_A0NeMwKQ6whRx0RoUWuJ0tGSQAg==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 2,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 3,\n    \"itinerary_feasibility\": 3\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary covers Shopping but fails to include any activities related to Culture & History or Sports, which were requested.\",\n    \"budget_alignment\": \"The hotel and both restaurants are labeled as 'Low' budget, perfectly aligning with the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is limited to one day and includes two activities, both of which are categorized as 'Shopping', resulting in a lack of variety.\",\n    \"itinerary_feasibility\": \"The itinerary meets the structural requirements of one hotel, two activities, and two restaurants for the requested duration, but lacks geographic proximity data to confirm feasibility.\"\n  },\n  \"limitations\": [\n    \"Geographic proximity and travel times between the selected activities and restaurants cannot be verified due to missing or incomplete location data.\",\n    \"Operational hours and booking requirements for the selected venues are unknown.\",\n    \"The dataset does not provide enough variety to fulfill all interest categories within the requested budget.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "cIIGa8fMCqDH-sAP3vG_-As",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 272,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 868,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 868
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1140,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

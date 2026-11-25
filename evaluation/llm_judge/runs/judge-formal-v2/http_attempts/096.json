@@ -1,0 +1,9 @@
+{
+  "request_number": 96,
+  "run_id": "treatment_G10_seed22",
+  "attempt": 1,
+  "started_at_utc": "2026-11-25T06:43:04.208813+00:00",
+  "status": "provider_error",
+  "error_type": "ServerError",
+  "provider_code": 503
+}

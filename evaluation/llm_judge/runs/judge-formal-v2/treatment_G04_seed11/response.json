@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:25:36 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1231",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfROBrQlzzs2lfU9asrEPH3DZmsHXidvuc3nVwXKRMVwUAD7nJWLdME4gdIYADrfxNpDWQVdH1ILHs-Qo0F9y3Sttdbx8qMtfdekaiiObkrTTTxTV8ihjtJhD9nSx0qZYU4j2BYXa03FOXR6RJXwwoIfLJrLqw1g2W7PG_ZfrvIQPNt_QL6k3WcbwjpKW3WJ3i55e-i4eIsSLfjvxSQKudRExqw==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"All selected activities align with the requested 'Nature & Outdoors' interest.\",\n    \"budget_alignment\": \"The hotel and all restaurants are categorized as 'Low' budget, matching the user request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with two distinct activities and two restaurants per day, with no repeated activities.\",\n    \"itinerary_feasibility\": \"The itinerary follows the required structure, uses valid dataset IDs, and avoids activity repetition.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, such as travel times between locations, opening hours, and booking requirements, cannot be verified.\",\n    \"Geographic proximity between activities and restaurants on the same day is not assessed.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "X38Ga9vsC6iN_uMP99-JoQ8",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 221,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1868,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1868
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2089,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

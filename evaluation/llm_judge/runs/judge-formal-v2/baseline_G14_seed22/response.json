@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:34:03 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1070",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRMb46cxhxL9fPU8Aqv8kiHs7-q2bikbGyDb9cJ6OMMac0Yy0cvyfbrk_Jblkrko1ZzRKSDFEttRqI5kFLY_epWh_TDF0Fwg5_gV3OiTDbA1kfiQryxARqc-cLKgKpHjzoN_W2d5pUyllrYLI05r88Xmd-uYS5RVS2Dzh08yRhJBLP6YiCZGWrMYDykbQc3fJbX6ENZ_YNTjR6jBOxV2Uq6VyQ==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary perfectly aligns with the requested interests of Religious and Nature & Outdoors, with a balanced distribution across all four days.\",\n    \"budget_alignment\": \"All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with a logical flow, no repeated activities, and a good variety of locations.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements: one hotel, four days, two distinct activities and two restaurants per day, and no activity repetition.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility such as travel times, opening hours, and real-world traffic conditions between locations cannot be verified.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "WoEGa9mxIoTX-8YPto7E0Ag",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 226,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1854,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1854
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2080,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

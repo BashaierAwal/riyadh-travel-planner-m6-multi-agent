@@ -1,0 +1,31 @@
+{
+  "baseline_G09_seed11": {
+    "status": "judged",
+    "request_sent": true,
+    "output": {
+      "scores": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      },
+      "reasons": {
+        "personalization": "The itinerary covers both requested interests (Shopping and Entertainment) across all four days, providing a good variety of activities.",
+        "budget_alignment": "The hotel and all selected restaurants are consistently labeled as 'High' budget, matching the user's request.",
+        "itinerary_coherence": "The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.",
+        "itinerary_feasibility": "The itinerary uses valid dataset IDs and meets all structural requirements. However, operational feasibility regarding travel times between locations is unknown."
+      },
+      "limitations": [
+        "Operational feasibility, including travel times between locations and opening hours, cannot be verified.",
+        "Geographic proximity of activities and restaurants was not evaluated for travel efficiency."
+      ]
+    },
+    "judged_at_utc": "2026-11-25T06:14:35.819930+00:00",
+    "elapsed_s": 2.6146219350000024
+  },
+  "treatment_G12_seed33": {
+    "status": "judge_error",
+    "request_sent": true,
+    "error_type": "ServerError"
+  }
+}

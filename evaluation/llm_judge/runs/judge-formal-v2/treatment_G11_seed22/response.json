@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:43:40 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1072",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRPJspvu2dV8KTyH4rDF6phtN_7t62VuoyZJgtF_FLrXqOmUH6n8PcNO765_S1gMtdQz7UBGmaQC-CtkrBDPQ6hWDeOeigiCcRtGU40g-LO07VsHAYmq6Tw7zvlOEiZpLGWSrtoBsLu12QYqjnHtOeYcawASIN1hqxCxUa-Raq3uhgNG_uQQslfQxmzs1updW9277VlfZtpkd7kT-TYqBfOD0A==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 3,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 4,\n    \"itinerary_feasibility\": 4\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary covers Nature & Outdoors but fails to include any activities related to the requested Sports interest.\",\n    \"budget_alignment\": \"The hotel and both restaurants are correctly labeled as Medium budget, aligning with the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured for a single day, though it lacks variety by focusing exclusively on parks for the Nature & Outdoors interest.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements (one hotel, two activities, two restaurants). Operational feasibility regarding travel times between locations is unknown.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, including travel times and opening hours, cannot be verified.\",\n    \"The dataset does not provide information on whether the selected activities satisfy the Sports interest requirement.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "m4MGa7KpIKrH-sAP8JjNsQw",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 238,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 867,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 867
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1105,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

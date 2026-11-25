@@ -1,0 +1,42 @@
+{
+  "status": "incomplete",
+  "scope": "Judge quality conditional on readable outputs; failures reported separately",
+  "conditions": {
+    "baseline": {
+      "total": 60,
+      "eligible": 59,
+      "generation_failed": 1,
+      "judged": 1,
+      "judge_errors_or_interrupted": 0,
+      "overall_mean": 4.5,
+      "overall_sample_sd": null,
+      "criterion_means": {
+        "personalization": 4,
+        "budget_alignment": 5,
+        "itinerary_coherence": 5,
+        "itinerary_feasibility": 4
+      }
+    },
+    "treatment": {
+      "total": 60,
+      "eligible": 55,
+      "generation_failed": 5,
+      "judged": 0,
+      "judge_errors_or_interrupted": 1,
+      "overall_mean": null,
+      "overall_sample_sd": null,
+      "criterion_means": {
+        "personalization": null,
+        "budget_alignment": null,
+        "itinerary_coherence": null,
+        "itinerary_feasibility": null
+      }
+    }
+  },
+  "paired_complete_outputs": {
+    "pairs": 0,
+    "mean_treatment_minus_baseline": null,
+    "sample_sd": null,
+    "limitation": "Conditions on both plans being judged; not all-run reliability or a significance test"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:28:54 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1139",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRNSya6k_2wCtvRMPxYaNcWw-mUjEl8TREbdN-3Ugt0gJXV7kKAIvLeb9kyghe-WlPlUTggO1KM5dYmIc5GS-MIOkHssIcgUv8ieBJZfeVfYy2wNbiotXmu_E5Yg9dabekYxs-I4oobNCmN_SnRRFHkJmJIsP9QJXGAD29QWS0c6BDxL0qsZDV-a5f8thFSfziqDCNkjGUN1AquWyuxq79-IDA==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 4,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 4\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary covers both requested interests (Shopping and Entertainment) across all four days, providing a good variety of activities.\",\n    \"budget_alignment\": \"The hotel and all selected restaurants are consistently labeled as 'High' budget, matching the user's request.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured with two activities and two restaurants per day, and there is no repetition of activities throughout the trip.\",\n    \"itinerary_feasibility\": \"The itinerary uses valid dataset IDs and meets all structural requirements. However, operational feasibility regarding travel times between locations is unknown.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, including travel times between locations and opening hours, cannot be verified.\",\n    \"Geographic proximity of activities and restaurants was not evaluated for travel efficiency.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "JYAGa__xE_e3sOIP9feaqAs",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 240,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1926,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1926
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2166,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:42:39 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1272",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRNlEhUKPPIVunPzd1wkf_oEOmY_MMP8btXZrgh64Wv8Pju6Ju14jQVuAo5yHHB27FFabqxhx4nbCQW1wn_KLgXkFsv50r1fPeM9Ah9kDKrN7OtILL8aRQb3xodd_PlkP2ukw-xK0FW0ELxoKYBpCzJEJWPLN0UZm7hsJBfIxV00rW6VKOJtzeFA4S4zvGpH1RfXl0uAeGXeZl57fayb-tAvMA==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 2,\n    \"itinerary_feasibility\": 2\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary exclusively features religious activities, perfectly aligning with the user's requested interest.\",\n    \"budget_alignment\": \"All selected hotels and restaurants are categorized as 'Medium', matching the user's budget request.\",\n    \"itinerary_coherence\": \"The itinerary suffers from a repeated activity (ACT_00813) on Day 2 and Day 5, which violates the requirement for variety and avoidance of repetition.\",\n    \"itinerary_feasibility\": \"The itinerary fails the feasibility requirement due to the repetition of activity ACT_00813 across the trip. Operational feasibility regarding travel times between these locations is unknown.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility, including travel times and opening hours, is not verified.\",\n    \"The model judge cannot confirm if the locations are accessible or currently open.\",\n    \"Geographic proximity between activities and restaurants was not evaluated for travel efficiency.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "XoMGa6iaA7f5-sAP-JTYwAE",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 266,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2181,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2181
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2447,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}

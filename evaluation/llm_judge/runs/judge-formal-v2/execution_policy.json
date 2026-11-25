@@ -1,0 +1,19 @@
+{
+  "version": "judge-formal-v2",
+  "judge_model": "gemini-3.1-flash-lite",
+  "logical_plan_cap": 114,
+  "http_cap": 126,
+  "previous_attempt_requests": 2,
+  "combined_cap": 128,
+  "max_attempts_per_plan": 3,
+  "retry_codes": [
+    500,
+    502,
+    503,
+    504
+  ],
+  "retry_spacing_seconds": 12,
+  "rubric_changed": false,
+  "prior_attempt_pooled": false,
+  "input_fingerprint": "eeaad1b95f5e24e4cd79cb3931e947f7530fdcbb9abd263152a310305f3a9533"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_SAVED_JUDGE_EVIDENCE",
+  "original_records": 120,
+  "judged": 114,
+  "http_requests": 121,
+  "temporary_provider_errors": 7,
+  "conditions": {
+    "baseline": {
+      "total": 60,
+      "eligible": 59,
+      "generation_failed": 1,
+      "judged": 59,
+      "judge_errors_or_interrupted": 0,
+      "overall_mean": 4.495762711864407,
+      "overall_sample_sd": 0.5383794437775036,
+      "criterion_means": {
+        "personalization": 4.135593220338983,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4.322033898305085,
+        "itinerary_feasibility": 4.52542372881356
+      }
+    },
+    "treatment": {
+      "total": 60,
+      "eligible": 55,
+      "generation_failed": 5,
+      "judged": 55,
+      "judge_errors_or_interrupted": 0,
+      "overall_mean": 4.531818181818182,
+      "overall_sample_sd": 0.604869410176282,
+      "criterion_means": {
+        "personalization": 4.254545454545455,
+        "budget_alignment": 5,
+        "itinerary_coherence": 4.4,
+        "itinerary_feasibility": 4.472727272727273
+      }
+    }
+  },
+  "paired_complete_outputs": {
+    "pairs": 54,
+    "mean_treatment_minus_baseline": 0.032407407407407406,
+    "sample_sd": 0.3537077739858955,
+    "limitation": "Conditions on both plans being judged; not all-run reliability or a significance test"
+  },
+  "observed_usage": {
+    "prompt_token_count": 176093,
+    "candidates_token_count": 26883,
+    "total_token_count": 202976
+  },
+  "scope": "Saved response integrity, input identity and independent arithmetic; no provider attestation or human calibration"
+}

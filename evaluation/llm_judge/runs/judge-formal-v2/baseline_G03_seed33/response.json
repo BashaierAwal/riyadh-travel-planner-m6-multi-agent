@@ -1,0 +1,73 @@
+{
+  "sdk_http_response": {
+    "headers": {
+      "x-gemini-service-tier": "standard",
+      "content-type": "application/json; charset=UTF-8",
+      "vary": "Origin, X-Origin, Referer",
+      "content-encoding": "gzip",
+      "date": "Wed, 25 Nov 2026 06:26:43 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "server-timing": "gfet4t7; dur=1086",
+      "transfer-encoding": "chunked"
+    },
+    "body": null
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "video_metadata": null,
+            "thought": null,
+            "inline_data": null,
+            "file_data": null,
+            "thought_signature": "EqkBCqYBAWkUfRPRwfSIVqQJh3EzymH9x3AuJ4REsEgG7NAffkGwvEA7PkSeBGSFcTetDos9IHXPzbpeMdUuuVWi2_nehHlqDCa2HEl6iPwN3ZlPvIn4e9eanK-6kFv-CZfVzvIJGzn7lH_29bofymACq5ITRz7j3wqIv98eM-P-PWZ31raLaMtp1r_tAwz3eIv-oamWi25or0s__3K9o4mfaO4Bm-R0DNO3jw==",
+            "code_execution_result": null,
+            "executable_code": null,
+            "function_call": null,
+            "function_response": null,
+            "text": "{\n  \"scores\": {\n    \"personalization\": 5,\n    \"budget_alignment\": 5,\n    \"itinerary_coherence\": 5,\n    \"itinerary_feasibility\": 5\n  },\n  \"reasons\": {\n    \"personalization\": \"The itinerary exclusively features activities categorized under 'Culture & History', perfectly aligning with the user's request.\",\n    \"budget_alignment\": \"The hotel and all selected restaurants are categorized as 'High' budget, matching the user's requested budget level.\",\n    \"itinerary_coherence\": \"The itinerary is well-structured over three days with a logical flow and no repeated activities.\",\n    \"itinerary_feasibility\": \"The itinerary meets all structural requirements: one hotel, three days, two activities and two restaurants per day, and no repeated activities. All IDs are valid.\"\n  },\n  \"limitations\": [\n    \"Operational feasibility such as travel times, opening hours, and booking availability cannot be verified with the provided dataset.\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "url_context_metadata": null,
+      "avg_logprobs": null,
+      "grounding_metadata": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-flash-lite",
+  "prompt_feedback": null,
+  "response_id": "on8Ga4f_F6ad_uMPyr_FWA",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 226,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1540,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1540
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1766,
+    "traffic_type": null
+  },
+  "automatic_function_calling_history": [],
+  "parsed": null
+}
