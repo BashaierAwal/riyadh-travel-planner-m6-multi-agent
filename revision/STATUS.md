@@ -12,7 +12,7 @@ Updated 27 November 2026. This page separates implemented changes from experimen
 | Limit and log repairs | At most three rounds; initial and revised plans, fixed and introduced problems, and tool counts are saved. |
 | Use traceable V3 evidence | All 60 original records rescored; original baseline remains unchanged. V2 is historical only. |
 | Report variation and pass³ | Original baseline rechecked; pass³ is 80%. Revised analysis code is prepared. |
-| Paired tests and 95% intervals | Implemented at case level. New comparative results require complete live cohorts. |
+| Paired tests and 95% intervals | Implemented at case level. New comparative results require a complete predefined group or the complete live grid. |
 | Verify repeated-seed behavior | G01 ran twice with seed 11 and returned the same readable plan. This is one checked pair, not a general determinism claim. |
 | Remove components and try another model | Second-model grid started; component-removal grids pending. |
 | Test a higher-capacity coordinator | Different-coordinator condition registered; live results pending. |
@@ -39,3 +39,5 @@ The [first development pilot](reports/PILOT_v1.md) and [final pilot and repeated
 The original partial main grid and its unfinished journal remain preserved. [Recovery](RECOVERY.md) explains why main-v2 is the primary new grid and why the earlier records are not pooled with it.
 
 The separate [M6 review revision](https://github.com/BashaierAwal/riyadh-travel-planner-m6-multi-agent/tree/m6/review-revision) retains the earlier experiment as history. [Original-case coverage limits](reports/ORIGINAL_CASE_COVERAGE.md) are documented without changing the approved data or requests.
+
+Three complete-group reporting tests also passed in each working copy. The reporting guard refuses the incomplete live hard-case group; it cannot produce a comparison from whichever cases happened to finish first.

@@ -11,3 +11,9 @@ An already-started original case finishes before the queue moves to H01–H20. T
 Four additional scheduling and controller tests use explicitly marked temporary fixtures. They check preservation of all planned units, unchanged within-case order, finishing an already-started case, retention of existing record bytes, refusal of a changed worker snapshot, distinct hard-group/full-grid completion and the cumulative request guard. These are software checks, not model-performance evidence.
 
 Comparative results may be reported only for a complete prespecified group of cases and seeds. Hard-case results require all twenty H cases, all three seeds and both systems. Combined forty-case results require the complete full grid. A submission must identify any original-case repeats or extra experiment groups still pending at the deadline.
+
+## Complete-group reports
+
+`scripts/Report_Study_Group.py` verifies saved evidence before reporting a predefined group. `--group hard` requires all twenty unchanged H cases, seeds 11, 22 and 33, and every registered condition. `--group original` applies the same rule to G01–G20. Missing or duplicate cells stop report creation. The output states both group completion and full-grid completion, keeps every failed attempt, and includes paired case-level estimates, pass³, execution-error counts, per-case cost estimates and elapsed time with and without scheduled pacing.
+
+Component-removal and coordinator comparisons additionally require a matching complete group in the main grid. They refuse changes to shared cases, source, data, models or generation settings. Three reporting tests passed in both project copies using explicitly synthetic evidence. The current incomplete live snapshot was also refused for hard-group reporting. No comparative hard-case result has been produced.
