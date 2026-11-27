@@ -38,3 +38,9 @@ After a complete cohort passes verification, run `python scripts/Report_Study_Ti
 ## Current scope
 
 The revised code and offline checks can be inspected before live execution. New experimental results must be backed by saved complete run records. Preparation, fixture checks, earlier M5 results and earlier M6 results must not be described as completed hard-case experiments.
+
+## Continue a registered model grid
+
+`scripts/Run_Review_Study_v4.py` can select one already-registered grid with `--stage main`, `ablation`, `second_model` or `strong_coordinator`. Each grid retains its original cases, requested seeds, model selection, prompts, tools and per-record limits. Selecting an independent model grid while another model waits for a quota reset changes execution order only. It does not replace failed records or select a model from observed hard-case performance.
+
+The controller uses batches of up to 24 new records to reduce repeated startup scans, while keeping the child request cap and the cumulative resource cap. Model-stage and per-record limit failures stay in the results; service errors and session resource limits stop the controller. Separate policy receipts record the selected stage.
