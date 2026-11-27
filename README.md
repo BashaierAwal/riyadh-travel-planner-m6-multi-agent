@@ -1,3 +1,18 @@
+# M6 review revision
+
+The revised comparison follows the updated M5 evaluation. It keeps the approved datasets and G01–G20, adds H01–H20, and gives both systems the same checking tools and a maximum of three repairs.
+
+- [Revised protocol](revision/PROTOCOL.md)
+- [Current status](revision/STATUS.md)
+- [Original and harder cases](revision/cases/)
+- [Shared implementation and run instructions](revision/README.md)
+- [Verified development pilot](revision/reports/PILOT_v1.md)
+- [Dataset references and licence checks](revision/DATA_SOURCES.md)
+
+The new formal comparison is not yet complete. The earlier experiment and its evidence are preserved below as history. Its results are not results for the harder requests or the revised repair workflow.
+
+## Earlier M6 experiment
+
 **Updated 9 November 2026: formal-v3 completed and verified — 120 live records, 484 HTTP requests. See reports/M6_Report.md for the completed comparison. Earlier incomplete versions are preserved separately.**
 
 # M6 — Riyadh Travel Planner

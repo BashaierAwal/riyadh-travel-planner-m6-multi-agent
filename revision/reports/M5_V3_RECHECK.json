@@ -1,0 +1,711 @@
+{
+  "scope": "Original M5 V3 records; no new model calls; no hard-case results",
+  "archive_sha256": "920d7dcc64f087f3217012a2c6608d081783eb17598c04a72cab46b643f92ecc",
+  "records": 60,
+  "statistics": {
+    "APM": {
+      "metric": "APM",
+      "conditions": {
+        "baseline": {
+          "n_runs": 60,
+          "n_cases": 20,
+          "mean": 93.50016666666667,
+          "sd_across_runs": 19.440389852028947,
+          "seed_means": {
+            "11": 91.8335,
+            "22": 91.8335,
+            "33": 96.8335
+          },
+          "sd_across_seed_means": 2.8867513459481287
+        }
+      }
+    },
+    "RBM": {
+      "metric": "RBM",
+      "conditions": {
+        "baseline": {
+          "n_runs": 60,
+          "n_cases": 20,
+          "mean": 96.66666666666667,
+          "sd_across_runs": 18.10203347193925,
+          "seed_means": {
+            "11": 95.0,
+            "22": 95.0,
+            "33": 100.0
+          },
+          "sd_across_seed_means": 2.8867513459481287
+        }
+      }
+    },
+    "HBM": {
+      "metric": "HBM",
+      "conditions": {
+        "baseline": {
+          "n_runs": 60,
+          "n_cases": 20,
+          "mean": 96.66666666666667,
+          "sd_across_runs": 18.10203347193925,
+          "seed_means": {
+            "11": 95.0,
+            "22": 95.0,
+            "33": 100.0
+          },
+          "sd_across_seed_means": 2.8867513459481287
+        }
+      }
+    },
+    "IFR": {
+      "metric": "IFR",
+      "conditions": {
+        "baseline": {
+          "n_runs": 60,
+          "n_cases": 20,
+          "mean": 81.66666666666667,
+          "sd_across_runs": 39.02049294994231,
+          "seed_means": {
+            "11": 80.0,
+            "22": 80.0,
+            "33": 85.0
+          },
+          "sd_across_seed_means": 2.8867513459481287,
+          "pass3": 0.8
+        }
+      }
+    },
+    "RTC": {
+      "metric": "RTC",
+      "conditions": {
+        "baseline": {
+          "n_runs": 60,
+          "n_cases": 20,
+          "mean": 100.0,
+          "sd_across_runs": 0.0,
+          "seed_means": {
+            "11": 100.0,
+            "22": 100.0,
+            "33": 100.0
+          },
+          "sd_across_seed_means": 0.0
+        }
+      }
+    }
+  },
+  "failures": [
+    {
+      "condition": "baseline",
+      "case_id": "G05",
+      "seed": 33,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00045",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_00813",
+              "ACT_00411"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_00290",
+              "ACT_00994"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01085",
+              "ACT_00968"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_00962",
+              "ACT_01106"
+            ],
+            "restaurants": [
+              "RES_00503",
+              "RES_06419"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01122",
+              "ACT_00813"
+            ],
+            "restaurants": [
+              "RES_10032",
+              "RES_10031"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G07",
+      "seed": 22,
+      "label": "no_output",
+      "subtype": "ParseError",
+      "details": [
+        "Itinerary must be an object"
+      ],
+      "generation_error": {
+        "type": "ParseError",
+        "code": null,
+        "message": "Response did not parse as an itinerary object"
+      },
+      "itinerary": null
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G05",
+      "seed": 11,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00045",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_00813",
+              "ACT_00411"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_00290",
+              "ACT_00994"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01085",
+              "ACT_00968"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_00962",
+              "ACT_01106"
+            ],
+            "restaurants": [
+              "RES_00503",
+              "RES_06419"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01122",
+              "ACT_00813"
+            ],
+            "restaurants": [
+              "RES_10032",
+              "RES_10031"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G07",
+      "seed": 11,
+      "label": "no_output",
+      "subtype": "provider",
+      "details": [
+        "Itinerary must be an object"
+      ],
+      "generation_error": {
+        "type": "ProviderFailure",
+        "code": 429,
+        "provider_error_type": "ClientError",
+        "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 10.900623574s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}"
+      },
+      "itinerary": null
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G15",
+      "seed": 11,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00049",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01108",
+              "ACT_01109"
+            ],
+            "restaurants": [
+              "RES_07855",
+              "RES_00117"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01110",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_06771",
+              "RES_01941"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01117",
+              "ACT_01118"
+            ],
+            "restaurants": [
+              "RES_06882",
+              "RES_04154"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_06670",
+              "RES_08489"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01108",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_09976",
+              "RES_07920"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G15",
+      "seed": 33,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00049",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01108",
+              "ACT_01109"
+            ],
+            "restaurants": [
+              "RES_07855",
+              "RES_00117"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01110",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_06771",
+              "RES_01941"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01117",
+              "ACT_01118"
+            ],
+            "restaurants": [
+              "RES_06882",
+              "RES_04154"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_06670",
+              "RES_08489"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01108",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_09976",
+              "RES_07920"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G08",
+      "seed": 33,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00045",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01114",
+              "ACT_01117"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01114",
+              "ACT_01120"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G08",
+      "seed": 11,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00045",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01114",
+              "ACT_01117"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01114",
+              "ACT_01117"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G05",
+      "seed": 22,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00045",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_00813",
+              "ACT_00411"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_00290",
+              "ACT_00994"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01085",
+              "ACT_00968"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_00962",
+              "ACT_01106"
+            ],
+            "restaurants": [
+              "RES_00503",
+              "RES_06419"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01122",
+              "ACT_00813"
+            ],
+            "restaurants": [
+              "RES_10032",
+              "RES_10031"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G08",
+      "seed": 22,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00054",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01114",
+              "ACT_01117"
+            ],
+            "restaurants": [
+              "RES_16991",
+              "RES_09956"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_10973",
+              "RES_10766"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01114",
+              "ACT_01120"
+            ],
+            "restaurants": [
+              "RES_01025",
+              "RES_04247"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "condition": "baseline",
+      "case_id": "G15",
+      "seed": 22,
+      "label": "repeated_place",
+      "subtype": "activity_repeated",
+      "details": [
+        "Repeated activities found",
+        "Repeated activities found"
+      ],
+      "generation_error": {},
+      "itinerary": {
+        "hotel_id": "HOT_00049",
+        "days": [
+          {
+            "day": 1,
+            "activities": [
+              "ACT_01108",
+              "ACT_01109"
+            ],
+            "restaurants": [
+              "RES_07855",
+              "RES_00117"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "ACT_01110",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_06771",
+              "RES_01941"
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              "ACT_01117",
+              "ACT_01118"
+            ],
+            "restaurants": [
+              "RES_06882",
+              "RES_04154"
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              "ACT_01120",
+              "ACT_01125"
+            ],
+            "restaurants": [
+              "RES_06670",
+              "RES_08489"
+            ]
+          },
+          {
+            "day": 5,
+            "activities": [
+              "ACT_01108",
+              "ACT_01114"
+            ],
+            "restaurants": [
+              "RES_09976",
+              "RES_07920"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "failure_counts": {
+    "repeated_place": 9,
+    "no_output": 2
+  }
+}

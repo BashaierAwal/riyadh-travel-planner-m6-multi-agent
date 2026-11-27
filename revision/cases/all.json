@@ -1,0 +1,539 @@
+[
+  {
+    "case_id": "G01",
+    "trip_duration": 1,
+    "interests": [
+      "Shopping"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G02",
+    "trip_duration": 2,
+    "interests": [
+      "Entertainment"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G03",
+    "trip_duration": 3,
+    "interests": [
+      "Culture & History"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G04",
+    "trip_duration": 4,
+    "interests": [
+      "Nature & Outdoors"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G05",
+    "trip_duration": 5,
+    "interests": [
+      "Religious"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G06",
+    "trip_duration": 1,
+    "interests": [
+      "Sports"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G07",
+    "trip_duration": 2,
+    "interests": [
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G08",
+    "trip_duration": 3,
+    "interests": [
+      "Sports"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G09",
+    "trip_duration": 4,
+    "interests": [
+      "Shopping",
+      "Entertainment"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G10",
+    "trip_duration": 5,
+    "interests": [
+      "Culture & History",
+      "Religious"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G11",
+    "trip_duration": 1,
+    "interests": [
+      "Nature & Outdoors",
+      "Sports"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G12",
+    "trip_duration": 2,
+    "interests": [
+      "Shopping",
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G13",
+    "trip_duration": 3,
+    "interests": [
+      "Entertainment",
+      "Culture & History"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G14",
+    "trip_duration": 4,
+    "interests": [
+      "Religious",
+      "Nature & Outdoors"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G15",
+    "trip_duration": 5,
+    "interests": [
+      "Sports",
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G16",
+    "trip_duration": 1,
+    "interests": [
+      "Shopping",
+      "Culture & History",
+      "Sports"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G17",
+    "trip_duration": 2,
+    "interests": [
+      "Entertainment",
+      "Religious",
+      "Nature & Outdoors"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "G18",
+    "trip_duration": 3,
+    "interests": [
+      "Shopping",
+      "Entertainment",
+      "Landmarks & Sightseeing"
+    ],
+    "budget_level": "High"
+  },
+  {
+    "case_id": "G19",
+    "trip_duration": 4,
+    "interests": [
+      "Culture & History",
+      "Religious",
+      "Sports"
+    ],
+    "budget_level": "Low"
+  },
+  {
+    "case_id": "G20",
+    "trip_duration": 5,
+    "interests": [
+      "Shopping",
+      "Entertainment",
+      "Nature & Outdoors"
+    ],
+    "budget_level": "Medium"
+  },
+  {
+    "case_id": "H01",
+    "trip_duration": 1,
+    "interests": [
+      "Shopping",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 25,
+      "hotel_cap_sar": 350,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Shopping": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H02",
+    "trip_duration": 2,
+    "interests": [
+      "Shopping",
+      "Entertainment"
+    ],
+    "budget_level": "Medium",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 750,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Shopping": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H03",
+    "trip_duration": 2,
+    "interests": [
+      "Shopping",
+      "Entertainment"
+    ],
+    "budget_level": "High",
+    "constraints": {
+      "max_km_per_day": 50,
+      "hotel_cap_sar": 1400,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Shopping": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H04",
+    "trip_duration": 3,
+    "interests": [
+      "Shopping",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 900,
+      "nights": 2,
+      "minimum_interest_slots": {
+        "Shopping": 3,
+        "Entertainment": 3
+      }
+    }
+  },
+  {
+    "case_id": "H05",
+    "trip_duration": 1,
+    "interests": [
+      "Culture & History",
+      "Shopping"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 25,
+      "hotel_cap_sar": 350,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Culture & History": 1,
+        "Shopping": 1
+      }
+    }
+  },
+  {
+    "case_id": "H06",
+    "trip_duration": 2,
+    "interests": [
+      "Culture & History",
+      "Shopping"
+    ],
+    "budget_level": "Medium",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 750,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Culture & History": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H07",
+    "trip_duration": 2,
+    "interests": [
+      "Culture & History",
+      "Shopping"
+    ],
+    "budget_level": "High",
+    "constraints": {
+      "max_km_per_day": 50,
+      "hotel_cap_sar": 1400,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Culture & History": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H08",
+    "trip_duration": 3,
+    "interests": [
+      "Culture & History",
+      "Shopping"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 900,
+      "nights": 2,
+      "minimum_interest_slots": {
+        "Culture & History": 3,
+        "Shopping": 3
+      }
+    }
+  },
+  {
+    "case_id": "H09",
+    "trip_duration": 1,
+    "interests": [
+      "Nature & Outdoors",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 25,
+      "hotel_cap_sar": 350,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Nature & Outdoors": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H10",
+    "trip_duration": 2,
+    "interests": [
+      "Nature & Outdoors",
+      "Entertainment"
+    ],
+    "budget_level": "Medium",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 750,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Nature & Outdoors": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H11",
+    "trip_duration": 2,
+    "interests": [
+      "Nature & Outdoors",
+      "Entertainment"
+    ],
+    "budget_level": "High",
+    "constraints": {
+      "max_km_per_day": 50,
+      "hotel_cap_sar": 1400,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Nature & Outdoors": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H12",
+    "trip_duration": 3,
+    "interests": [
+      "Nature & Outdoors",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 900,
+      "nights": 2,
+      "minimum_interest_slots": {
+        "Nature & Outdoors": 3,
+        "Entertainment": 3
+      }
+    }
+  },
+  {
+    "case_id": "H13",
+    "trip_duration": 1,
+    "interests": [
+      "Religious",
+      "Shopping"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 25,
+      "hotel_cap_sar": 350,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Religious": 1,
+        "Shopping": 1
+      }
+    }
+  },
+  {
+    "case_id": "H14",
+    "trip_duration": 2,
+    "interests": [
+      "Religious",
+      "Shopping"
+    ],
+    "budget_level": "Medium",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 750,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Religious": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H15",
+    "trip_duration": 2,
+    "interests": [
+      "Religious",
+      "Shopping"
+    ],
+    "budget_level": "High",
+    "constraints": {
+      "max_km_per_day": 50,
+      "hotel_cap_sar": 1400,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Religious": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H16",
+    "trip_duration": 3,
+    "interests": [
+      "Religious",
+      "Shopping"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 900,
+      "nights": 2,
+      "minimum_interest_slots": {
+        "Religious": 3,
+        "Shopping": 3
+      }
+    }
+  },
+  {
+    "case_id": "H17",
+    "trip_duration": 1,
+    "interests": [
+      "Landmarks & Sightseeing",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 25,
+      "hotel_cap_sar": 350,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Landmarks & Sightseeing": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H18",
+    "trip_duration": 2,
+    "interests": [
+      "Landmarks & Sightseeing",
+      "Entertainment"
+    ],
+    "budget_level": "Medium",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 750,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Landmarks & Sightseeing": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H19",
+    "trip_duration": 2,
+    "interests": [
+      "Landmarks & Sightseeing",
+      "Entertainment"
+    ],
+    "budget_level": "High",
+    "constraints": {
+      "max_km_per_day": 50,
+      "hotel_cap_sar": 1400,
+      "nights": 1,
+      "minimum_interest_slots": {
+        "Landmarks & Sightseeing": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H20",
+    "trip_duration": 3,
+    "interests": [
+      "Landmarks & Sightseeing",
+      "Entertainment"
+    ],
+    "budget_level": "Low",
+    "constraints": {
+      "max_km_per_day": 40,
+      "hotel_cap_sar": 900,
+      "nights": 2,
+      "minimum_interest_slots": {
+        "Landmarks & Sightseeing": 3,
+        "Entertainment": 3
+      }
+    }
+  }
+]

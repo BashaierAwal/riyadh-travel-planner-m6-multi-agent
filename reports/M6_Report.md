@@ -1,3 +1,7 @@
+# Earlier M6 comparison
+
+This report describes the previous experiment. The [review revision](../revision/PROTOCOL.md) introduces harder requests and bounded repairs. Its new formal results are separate and remain pending; the earlier numbers below must not be presented as results of the revised workflow.
+
 # M6: Coordinated Riyadh Travel Planner
 
 **Current status:** the formal-v3 comparison completed on 9 November 2026: 120 live records, 60 per condition, 484 HTTP requests. Earlier incomplete attempts remain separate. Saved evidence passed the independent arithmetic/integrity verifier in Colab and locally.

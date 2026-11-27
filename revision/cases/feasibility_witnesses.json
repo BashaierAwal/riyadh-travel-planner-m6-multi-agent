@@ -1,0 +1,1022 @@
+[
+  {
+    "case_id": "H01",
+    "witness": {
+      "hotel_id": "HOT_00016",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01033",
+            "ACT_00192"
+          ],
+          "restaurants": [
+            "RES_05670",
+            "RES_08652"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 1.5184535656956353
+        }
+      ],
+      "hotel_cost_sar": 266.25,
+      "interest_slots": {
+        "Shopping": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H02",
+    "witness": {
+      "hotel_id": "HOT_00001",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00430",
+            "ACT_00078"
+          ],
+          "restaurants": [
+            "RES_07124",
+            "RES_08317"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00440",
+            "ACT_00041"
+          ],
+          "restaurants": [
+            "RES_06497",
+            "RES_00496"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 4.15474738465009
+        },
+        {
+          "day": 2,
+          "km": 4.990545573858018
+        }
+      ],
+      "hotel_cost_sar": 675.0,
+      "interest_slots": {
+        "Shopping": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H03",
+    "witness": {
+      "hotel_id": "HOT_00023",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00569",
+            "ACT_00041"
+          ],
+          "restaurants": [
+            "RES_10760",
+            "RES_08489"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01078",
+            "ACT_00134"
+          ],
+          "restaurants": [
+            "RES_09982",
+            "RES_09982"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 2.8858308968552864
+        },
+        {
+          "day": 2,
+          "km": 2.9173473214532266
+        }
+      ],
+      "hotel_cost_sar": 1087.5,
+      "interest_slots": {
+        "Shopping": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H04",
+    "witness": {
+      "hotel_id": "HOT_00015",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01031",
+            "ACT_00134"
+          ],
+          "restaurants": [
+            "RES_00815",
+            "RES_02493"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00296",
+            "ACT_00106"
+          ],
+          "restaurants": [
+            "RES_11065",
+            "RES_14118"
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            "ACT_00594",
+            "ACT_00119"
+          ],
+          "restaurants": [
+            "RES_08541",
+            "RES_09884"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 0.47546229101696735
+        },
+        {
+          "day": 2,
+          "km": 1.8955415228258223
+        },
+        {
+          "day": 3,
+          "km": 3.1985905259512504
+        }
+      ],
+      "hotel_cost_sar": 802.5,
+      "interest_slots": {
+        "Shopping": 3,
+        "Entertainment": 3
+      }
+    }
+  },
+  {
+    "case_id": "H05",
+    "witness": {
+      "hotel_id": "HOT_00016",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01116",
+            "ACT_01033"
+          ],
+          "restaurants": [
+            "RES_05670",
+            "RES_02251"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 2.116554484780526
+        }
+      ],
+      "hotel_cost_sar": 266.25,
+      "interest_slots": {
+        "Culture & History": 1,
+        "Shopping": 1
+      }
+    }
+  },
+  {
+    "case_id": "H06",
+    "witness": {
+      "hotel_id": "HOT_00001",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01111",
+            "ACT_00430"
+          ],
+          "restaurants": [
+            "RES_13955",
+            "RES_18618"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01107",
+            "ACT_00393"
+          ],
+          "restaurants": [
+            "RES_11048",
+            "RES_03418"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 8.448510973166085
+        },
+        {
+          "day": 2,
+          "km": 9.044811578154869
+        }
+      ],
+      "hotel_cost_sar": 675.0,
+      "interest_slots": {
+        "Culture & History": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H07",
+    "witness": {
+      "hotel_id": "HOT_00023",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01112",
+            "ACT_00838"
+          ],
+          "restaurants": [
+            "RES_08098",
+            "RES_06500"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01111",
+            "ACT_00272"
+          ],
+          "restaurants": [
+            "RES_02451",
+            "RES_02760"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 11.854222626284331
+        },
+        {
+          "day": 2,
+          "km": 13.219942330788626
+        }
+      ],
+      "hotel_cost_sar": 1087.5,
+      "interest_slots": {
+        "Culture & History": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H08",
+    "witness": {
+      "hotel_id": "HOT_00015",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01112",
+            "ACT_01031"
+          ],
+          "restaurants": [
+            "RES_00815",
+            "RES_16939"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01113",
+            "ACT_00296"
+          ],
+          "restaurants": [
+            "RES_11065",
+            "RES_11065"
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            "ACT_01111",
+            "ACT_00659"
+          ],
+          "restaurants": [
+            "RES_04920",
+            "RES_04019"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 12.941665789418156
+        },
+        {
+          "day": 2,
+          "km": 15.895758718665272
+        },
+        {
+          "day": 3,
+          "km": 16.130228803934536
+        }
+      ],
+      "hotel_cost_sar": 802.5,
+      "interest_slots": {
+        "Culture & History": 3,
+        "Shopping": 3
+      }
+    }
+  },
+  {
+    "case_id": "H09",
+    "witness": {
+      "hotel_id": "HOT_00016",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00142",
+            "ACT_00159"
+          ],
+          "restaurants": [
+            "RES_07572",
+            "RES_06852"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 2.7852156179201613
+        }
+      ],
+      "hotel_cost_sar": 266.25,
+      "interest_slots": {
+        "Nature & Outdoors": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H10",
+    "witness": {
+      "hotel_id": "HOT_00001",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00142",
+            "ACT_00078"
+          ],
+          "restaurants": [
+            "RES_08258",
+            "RES_08317"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01123",
+            "ACT_00041"
+          ],
+          "restaurants": [
+            "RES_18401",
+            "RES_00496"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 9.793292251627724
+        },
+        {
+          "day": 2,
+          "km": 13.17589778960956
+        }
+      ],
+      "hotel_cost_sar": 675.0,
+      "interest_slots": {
+        "Nature & Outdoors": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H11",
+    "witness": {
+      "hotel_id": "HOT_00023",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01123",
+            "ACT_00041"
+          ],
+          "restaurants": [
+            "RES_11589",
+            "RES_08489"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00839",
+            "ACT_00064"
+          ],
+          "restaurants": [
+            "RES_07693",
+            "RES_00416"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 9.511874605154228
+        },
+        {
+          "day": 2,
+          "km": 13.335559671613712
+        }
+      ],
+      "hotel_cost_sar": 1087.5,
+      "interest_slots": {
+        "Nature & Outdoors": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H12",
+    "witness": {
+      "hotel_id": "HOT_00015",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01123",
+            "ACT_00134"
+          ],
+          "restaurants": [
+            "RES_02493",
+            "RES_02493"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00839",
+            "ACT_00106"
+          ],
+          "restaurants": [
+            "RES_04019",
+            "RES_14118"
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            "ACT_00142",
+            "ACT_00119"
+          ],
+          "restaurants": [
+            "RES_04038",
+            "RES_09884"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 10.066297709877036
+        },
+        {
+          "day": 2,
+          "km": 14.130944691570607
+        },
+        {
+          "day": 3,
+          "km": 18.18575148472938
+        }
+      ],
+      "hotel_cost_sar": 802.5,
+      "interest_slots": {
+        "Nature & Outdoors": 3,
+        "Entertainment": 3
+      }
+    }
+  },
+  {
+    "case_id": "H13",
+    "witness": {
+      "hotel_id": "HOT_00016",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01122",
+            "ACT_00587"
+          ],
+          "restaurants": [
+            "RES_02643",
+            "RES_15003"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 3.3029892822066977
+        }
+      ],
+      "hotel_cost_sar": 266.25,
+      "interest_slots": {
+        "Religious": 1,
+        "Shopping": 1
+      }
+    }
+  },
+  {
+    "case_id": "H14",
+    "witness": {
+      "hotel_id": "HOT_00001",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00962",
+            "ACT_00440"
+          ],
+          "restaurants": [
+            "RES_18401",
+            "RES_11547"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01122",
+            "ACT_00430"
+          ],
+          "restaurants": [
+            "RES_13955",
+            "RES_18618"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 7.066084919285827
+        },
+        {
+          "day": 2,
+          "km": 11.824671262457137
+        }
+      ],
+      "hotel_cost_sar": 675.0,
+      "interest_slots": {
+        "Religious": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H15",
+    "witness": {
+      "hotel_id": "HOT_00023",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00962",
+            "ACT_00569"
+          ],
+          "restaurants": [
+            "RES_10760",
+            "RES_04158"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01122",
+            "ACT_00838"
+          ],
+          "restaurants": [
+            "RES_11551",
+            "RES_06500"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 5.566102329366805
+        },
+        {
+          "day": 2,
+          "km": 16.569399463509708
+        }
+      ],
+      "hotel_cost_sar": 1087.5,
+      "interest_slots": {
+        "Religious": 2,
+        "Shopping": 2
+      }
+    }
+  },
+  {
+    "case_id": "H16",
+    "witness": {
+      "hotel_id": "HOT_00015",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_00962",
+            "ACT_01031"
+          ],
+          "restaurants": [
+            "RES_09884",
+            "RES_16939"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_00968",
+            "ACT_00296"
+          ],
+          "restaurants": [
+            "RES_11065",
+            "RES_11065"
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            "ACT_00411",
+            "ACT_00462"
+          ],
+          "restaurants": [
+            "RES_11065",
+            "RES_11065"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 6.705125780341753
+        },
+        {
+          "day": 2,
+          "km": 15.003172349548452
+        },
+        {
+          "day": 3,
+          "km": 15.062950291112118
+        }
+      ],
+      "hotel_cost_sar": 802.5,
+      "interest_slots": {
+        "Religious": 3,
+        "Shopping": 3
+      }
+    }
+  },
+  {
+    "case_id": "H17",
+    "witness": {
+      "hotel_id": "HOT_00016",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01109",
+            "ACT_00159"
+          ],
+          "restaurants": [
+            "RES_07572",
+            "RES_06852"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 5.430423040524286
+        }
+      ],
+      "hotel_cost_sar": 266.25,
+      "interest_slots": {
+        "Landmarks & Sightseeing": 1,
+        "Entertainment": 1
+      }
+    }
+  },
+  {
+    "case_id": "H18",
+    "witness": {
+      "hotel_id": "HOT_00001",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01118",
+            "ACT_00064"
+          ],
+          "restaurants": [
+            "RES_07052",
+            "RES_18334"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01109",
+            "ACT_00078"
+          ],
+          "restaurants": [
+            "RES_08258",
+            "RES_08317"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 5.229859932991041
+        },
+        {
+          "day": 2,
+          "km": 9.77637795814338
+        }
+      ],
+      "hotel_cost_sar": 675.0,
+      "interest_slots": {
+        "Landmarks & Sightseeing": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H19",
+    "witness": {
+      "hotel_id": "HOT_00023",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01118",
+            "ACT_00064"
+          ],
+          "restaurants": [
+            "RES_10800",
+            "RES_00416"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01109",
+            "ACT_00041"
+          ],
+          "restaurants": [
+            "RES_02578",
+            "RES_08489"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 4.237783456999872
+        },
+        {
+          "day": 2,
+          "km": 14.411622634344116
+        }
+      ],
+      "hotel_cost_sar": 1087.5,
+      "interest_slots": {
+        "Landmarks & Sightseeing": 2,
+        "Entertainment": 2
+      }
+    }
+  },
+  {
+    "case_id": "H20",
+    "witness": {
+      "hotel_id": "HOT_00015",
+      "days": [
+        {
+          "day": 1,
+          "activities": [
+            "ACT_01118",
+            "ACT_00134"
+          ],
+          "restaurants": [
+            "RES_00815",
+            "RES_02493"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "ACT_01108",
+            "ACT_00106"
+          ],
+          "restaurants": [
+            "RES_05585",
+            "RES_14118"
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            "ACT_01109",
+            "ACT_00119"
+          ],
+          "restaurants": [
+            "RES_04038",
+            "RES_09884"
+          ]
+        }
+      ]
+    },
+    "check": {
+      "violations": [],
+      "violation_count": 0,
+      "passed": true,
+      "checkable": true,
+      "routes": [
+        {
+          "day": 1,
+          "km": 5.403242051258444
+        },
+        {
+          "day": 2,
+          "km": 14.533712771868025
+        },
+        {
+          "day": 3,
+          "km": 18.19786693341072
+        }
+      ],
+      "hotel_cost_sar": 802.5,
+      "interest_slots": {
+        "Landmarks & Sightseeing": 3,
+        "Entertainment": 3
+      }
+    }
+  }
+]

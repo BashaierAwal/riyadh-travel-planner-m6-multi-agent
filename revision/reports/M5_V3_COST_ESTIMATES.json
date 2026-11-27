@@ -1,0 +1,2237 @@
+{
+  "scope": "Historical V3 usage at standard uncached list prices checked on 27 November 2026; not actual billing",
+  "records": {
+    "G14_seed11": {
+      "estimated_cost_usd": 0.0017366999999999999,
+      "observed_usage_subtotal_usd": 0.0017366999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2090,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2422,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001457
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G18_seed22": {
+      "estimated_cost_usd": 0.0015172,
+      "observed_usage_subtotal_usd": 0.0015172,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 454,
+          "candidate_tokens": 78,
+          "thinking_tokens": 0,
+          "total_tokens": 532,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0003312
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1820,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 2076,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001186
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G10_seed33": {
+      "estimated_cost_usd": 0.0018978999999999997,
+      "observed_usage_subtotal_usd": 0.0018978999999999997,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1994,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2402,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0016181999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G10_seed22": {
+      "estimated_cost_usd": 0.0018563999999999998,
+      "observed_usage_subtotal_usd": 0.0018563999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 72,
+          "thinking_tokens": 0,
+          "total_tokens": 521,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0003147
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1739,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2147,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015416999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G13_seed33": {
+      "estimated_cost_usd": 0.0017486000000000001,
+      "observed_usage_subtotal_usd": 0.0017486000000000001,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2763,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 3019,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0014689000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G20_seed33": {
+      "estimated_cost_usd": 0.0021140000000000004,
+      "observed_usage_subtotal_usd": 0.0021140000000000004,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2678,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 3086,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0018234000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G11_seed22": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0010875,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 3,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 504,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1826,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1930,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0008077999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G19_seed33": {
+      "estimated_cost_usd": 0.0017596,
+      "observed_usage_subtotal_usd": 0.0017596,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2130,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2462,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001469
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G12_seed11": {
+      "estimated_cost_usd": 0.0013833,
+      "observed_usage_subtotal_usd": 0.0013833,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2710,
+          "candidate_tokens": 114,
+          "thinking_tokens": 0,
+          "total_tokens": 2824,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001098
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G17_seed11": {
+      "estimated_cost_usd": 0.0013985,
+      "observed_usage_subtotal_usd": 0.0013985,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2743,
+          "candidate_tokens": 114,
+          "thinking_tokens": 0,
+          "total_tokens": 2857,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0011079
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G18_seed11": {
+      "estimated_cost_usd": 0.0017594,
+      "observed_usage_subtotal_usd": 0.0017594,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 454,
+          "candidate_tokens": 67,
+          "thinking_tokens": 0,
+          "total_tokens": 521,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0003037
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2719,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 2975,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0014556999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G05_seed33": {
+      "estimated_cost_usd": 0.0017958,
+      "observed_usage_subtotal_usd": 0.0017958,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 57,
+          "thinking_tokens": 0,
+          "total_tokens": 501,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002757
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1667,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2075,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015201
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G06_seed33": {
+      "estimated_cost_usd": 0.0009537,
+      "observed_usage_subtotal_usd": 0.0009537,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1435,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1539,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0006905
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G02_seed22": {
+      "estimated_cost_usd": 0.0012764999999999999,
+      "observed_usage_subtotal_usd": 0.0012764999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 66,
+          "thinking_tokens": 0,
+          "total_tokens": 510,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002982
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1761,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 1941,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0009782999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G20_seed22": {
+      "estimated_cost_usd": 0.0021140000000000004,
+      "observed_usage_subtotal_usd": 0.0021140000000000004,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2678,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 3086,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0018234000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G16_seed22": {
+      "estimated_cost_usd": 0.0013591,
+      "observed_usage_subtotal_usd": 0.0013591,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2695,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 2799,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010685
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G07_seed22": {
+      "estimated_cost_usd": 0.0011586,
+      "observed_usage_subtotal_usd": 0.0011586,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 448,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 504,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002744
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1439,
+          "candidate_tokens": 181,
+          "thinking_tokens": 0,
+          "total_tokens": 1620,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0008842
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G17_seed22": {
+      "estimated_cost_usd": 0.0015635,
+      "observed_usage_subtotal_usd": 0.0015635,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2743,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 2923,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0012729
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G06_seed22": {
+      "estimated_cost_usd": 0.0009074999999999999,
+      "observed_usage_subtotal_usd": 0.0009074999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 64,
+          "thinking_tokens": 0,
+          "total_tokens": 508,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00029319999999999997
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1181,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1285,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0006142999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G16_seed11": {
+      "estimated_cost_usd": 0.0012641,
+      "observed_usage_subtotal_usd": 0.0012641,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2695,
+          "candidate_tokens": 66,
+          "thinking_tokens": 0,
+          "total_tokens": 2761,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0009735
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G02_seed11": {
+      "estimated_cost_usd": 0.0013681000000000001,
+      "observed_usage_subtotal_usd": 0.0013681000000000001,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2733,
+          "candidate_tokens": 114,
+          "thinking_tokens": 0,
+          "total_tokens": 2847,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0011049
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G02_seed33": {
+      "estimated_cost_usd": 0.0015331,
+      "observed_usage_subtotal_usd": 0.0015331,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2733,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 2913,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0012699
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G20_seed11": {
+      "estimated_cost_usd": 0.0021140000000000004,
+      "observed_usage_subtotal_usd": 0.0021140000000000004,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2678,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 3086,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0018234000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G16_seed33": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0013591,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 4,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 503,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 503,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2695,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 2799,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010685
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G05_seed11": {
+      "estimated_cost_usd": 0.0017818,
+      "observed_usage_subtotal_usd": 0.0017818,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1662,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2070,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015186
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G03_seed11": {
+      "estimated_cost_usd": 0.0013924,
+      "observed_usage_subtotal_usd": 0.0013924,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1612,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1868,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0011236
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G03_seed33": {
+      "estimated_cost_usd": 0.0013924,
+      "observed_usage_subtotal_usd": 0.0013924,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1612,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1868,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0011236
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G01_seed33": {
+      "estimated_cost_usd": 0.0013262999999999999,
+      "observed_usage_subtotal_usd": 0.0013262999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2677,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 2781,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010631
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G19_seed11": {
+      "estimated_cost_usd": 0.0017596,
+      "observed_usage_subtotal_usd": 0.0017596,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2130,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2462,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001469
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G19_seed22": {
+      "estimated_cost_usd": 0.0017596,
+      "observed_usage_subtotal_usd": 0.0017596,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2130,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2462,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001469
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G07_seed11": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0005488,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 5,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 429,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 448,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 504,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002744
+        },
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 429,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 448,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 504,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002744
+        },
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 429,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G07_seed33": {
+      "estimated_cost_usd": 0.0011561,
+      "observed_usage_subtotal_usd": 0.0011561,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 448,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 504,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002744
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1439,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 1619,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0008817
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G06_seed11": {
+      "estimated_cost_usd": 0.0009537,
+      "observed_usage_subtotal_usd": 0.0009537,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1435,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1539,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0006905
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G18_seed33": {
+      "estimated_cost_usd": 0.0017518999999999998,
+      "observed_usage_subtotal_usd": 0.0017518999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 454,
+          "candidate_tokens": 64,
+          "thinking_tokens": 0,
+          "total_tokens": 518,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002962
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2719,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 2975,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0014556999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G14_seed33": {
+      "estimated_cost_usd": 0.0017366999999999999,
+      "observed_usage_subtotal_usd": 0.0017366999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2090,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2422,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001457
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G13_seed11": {
+      "estimated_cost_usd": 0.0015136,
+      "observed_usage_subtotal_usd": 0.0015136,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2763,
+          "candidate_tokens": 162,
+          "thinking_tokens": 0,
+          "total_tokens": 2925,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0012339
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G10_seed11": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0018978999999999997,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 3,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 503,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1994,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2402,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0016181999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G12_seed33": {
+      "estimated_cost_usd": 0.0015482999999999998,
+      "observed_usage_subtotal_usd": 0.0015482999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2710,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 2890,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001263
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G09_seed22": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0018844,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 4,
+      "requests_with_estimate": 3,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 447,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 503,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027410000000000005
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 503,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 447,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 503,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027410000000000005
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2704,
+          "candidate_tokens": 210,
+          "thinking_tokens": 0,
+          "total_tokens": 2914,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0013361999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G01_seed22": {
+      "estimated_cost_usd": 0.0013262999999999999,
+      "observed_usage_subtotal_usd": 0.0013262999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2677,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 2781,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010631
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G03_seed22": {
+      "estimated_cost_usd": 0.0013924,
+      "observed_usage_subtotal_usd": 0.0013924,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1612,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1868,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0011236
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G11_seed33": {
+      "estimated_cost_usd": 0.0010875,
+      "observed_usage_subtotal_usd": 0.0010875,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1826,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1930,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0008077999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G04_seed22": {
+      "estimated_cost_usd": 0.0016114999999999999,
+      "observed_usage_subtotal_usd": 0.0016114999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1709,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2041,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0013426999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G12_seed22": {
+      "estimated_cost_usd": 0.0015482999999999998,
+      "observed_usage_subtotal_usd": 0.0015482999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2710,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 2890,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001263
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G11_seed11": {
+      "estimated_cost_usd": 0.0010875,
+      "observed_usage_subtotal_usd": 0.0010875,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1826,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 1930,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0008077999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G15_seed11": {
+      "estimated_cost_usd": 0.0017882000000000002,
+      "observed_usage_subtotal_usd": 0.0017882000000000002,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1593,
+          "candidate_tokens": 410,
+          "thinking_tokens": 0,
+          "total_tokens": 2003,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015029000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G13_seed22": {
+      "estimated_cost_usd": 0.0015136,
+      "observed_usage_subtotal_usd": 0.0015136,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2763,
+          "candidate_tokens": 162,
+          "thinking_tokens": 0,
+          "total_tokens": 2925,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0012339
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G15_seed33": {
+      "estimated_cost_usd": 0.0017882000000000002,
+      "observed_usage_subtotal_usd": 0.0017882000000000002,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1593,
+          "candidate_tokens": 410,
+          "thinking_tokens": 0,
+          "total_tokens": 2003,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015029000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G01_seed11": {
+      "estimated_cost_usd": 0.0013262999999999999,
+      "observed_usage_subtotal_usd": 0.0013262999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2677,
+          "candidate_tokens": 104,
+          "thinking_tokens": 0,
+          "total_tokens": 2781,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010631
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G08_seed33": {
+      "estimated_cost_usd": 0.0013617999999999998,
+      "observed_usage_subtotal_usd": 0.0013617999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 66,
+          "thinking_tokens": 0,
+          "total_tokens": 510,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002982
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1412,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1668,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010635999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G09_seed11": {
+      "estimated_cost_usd": 0.0019152999999999998,
+      "observed_usage_subtotal_usd": 0.0019152999999999998,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 447,
+          "candidate_tokens": 56,
+          "thinking_tokens": 0,
+          "total_tokens": 503,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027410000000000005
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2704,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 3036,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0016411999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G08_seed11": {
+      "estimated_cost_usd": 0.0013226000000000002,
+      "observed_usage_subtotal_usd": 0.0013226000000000002,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1398,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1654,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010594
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G05_seed22": {
+      "estimated_cost_usd": 0.0018915,
+      "observed_usage_subtotal_usd": 0.0018915,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 3,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 66,
+          "thinking_tokens": 0,
+          "total_tokens": 510,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002982
+        },
+        {
+          "request": 4,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1911,
+          "candidate_tokens": 408,
+          "thinking_tokens": 0,
+          "total_tokens": 2319,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015933
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G14_seed22": {
+      "estimated_cost_usd": 0.0017366999999999999,
+      "observed_usage_subtotal_usd": 0.0017366999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 449,
+          "candidate_tokens": 58,
+          "thinking_tokens": 0,
+          "total_tokens": 507,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00027969999999999997
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2090,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2422,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.001457
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G04_seed33": {
+      "estimated_cost_usd": null,
+      "observed_usage_subtotal_usd": 0.0018802999999999997,
+      "complete_usage_and_price_coverage": false,
+      "http_requests": 5,
+      "requests_with_estimate": 3,
+      "details": [
+        {
+          "request": 5,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 6,
+          "model": "gemini-3.5-flash-lite",
+          "status": 429,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 7,
+          "model": "gemini-3.5-flash-lite",
+          "status": 429,
+          "prompt_tokens": null,
+          "candidate_tokens": null,
+          "thinking_tokens": null,
+          "total_tokens": null,
+          "zero_thinking_inferred_from_total": false,
+          "estimated_usd": null
+        },
+        {
+          "request": 8,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 9,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1709,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2041,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0013426999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G08_seed22": {
+      "estimated_cost_usd": 0.0013226000000000002,
+      "observed_usage_subtotal_usd": 0.0013226000000000002,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 444,
+          "candidate_tokens": 52,
+          "thinking_tokens": 0,
+          "total_tokens": 496,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002632
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1398,
+          "candidate_tokens": 256,
+          "thinking_tokens": 0,
+          "total_tokens": 1654,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0010594
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G17_seed33": {
+      "estimated_cost_usd": 0.0015635,
+      "observed_usage_subtotal_usd": 0.0015635,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 452,
+          "candidate_tokens": 62,
+          "thinking_tokens": 0,
+          "total_tokens": 514,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002906
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 2743,
+          "candidate_tokens": 180,
+          "thinking_tokens": 0,
+          "total_tokens": 2923,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0012729
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G09_seed33": {
+      "estimated_cost_usd": 0.0016694,
+      "observed_usage_subtotal_usd": 0.0016694,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 447,
+          "candidate_tokens": 66,
+          "thinking_tokens": 0,
+          "total_tokens": 513,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002991
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1801,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2133,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0013702999999999999
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G04_seed11": {
+      "estimated_cost_usd": 0.0016114999999999999,
+      "observed_usage_subtotal_usd": 0.0016114999999999999,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 446,
+          "candidate_tokens": 54,
+          "thinking_tokens": 0,
+          "total_tokens": 500,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0002688
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1709,
+          "candidate_tokens": 332,
+          "thinking_tokens": 0,
+          "total_tokens": 2041,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0013426999999999998
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    },
+    "G15_seed22": {
+      "estimated_cost_usd": 0.0017882000000000002,
+      "observed_usage_subtotal_usd": 0.0017882000000000002,
+      "complete_usage_and_price_coverage": true,
+      "http_requests": 2,
+      "requests_with_estimate": 2,
+      "details": [
+        {
+          "request": 1,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 451,
+          "candidate_tokens": 60,
+          "thinking_tokens": 0,
+          "total_tokens": 511,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.00028529999999999994
+        },
+        {
+          "request": 2,
+          "model": "gemini-3.5-flash-lite",
+          "status": 200,
+          "prompt_tokens": 1593,
+          "candidate_tokens": 410,
+          "thinking_tokens": 0,
+          "total_tokens": 2003,
+          "zero_thinking_inferred_from_total": true,
+          "estimated_usd": 0.0015029000000000002
+        }
+      ],
+      "actual_cost_usd": null,
+      "basis": "Standard uncached text-token list-price equivalent; not actual billing",
+      "price_checked_date": "2026-11-27",
+      "price_source": "https://aistudio.google.com/docs/pricing"
+    }
+  }
+}
