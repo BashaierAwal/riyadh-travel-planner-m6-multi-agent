@@ -48,3 +48,7 @@ The controller uses batches of up to 24 new records to reduce repeated startup s
 ## Replay results on another computer
 
 Use `python scripts/Verify_Study_Replay.py RUN_FOLDER` for local replay, or append `--allow-partial` for a progress snapshot. [Numerical replay](reports/NUMERIC_REPLAY.md) explains the narrow route-distance tolerance and unchanged exact checks. The original `revision.verify` remains unchanged for exact replay in the generation environment. Additional verifier tests run with `python -m unittest discover -s scripts/tests -v`.
+
+## Deadline execution priority
+
+[Hard-case execution priority](reports/PRIORITY_EXECUTION.md) records the move to the new cases first, after finishing any already-started original case. The priority worker preserves every registered unit. Controller v5 distinguishes the complete hard group from the complete forty-case grid.

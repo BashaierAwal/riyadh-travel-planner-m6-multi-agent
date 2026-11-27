@@ -24,7 +24,7 @@ The shared execution policy uses temperature zero, requested seeds 11, 22 and 33
 
 ## Experimental comparisons
 
-The main grid contains forty requests, three seeds and two systems: 240 records. The primary model is gemini-3.5-flash-lite. Original and additional cases are reported separately. The historical M5 V3 baseline remains available as context, but its sixty runs are not pooled with the revised baseline because the tools and repair policy differ.
+The main grid contains forty requests, three seeds and two systems: 240 records. A dated execution appendix prioritises the twenty hard requests after finishing any started original case, preserving all registered units and their within-case condition order. Group completion and full-grid completion are reported separately. The primary model is gemini-3.5-flash-lite. Original and additional cases are reported separately. The historical M5 V3 baseline remains available as context, but its sixty runs are not pooled with the revised baseline because the tools and repair policy differ.
 
 Two component-removal variants each run the same 120 case and seed combinations. One removes the feasibility specialist while leaving its tools available to the coordinator. The other removes the repair loop while keeping the initial team workflow. Each is compared with the full team from the main grid.
 
