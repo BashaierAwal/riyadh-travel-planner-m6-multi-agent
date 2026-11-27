@@ -71,3 +71,7 @@ Sum observed provider usage, retaining missing values as unknown. Estimate cost 
 ## Selected models
 
 Metadata access was checked on 27 November 2026 for gemini-3.5-flash-lite, gemini-3.1-flash-lite and gemini-3-flash-preview. All three advertised generateContent support. The main comparison uses gemini-3.5-flash-lite; the second-model comparison uses gemini-3.1-flash-lite. The coordinator-only variant uses gemini-3-flash-preview, a Flash-family alternative to the Lite specialist model. Its performance advantage is a question for the experiment, not an assumed result. These models list a free tier, but account quotas and actual billing are not established by a model metadata response. No paid upgrade is part of this work.
+
+## Related design
+
+Choi, Yoon, Chen, Jha and Pfister describe constraint management and repeated plan critique in [ATLAS Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/6c78ae0c1140902bf3a430b1725bcc4e-Abstract-Conference.html), ICLR 2026. Their work motivates giving the feasibility role explicit checking work. This study evaluates a bounded local-data workflow and reports its own results.
