@@ -34,4 +34,8 @@ The [first live development pilot](reports/PILOT_v1.md) completed both systems s
 
 The [final pilot and repeated-seed check](reports/PREFLIGHT_v2.md) passed in Colab and locally. The new formal grid has started; the first request encountered a recorded HTTP 503 service error. That failed record is preserved, and remaining requests resume without replacing it. No full comparative result is claimed.
 
+The separate [M6 review revision](https://github.com/BashaierAwal/riyadh-travel-planner-m6-multi-agent/tree/m6/review-revision) contains the revised implementation and retains the earlier experiment as history.
+
 An execution interruption left the first partial grid incomplete. [Recovery is documented here](RECOVERY.md). The primary complete comparison uses main-v2 with the same frozen code and settings; the earlier records and unfinished journal are preserved separately.
+
+The [27-record checkpoint](reports/PROGRESS_27.md) passed local evidence verification. The revised main grid remains incomplete. The controller continues past recorded internal step-limit failures without retrying or replacing them.
