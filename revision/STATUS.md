@@ -33,3 +33,5 @@ No new formal hard-case results are claimed on this page. Completed live experim
 The [first live development pilot](reports/PILOT_v1.md) completed both systems successfully. Its saved evidence passed verification in Colab and locally. It is separate from the formal tests.
 
 The [final pilot and repeated-seed check](reports/PREFLIGHT_v2.md) passed in Colab and locally. The new formal grid has started; the first request encountered a recorded HTTP 503 service error. That failed record is preserved, and remaining requests resume without replacing it. No full comparative result is claimed.
+
+An execution interruption left the first partial grid incomplete. [Recovery is documented here](RECOVERY.md). The primary complete comparison uses main-v2 with the same frozen code and settings; the earlier records and unfinished journal are preserved separately.

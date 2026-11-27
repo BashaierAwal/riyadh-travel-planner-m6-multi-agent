@@ -75,3 +75,5 @@ Metadata access was checked on 27 November 2026 for gemini-3.5-flash-lite, gemin
 ## Related design
 
 Choi, Yoon, Chen, Jha and Pfister describe constraint management and repeated plan critique in [ATLAS Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/6c78ae0c1140902bf3a430b1725bcc4e-Abstract-Conference.html), ICLR 2026. Their work motivates giving the feasibility role explicit checking work. This study evaluates a bounded local-data workflow and reports its own results.
+
+The repair-round metric counts the outer complete-plan/check/revision cycles managed by the controller. Tool calls made while a model prepares a draft, including check_plan calls, are recorded separately and are bounded by the per-stage and per-record HTTP ceilings. The three-round limit is not a count of a model’s internal reasoning steps.

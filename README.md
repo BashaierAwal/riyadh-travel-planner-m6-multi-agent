@@ -38,3 +38,17 @@ Formal-v1 is incomplete after runtime-storage loss: only 12 raw records are reco
 ## Supplementary itinerary judge
 
 The [supplementary judge evaluation](evaluation/llm_judge/JUDGE_REPORT.md) completed on 25 November 2026: all 114 readable plans were graded (59 baseline, 55 three-agent), with six generation failures reported separately. Mean quality scores were **4.496/5** and **4.532/5**. The small conditional difference does not establish overall superiority. [Grades, reasons and saved evidence](evaluation/llm_judge/) and an offline verifier are included. The original formal-v3 results and evidence remain unchanged.
+
+## Dataset sources and licences
+
+Source pages were checked on 27 November 2026. The approved processed CSVs remain unchanged.
+
+| Source | Owner | Licence shown |
+|---|---|---|
+| [Riyadh Entertainment](https://www.kaggle.com/datasets/meshalalsanari/riyadh-entertainment) | Meshal Alsanari | MIT |
+| [Riyadh Mall](https://www.kaggle.com/datasets/meshalalsanari/riyadh-mall) | Meshal Alsanari | MIT metadata; the description also states non-commercial research use |
+| [Audiala Places](https://github.com/audiala/open-data) | Audiala | CC BY 4.0; Data by Audiala — [audiala.com](https://audiala.com) |
+| [Riyadh Restaurants 20K](https://www.kaggle.com/datasets/fahd09/riyadh-restaurants-20k) | Fahd (fahd09) | Unknown |
+| [Riyadh Hotels](https://www.kaggle.com/datasets/mohammedalsubaie/riyadh-hotels) | Mohammed Alsubaie | Apache 2.0 |
+
+The restaurant licence and the conflicting shopping-source description remain unresolved. See [the full source references and checks](revision/DATA_SOURCES.md). No claim of complete redistribution clearance is made.
