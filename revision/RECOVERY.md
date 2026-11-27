@@ -5,3 +5,5 @@ The first main batch stopped after eleven complete records and one unfinished ba
 The primary comparison uses a fresh complete grid, main-v2, with the same frozen source commit 797621176f2148d804d111437713a7c1c3d899b8, datasets, cases, seeds, models and generation settings. The earlier partial grid is not pooled into it. No hard-case model outcomes had been examined when this recovery was chosen. Failures within the new complete grid remain in its denominators.
 
 The second controller preserves the old folders and reserves the full 60-request allowance for the unfinished prior record when checking its resource cap. That reservation is not a claim that 60 requests were observed or charged. Completed records use their saved actual request counts.
+
+The third controller continues unstarted records after an internal 12-request stage limit. The model-stage failure is kept without a retry; prompts, tool behavior and all study limits stay fixed. Service errors and session request caps still stop execution. This scheduling update does not create a new experimental cohort or replace failed records.

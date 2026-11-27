@@ -31,6 +31,10 @@ For the full study, choose `main`, `ablation`, `second_model`, `strong_coordinat
 
 After both grids are complete, compare a component-removal condition with the full team using `python -m revision.compare MAIN_FOLDER ABLATION_FOLDER without_feasibility` (or `without_repair`). Use the same command with the coordinator-only folder and `strong_coordinator`. The comparison refuses mismatched cases, data, models or shared policies. `python -m revision.cost RUN_FOLDER` exports per-case usage-based list-price estimates separately from actual billing.
 
+## Report execution time
+
+After a complete cohort passes verification, run `python scripts/Report_Study_Timing.py RUN_FOLDER`. It writes elapsed time, measured scheduled pacing and elapsed time excluding pacing to `analysis/TIMING.csv` and `analysis/TIMING.json`, retaining failed records. The last measure includes network, tools and local processing; it is not pure model inference time. The report refuses an incomplete cohort.
+
 ## Current scope
 
 The revised code and offline checks can be inspected before live execution. New experimental results must be backed by saved complete run records. Preparation, fixture checks, earlier M5 results and earlier M6 results must not be described as completed hard-case experiments.
