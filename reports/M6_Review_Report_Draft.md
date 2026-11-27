@@ -2,6 +2,10 @@
 
 The revised study asks whether a team that checks and repairs a complete itinerary can meet competing travel requirements more reliably than a single planner. Both systems use the same approved Riyadh data and the same tools. The formal experiments are in progress; this draft covers the study design and interpretation rules.
 
+## Related work
+
+Choi, Yoon, Chen, Jha and Pfister present [ATLAS: Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/6c78ae0c1140902bf3a430b1725bcc4e-Abstract-Conference.html), ICLR 2026. Their framework uses constraint management and repeated plan critique. This motivates giving the feasibility specialist a full-plan checking role. Our experiment uses fixed local data and its own bounded repair workflow; it does not reproduce their benchmark results.
+
 ## Task and data
 
 Each itinerary contains one hotel, two activities per day and two restaurants per day. Selected places must use existing dataset IDs, and activities must not repeat. The approved data contains 1,125 activities, 19,345 restaurants and 55 hotels. The CSV values and original twenty requests remain unchanged.
@@ -42,10 +46,38 @@ Execution time includes failed runs. Total elapsed time, measured scheduled paci
 
 ## Failure interpretation and limits
 
-Failure labels cover missing output, unknown places, repeated activities, budget, distance, preferences, structure, missing information and missing search grounding. The report retains all applicable labels and gives saved examples. Component-removal results are needed before attributing an observed failure to a particular role or repair mechanism.
+Failure labels cover missing output, unknown places, repeated activities, budget, distance, preferences, structure, missing information and missing search grounding. The report retains all applicable labels and gives saved examples. Each failed attempt also receives one primary label, using the table order below when several apply.
+
+| Primary label | Definition |
+|---|---|
+| No output | No readable final itinerary was returned. |
+| Unknown place | A selected ID is absent from the approved dataset. |
+| Repeated activity | An activity ID occurs more than once in the trip. |
+| Budget | A restaurant or hotel category fails its budget rule, or total hotel cost exceeds the cap. |
+| Distance | A measured daily route exceeds its stated kilometre limit. |
+| Preference | The required number of distinct activities for an interest is not met. |
+| Structure | The itinerary has a wrong number of days or slots, or another required structural field is invalid. |
+| Missing information | A rule cannot be measured from the recorded coordinates or price. |
+| Missing search grounding | A selected ID was not returned by a successful dataset search. |
+
+Service errors and registered request-limit failures are counted separately within these outcomes. They remain in the denominator, but do not by themselves establish that one planning design is weaker.  Component-removal results are needed before attributing an observed failure to a particular role or repair mechanism.
 
 The original data limits preference matching in G05, G08 and G15 when activities must be unique. Their maximum activity preference match is 90%, 66.67% and 80%, respectively. These ceilings do not make every structurally valid plan impossible: using another activity can fill a slot while lowering preference match. The requests remain unchanged, and such tradeoffs must be distinguished from model or coordination failures.
 
 The study evaluates a fixed local dataset and a small set of designed requests. The added cases combine five interest pairs with four budget and distance scenarios. Shared templates limit diversity, so case-level intervals should not be read as uncertainty for every kind of travel request. Straight-line routes, historical median prices and a checked feasible example do not establish real-world booking feasibility. Model versions, service conditions and requested seed behavior can also affect reproducibility. Across-computer replay allows a 1e-12 km tolerance only for calculated route numbers; hashes, scores and rule decisions remain exact. The twenty deterministic feasible examples produced identical rule decisions in Colab and on the Mac. One same-seed case was repeated twice and produced the same readable plan; this does not establish general determinism.
 
 Dataset sources and licences are documented in the revision. The restaurant source lists its licence as unknown, and the shopping source has conflicting licence information. These unresolved terms must remain visible. Credentials are kept outside source files and saved model journals.
+
+## Dataset references
+
+The source pages below were checked on 27 November 2026. They identify the upstream sources used for the frozen processed tables, rather than a claim that a current download matches the earlier snapshot.
+
+| Dataset and owner | Licence shown |
+|---|---|
+| Meshal Alsanari, [Riyadh Entertainment](https://www.kaggle.com/datasets/meshalalsanari/riyadh-entertainment), Kaggle | MIT |
+| Meshal Alsanari, [Riyadh Mall](https://www.kaggle.com/datasets/meshalalsanari/riyadh-mall), Kaggle | MIT metadata; its description also states non-commercial research use |
+| Audiala, [Audiala Places](https://github.com/audiala/open-data), GitHub | CC BY 4.0. Data by Audiala — [audiala.com](https://audiala.com) |
+| Fahd (fahd09), [Riyadh Restaurants 20K](https://www.kaggle.com/datasets/fahd09/riyadh-restaurants-20k), Kaggle | Unknown |
+| Mohammed Alsubaie, [Riyadh Hotels](https://www.kaggle.com/datasets/mohammedalsubaie/riyadh-hotels), Kaggle | Apache 2.0 |
+
+The unknown restaurant licence and conflicting shopping-source terms remain unresolved. The [source record](../revision/DATA_SOURCES.md) documents these limits. Public availability alone does not grant permission to redistribute a dataset.
