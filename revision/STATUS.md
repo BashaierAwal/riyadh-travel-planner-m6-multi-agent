@@ -26,6 +26,8 @@ Twenty-three new offline tests passed. They include an independent route-distanc
 
 The original evidence verifier passed for all 60 M5 baseline records. The original test suite ran with 45 passing tests and eight optional SDK tests skipped because that SDK is not installed in this local environment. No claim is made that those eight tests ran during this revision.
 
+Two additional numeric-replay tests passed in both working copies. A [cross-platform check](reports/NUMERIC_REPLAY.md) confirmed identical rule decisions for all twenty feasible examples despite tiny route-number rounding differences. Raw hashes and all non-route checks remain exact.
+
 ## Experiments
 
 The [current progress record](reports/PROGRESS.md) documents the verified 54-record main-grid snapshot, the daily provider-quota stop and the independent second-model continuation. The revised grids remain incomplete; no new hard-case comparative result is claimed.

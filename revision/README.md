@@ -44,3 +44,7 @@ The revised code and offline checks can be inspected before live execution. New 
 `scripts/Run_Review_Study_v4.py` can select one already-registered grid with `--stage main`, `ablation`, `second_model` or `strong_coordinator`. Each grid retains its original cases, requested seeds, model selection, prompts, tools and per-record limits. Selecting an independent model grid while another model waits for a quota reset changes execution order only. It does not replace failed records or select a model from observed hard-case performance.
 
 The controller uses batches of up to 24 new records to reduce repeated startup scans, while keeping the child request cap and the cumulative resource cap. Model-stage and per-record limit failures stay in the results; service errors and session resource limits stop the controller. Separate policy receipts record the selected stage.
+
+## Replay results on another computer
+
+Use `python scripts/Verify_Study_Replay.py RUN_FOLDER` for local replay, or append `--allow-partial` for a progress snapshot. [Numerical replay](reports/NUMERIC_REPLAY.md) explains the narrow route-distance tolerance and unchanged exact checks. The original `revision.verify` remains unchanged for exact replay in the generation environment. Additional verifier tests run with `python -m unittest discover -s scripts/tests -v`.

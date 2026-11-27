@@ -10,7 +10,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT))
 
 from revision.statistics import summarize
-from revision.verify import audit
+from scripts.Verify_Study_Replay import audit
 
 
 def timing_rows(records):
@@ -36,7 +36,9 @@ def main():
         raise ValueError("Timing comparisons require a complete registered cohort")
     rows = timing_rows(result["records"])
     identity = result["identity"]
-    report = {"note": "All registered runs, including failures. Excluding pacing still includes network, tool and local processing time; it is not pure model inference time.",
+    report = {"evidence_mode": result["evidence_mode"],
+              "numeric_replay": result["numeric_replay"],
+              "note": "All registered runs, including failures. Excluding pacing still includes network, tool and local processing time; it is not pure model inference time. Fixture records describe software tests only.",
               "identity_sha256": result["records"][0]["identity_sha256"], "subsets": {}}
     for subset, prefix in (("original", "G"), ("hard", "H"), ("combined", "")):
         selected = [row for row in rows if row["case_id"].startswith(prefix)]

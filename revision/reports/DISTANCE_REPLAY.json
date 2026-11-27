@@ -1,0 +1,11 @@
+{
+  "scope": "Deterministic cross-platform checks, not model-performance results",
+  "cases": 20,
+  "exact_checks": 8,
+  "numerically_equivalent_checks": 20,
+  "route_tolerance_km": 1e-12,
+  "maximum_difference_km": 3.552713678800501e-15,
+  "colab_evidence_sha256": "3eb056f971060d4e763368acd6368bf8b37c431bd32c5e392cc014f78d9f5528",
+  "reference_file_sha256": "892339f8f50978f80febf64cdc89fab69a302cf93943397b95d5b4cc2a728cef",
+  "all_rule_decisions_unchanged": true
+}

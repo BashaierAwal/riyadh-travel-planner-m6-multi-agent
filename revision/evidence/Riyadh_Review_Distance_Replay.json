@@ -1,0 +1,488 @@
+{
+  "scope": "Deterministic approved-data examples only; no generation requests",
+  "source_commit": "797621176f2148d804d111437713a7c1c3d899b8",
+  "reference_file_sha256": "892339f8f50978f80febf64cdc89fab69a302cf93943397b95d5b4cc2a728cef",
+  "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "checks": [
+    {
+      "case_id": "H01",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 1.5184535656956355
+          }
+        ],
+        "hotel_cost_sar": 266.25,
+        "interest_slots": {
+          "Shopping": 1,
+          "Entertainment": 1
+        }
+      }
+    },
+    {
+      "case_id": "H02",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 4.15474738465009
+          },
+          {
+            "day": 2,
+            "km": 4.990545573858018
+          }
+        ],
+        "hotel_cost_sar": 675.0,
+        "interest_slots": {
+          "Shopping": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H03",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 2.885830896855286
+          },
+          {
+            "day": 2,
+            "km": 2.9173473214532266
+          }
+        ],
+        "hotel_cost_sar": 1087.5,
+        "interest_slots": {
+          "Shopping": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H04",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 0.4754622910169674
+          },
+          {
+            "day": 2,
+            "km": 1.8955415228258226
+          },
+          {
+            "day": 3,
+            "km": 3.1985905259512504
+          }
+        ],
+        "hotel_cost_sar": 802.5,
+        "interest_slots": {
+          "Shopping": 3,
+          "Entertainment": 3
+        }
+      }
+    },
+    {
+      "case_id": "H05",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 2.116554484780526
+          }
+        ],
+        "hotel_cost_sar": 266.25,
+        "interest_slots": {
+          "Culture & History": 1,
+          "Shopping": 1
+        }
+      }
+    },
+    {
+      "case_id": "H06",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 8.448510973166085
+          },
+          {
+            "day": 2,
+            "km": 9.044811578154869
+          }
+        ],
+        "hotel_cost_sar": 675.0,
+        "interest_slots": {
+          "Culture & History": 2,
+          "Shopping": 2
+        }
+      }
+    },
+    {
+      "case_id": "H07",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 11.854222626284331
+          },
+          {
+            "day": 2,
+            "km": 13.219942330788626
+          }
+        ],
+        "hotel_cost_sar": 1087.5,
+        "interest_slots": {
+          "Culture & History": 2,
+          "Shopping": 2
+        }
+      }
+    },
+    {
+      "case_id": "H08",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 12.941665789418156
+          },
+          {
+            "day": 2,
+            "km": 15.895758718665272
+          },
+          {
+            "day": 3,
+            "km": 16.130228803934532
+          }
+        ],
+        "hotel_cost_sar": 802.5,
+        "interest_slots": {
+          "Culture & History": 3,
+          "Shopping": 3
+        }
+      }
+    },
+    {
+      "case_id": "H09",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 2.7852156179201617
+          }
+        ],
+        "hotel_cost_sar": 266.25,
+        "interest_slots": {
+          "Nature & Outdoors": 1,
+          "Entertainment": 1
+        }
+      }
+    },
+    {
+      "case_id": "H10",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 9.793292251627724
+          },
+          {
+            "day": 2,
+            "km": 13.175897789609559
+          }
+        ],
+        "hotel_cost_sar": 675.0,
+        "interest_slots": {
+          "Nature & Outdoors": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H11",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 9.511874605154228
+          },
+          {
+            "day": 2,
+            "km": 13.335559671613712
+          }
+        ],
+        "hotel_cost_sar": 1087.5,
+        "interest_slots": {
+          "Nature & Outdoors": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H12",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 10.066297709877034
+          },
+          {
+            "day": 2,
+            "km": 14.130944691570607
+          },
+          {
+            "day": 3,
+            "km": 18.18575148472938
+          }
+        ],
+        "hotel_cost_sar": 802.5,
+        "interest_slots": {
+          "Nature & Outdoors": 3,
+          "Entertainment": 3
+        }
+      }
+    },
+    {
+      "case_id": "H13",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 3.3029892822066977
+          }
+        ],
+        "hotel_cost_sar": 266.25,
+        "interest_slots": {
+          "Religious": 1,
+          "Shopping": 1
+        }
+      }
+    },
+    {
+      "case_id": "H14",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 7.066084919285827
+          },
+          {
+            "day": 2,
+            "km": 11.824671262457136
+          }
+        ],
+        "hotel_cost_sar": 675.0,
+        "interest_slots": {
+          "Religious": 2,
+          "Shopping": 2
+        }
+      }
+    },
+    {
+      "case_id": "H15",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 5.566102329366804
+          },
+          {
+            "day": 2,
+            "km": 16.569399463509704
+          }
+        ],
+        "hotel_cost_sar": 1087.5,
+        "interest_slots": {
+          "Religious": 2,
+          "Shopping": 2
+        }
+      }
+    },
+    {
+      "case_id": "H16",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 6.705125780341753
+          },
+          {
+            "day": 2,
+            "km": 15.003172349548453
+          },
+          {
+            "day": 3,
+            "km": 15.06295029111212
+          }
+        ],
+        "hotel_cost_sar": 802.5,
+        "interest_slots": {
+          "Religious": 3,
+          "Shopping": 3
+        }
+      }
+    },
+    {
+      "case_id": "H17",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 5.430423040524286
+          }
+        ],
+        "hotel_cost_sar": 266.25,
+        "interest_slots": {
+          "Landmarks & Sightseeing": 1,
+          "Entertainment": 1
+        }
+      }
+    },
+    {
+      "case_id": "H18",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 5.229859932991041
+          },
+          {
+            "day": 2,
+            "km": 9.77637795814338
+          }
+        ],
+        "hotel_cost_sar": 675.0,
+        "interest_slots": {
+          "Landmarks & Sightseeing": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H19",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 4.237783456999873
+          },
+          {
+            "day": 2,
+            "km": 14.411622634344116
+          }
+        ],
+        "hotel_cost_sar": 1087.5,
+        "interest_slots": {
+          "Landmarks & Sightseeing": 2,
+          "Entertainment": 2
+        }
+      }
+    },
+    {
+      "case_id": "H20",
+      "check": {
+        "violations": [],
+        "violation_count": 0,
+        "passed": true,
+        "checkable": true,
+        "routes": [
+          {
+            "day": 1,
+            "km": 5.403242051258444
+          },
+          {
+            "day": 2,
+            "km": 14.533712771868027
+          },
+          {
+            "day": 3,
+            "km": 18.19786693341072
+          }
+        ],
+        "hotel_cost_sar": 802.5,
+        "interest_slots": {
+          "Landmarks & Sightseeing": 3,
+          "Entertainment": 3
+        }
+      }
+    }
+  ]
+}
