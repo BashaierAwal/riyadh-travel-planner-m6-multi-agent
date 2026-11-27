@@ -1,0 +1,9 @@
+{
+  "scope": "Partial diagnostic audit; no comparative model-performance claim",
+  "archive_sha256": "52e731b204dee9f640e0ba7df4f81b765e21f0f4b2152b7789052e307c4b942a",
+  "snapshot_records": 54,
+  "team_records": 27,
+  "feasibility_stages_started": 26,
+  "feasibility_stages_with_check_plan_tool_call": 26,
+  "note": "The provider-quota failure occurred before the feasibility stage. Checker-call counts do not mean that a plan passed."
+}

@@ -14,8 +14,8 @@ Updated 27 November 2026. This page separates implemented changes from experimen
 | Report variation and pass³ | Original baseline rechecked; pass³ is 80%. Revised analysis code is prepared. |
 | Paired tests and 95% intervals | Implemented at case level. New comparative results require complete live cohorts. |
 | Verify repeated-seed behavior | G01 ran twice with seed 11 and returned the same readable plan. This is one checked pair, not a general determinism claim. |
-| Remove components and try another model | Experiment schedules prepared; live results pending. |
-| Test a higher-capacity coordinator | Separate condition prepared; model availability and access must be checked. |
+| Remove components and try another model | Second-model grid started; component-removal grids pending. |
+| Test a higher-capacity coordinator | Different-coordinator condition registered; live results pending. |
 | Estimate cost per case | Dated prices and usage-based calculation prepared for the selected text models; actual billing remains separate. Original V3 per-case estimates are available. |
 | Explain failures using real examples | Original M5 failures recounted and saved. Revised failure reports will use new run evidence. |
 | Cite datasets and check licences | Five upstream sources identified. Restaurant licence is Unknown; shopping-source terms conflict. These points remain unresolved. |
@@ -28,16 +28,10 @@ The original evidence verifier passed for all 60 M5 baseline records. The origin
 
 ## Experiments
 
-No new formal hard-case results are claimed on this page. Completed live experiments will be linked here only after their saved evidence has been checked. Earlier M6 results remain separate and do not stand in for the revised comparison.
+The [current progress record](reports/PROGRESS.md) documents the verified 54-record main-grid snapshot, the daily provider-quota stop and the independent second-model continuation. The revised grids remain incomplete; no new hard-case comparative result is claimed.
 
-The [first live development pilot](reports/PILOT_v1.md) completed both systems successfully. Its saved evidence passed verification in Colab and locally. It is separate from the formal tests.
+The [first development pilot](reports/PILOT_v1.md) and [final pilot and repeated-seed check](reports/PREFLIGHT_v2.md) are separate from the formal grids. Their saved evidence passed Colab and local checks.
 
-The [final pilot and repeated-seed check](reports/PREFLIGHT_v2.md) passed in Colab and locally. The new formal grid has started; the first request encountered a recorded HTTP 503 service error. That failed record is preserved, and remaining requests resume without replacing it. No full comparative result is claimed.
+The original partial main grid and its unfinished journal remain preserved. [Recovery](RECOVERY.md) explains why main-v2 is the primary new grid and why the earlier records are not pooled with it.
 
-The separate [M6 review revision](https://github.com/BashaierAwal/riyadh-travel-planner-m6-multi-agent/tree/m6/review-revision) contains the revised implementation and retains the earlier experiment as history.
-
-An execution interruption left the first partial grid incomplete. [Recovery is documented here](RECOVERY.md). The primary complete comparison uses main-v2 with the same frozen code and settings; the earlier records and unfinished journal are preserved separately.
-
-The [27-record checkpoint](reports/PROGRESS_27.md) passed local evidence verification. The revised main grid remains incomplete. The controller continues past recorded internal step-limit failures without retrying or replacing them.
-
-The latest [34-record snapshot](reports/PROGRESS_34.md) passed Colab and local evidence verification. It is preserved separately while the registered main grid continues. [Activity-coverage limits](reports/ORIGINAL_CASE_COVERAGE.md) are documented for the original requests.
+The separate [M6 review revision](https://github.com/BashaierAwal/riyadh-travel-planner-m6-multi-agent/tree/m6/review-revision) retains the earlier experiment as history. [Original-case coverage limits](reports/ORIGINAL_CASE_COVERAGE.md) are documented without changing the approved data or requests.

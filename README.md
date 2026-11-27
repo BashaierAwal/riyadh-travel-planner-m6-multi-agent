@@ -4,6 +4,8 @@ The revised comparison follows the updated M5 evaluation. It keeps the approved 
 
 - [Revised protocol](revision/PROTOCOL.md)
 - [Current status](revision/STATUS.md)
+- [Verified checkpoint and current execution](revision/reports/PROGRESS.md)
+- [Draft of the revised M6 evaluation](reports/M6_Review_Report_Draft.md)
 - [Original and harder cases](revision/cases/)
 - [Shared implementation and run instructions](revision/README.md)
 - [Verified development pilot](revision/reports/PILOT_v1.md)
