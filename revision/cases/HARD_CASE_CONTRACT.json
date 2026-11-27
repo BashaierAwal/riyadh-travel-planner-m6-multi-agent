@@ -1,0 +1,550 @@
+{
+  "scope": "Data-based acceptance rules and candidate counts, not model-performance results",
+  "dataset_sha256": {
+    "activities": "df5abb1fbb5fe13e0e8f20776fc83f707f2d7bf5e610a36acedb06cffa76d01f",
+    "restaurants": "2f808d6007d026b3c11b38ea9c922560b97920f3da82020b3662b24313c63cbc",
+    "hotels": "910e7b6055b37fd76c0aec254e4e8f5cf9a6028735096a112f512f3c715ae878"
+  },
+  "cases": [
+    {
+      "case_id": "H01",
+      "trip_duration": 1,
+      "interests": [
+        "Shopping",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 25,
+        "hotel_cap_sar": 350,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Shopping": 1,
+          "Entertainment": 1
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 1,
+      "available_activities_per_interest": {
+        "Shopping": 858,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 1.5184535656956353
+    },
+    {
+      "case_id": "H02",
+      "trip_duration": 2,
+      "interests": [
+        "Shopping",
+        "Entertainment"
+      ],
+      "budget_level": "Medium",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 750,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Shopping": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 14,
+      "hotels_with_coordinates": 8,
+      "hotels_meeting_cost_and_coordinate_rules": 4,
+      "available_activities_per_interest": {
+        "Shopping": 858,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 4.990545573858018
+    },
+    {
+      "case_id": "H03",
+      "trip_duration": 2,
+      "interests": [
+        "Shopping",
+        "Entertainment"
+      ],
+      "budget_level": "High",
+      "constraints": {
+        "max_km_per_day": 50,
+        "hotel_cap_sar": 1400,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Shopping": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 22,
+      "hotels_with_coordinates": 9,
+      "hotels_meeting_cost_and_coordinate_rules": 3,
+      "available_activities_per_interest": {
+        "Shopping": 858,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 2.9173473214532266
+    },
+    {
+      "case_id": "H04",
+      "trip_duration": 3,
+      "interests": [
+        "Shopping",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 900,
+        "nights": 2,
+        "minimum_interest_slots": {
+          "Shopping": 3,
+          "Entertainment": 3
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 2,
+      "available_activities_per_interest": {
+        "Shopping": 858,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 3.1985905259512504
+    },
+    {
+      "case_id": "H05",
+      "trip_duration": 1,
+      "interests": [
+        "Culture & History",
+        "Shopping"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 25,
+        "hotel_cap_sar": 350,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Culture & History": 1,
+          "Shopping": 1
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 1,
+      "available_activities_per_interest": {
+        "Culture & History": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 2.116554484780526
+    },
+    {
+      "case_id": "H06",
+      "trip_duration": 2,
+      "interests": [
+        "Culture & History",
+        "Shopping"
+      ],
+      "budget_level": "Medium",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 750,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Culture & History": 2,
+          "Shopping": 2
+        }
+      },
+      "hotels_in_budget_category": 14,
+      "hotels_with_coordinates": 8,
+      "hotels_meeting_cost_and_coordinate_rules": 4,
+      "available_activities_per_interest": {
+        "Culture & History": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 9.044811578154869
+    },
+    {
+      "case_id": "H07",
+      "trip_duration": 2,
+      "interests": [
+        "Culture & History",
+        "Shopping"
+      ],
+      "budget_level": "High",
+      "constraints": {
+        "max_km_per_day": 50,
+        "hotel_cap_sar": 1400,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Culture & History": 2,
+          "Shopping": 2
+        }
+      },
+      "hotels_in_budget_category": 22,
+      "hotels_with_coordinates": 9,
+      "hotels_meeting_cost_and_coordinate_rules": 3,
+      "available_activities_per_interest": {
+        "Culture & History": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 13.219942330788626
+    },
+    {
+      "case_id": "H08",
+      "trip_duration": 3,
+      "interests": [
+        "Culture & History",
+        "Shopping"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 900,
+        "nights": 2,
+        "minimum_interest_slots": {
+          "Culture & History": 3,
+          "Shopping": 3
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 2,
+      "available_activities_per_interest": {
+        "Culture & History": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 16.130228803934536
+    },
+    {
+      "case_id": "H09",
+      "trip_duration": 1,
+      "interests": [
+        "Nature & Outdoors",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 25,
+        "hotel_cap_sar": 350,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Nature & Outdoors": 1,
+          "Entertainment": 1
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 1,
+      "available_activities_per_interest": {
+        "Nature & Outdoors": 9,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 2.7852156179201613
+    },
+    {
+      "case_id": "H10",
+      "trip_duration": 2,
+      "interests": [
+        "Nature & Outdoors",
+        "Entertainment"
+      ],
+      "budget_level": "Medium",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 750,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Nature & Outdoors": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 14,
+      "hotels_with_coordinates": 8,
+      "hotels_meeting_cost_and_coordinate_rules": 4,
+      "available_activities_per_interest": {
+        "Nature & Outdoors": 9,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 13.17589778960956
+    },
+    {
+      "case_id": "H11",
+      "trip_duration": 2,
+      "interests": [
+        "Nature & Outdoors",
+        "Entertainment"
+      ],
+      "budget_level": "High",
+      "constraints": {
+        "max_km_per_day": 50,
+        "hotel_cap_sar": 1400,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Nature & Outdoors": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 22,
+      "hotels_with_coordinates": 9,
+      "hotels_meeting_cost_and_coordinate_rules": 3,
+      "available_activities_per_interest": {
+        "Nature & Outdoors": 9,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 13.335559671613712
+    },
+    {
+      "case_id": "H12",
+      "trip_duration": 3,
+      "interests": [
+        "Nature & Outdoors",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 900,
+        "nights": 2,
+        "minimum_interest_slots": {
+          "Nature & Outdoors": 3,
+          "Entertainment": 3
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 2,
+      "available_activities_per_interest": {
+        "Nature & Outdoors": 9,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 18.18575148472938
+    },
+    {
+      "case_id": "H13",
+      "trip_duration": 1,
+      "interests": [
+        "Religious",
+        "Shopping"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 25,
+        "hotel_cap_sar": 350,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Religious": 1,
+          "Shopping": 1
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 1,
+      "available_activities_per_interest": {
+        "Religious": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 3.3029892822066977
+    },
+    {
+      "case_id": "H14",
+      "trip_duration": 2,
+      "interests": [
+        "Religious",
+        "Shopping"
+      ],
+      "budget_level": "Medium",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 750,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Religious": 2,
+          "Shopping": 2
+        }
+      },
+      "hotels_in_budget_category": 14,
+      "hotels_with_coordinates": 8,
+      "hotels_meeting_cost_and_coordinate_rules": 4,
+      "available_activities_per_interest": {
+        "Religious": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 11.824671262457137
+    },
+    {
+      "case_id": "H15",
+      "trip_duration": 2,
+      "interests": [
+        "Religious",
+        "Shopping"
+      ],
+      "budget_level": "High",
+      "constraints": {
+        "max_km_per_day": 50,
+        "hotel_cap_sar": 1400,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Religious": 2,
+          "Shopping": 2
+        }
+      },
+      "hotels_in_budget_category": 22,
+      "hotels_with_coordinates": 9,
+      "hotels_meeting_cost_and_coordinate_rules": 3,
+      "available_activities_per_interest": {
+        "Religious": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 16.569399463509708
+    },
+    {
+      "case_id": "H16",
+      "trip_duration": 3,
+      "interests": [
+        "Religious",
+        "Shopping"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 900,
+        "nights": 2,
+        "minimum_interest_slots": {
+          "Religious": 3,
+          "Shopping": 3
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 2,
+      "available_activities_per_interest": {
+        "Religious": 9,
+        "Shopping": 858
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 15.062950291112118
+    },
+    {
+      "case_id": "H17",
+      "trip_duration": 1,
+      "interests": [
+        "Landmarks & Sightseeing",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 25,
+        "hotel_cap_sar": 350,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Landmarks & Sightseeing": 1,
+          "Entertainment": 1
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 1,
+      "available_activities_per_interest": {
+        "Landmarks & Sightseeing": 4,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 5.430423040524286
+    },
+    {
+      "case_id": "H18",
+      "trip_duration": 2,
+      "interests": [
+        "Landmarks & Sightseeing",
+        "Entertainment"
+      ],
+      "budget_level": "Medium",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 750,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Landmarks & Sightseeing": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 14,
+      "hotels_with_coordinates": 8,
+      "hotels_meeting_cost_and_coordinate_rules": 4,
+      "available_activities_per_interest": {
+        "Landmarks & Sightseeing": 4,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 9.77637795814338
+    },
+    {
+      "case_id": "H19",
+      "trip_duration": 2,
+      "interests": [
+        "Landmarks & Sightseeing",
+        "Entertainment"
+      ],
+      "budget_level": "High",
+      "constraints": {
+        "max_km_per_day": 50,
+        "hotel_cap_sar": 1400,
+        "nights": 1,
+        "minimum_interest_slots": {
+          "Landmarks & Sightseeing": 2,
+          "Entertainment": 2
+        }
+      },
+      "hotels_in_budget_category": 22,
+      "hotels_with_coordinates": 9,
+      "hotels_meeting_cost_and_coordinate_rules": 3,
+      "available_activities_per_interest": {
+        "Landmarks & Sightseeing": 4,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 14.411622634344116
+    },
+    {
+      "case_id": "H20",
+      "trip_duration": 3,
+      "interests": [
+        "Landmarks & Sightseeing",
+        "Entertainment"
+      ],
+      "budget_level": "Low",
+      "constraints": {
+        "max_km_per_day": 40,
+        "hotel_cap_sar": 900,
+        "nights": 2,
+        "minimum_interest_slots": {
+          "Landmarks & Sightseeing": 3,
+          "Entertainment": 3
+        }
+      },
+      "hotels_in_budget_category": 19,
+      "hotels_with_coordinates": 6,
+      "hotels_meeting_cost_and_coordinate_rules": 2,
+      "available_activities_per_interest": {
+        "Landmarks & Sightseeing": 4,
+        "Entertainment": 207
+      },
+      "checked_feasible_example_exists": true,
+      "example_max_daily_km": 18.19786693341072
+    }
+  ]
+}
