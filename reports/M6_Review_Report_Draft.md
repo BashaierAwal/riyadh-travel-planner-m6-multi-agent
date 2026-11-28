@@ -26,6 +26,22 @@ After the initial plan, both systems receive deterministic feedback. The single 
 
 The shared execution policy uses temperature zero, requested seeds 11, 22 and 33, an 8,192-output-token ceiling, a sixty-second timeout and at least twelve seconds between HTTP request starts. There are no hidden provider retries. Every completed failed record remains in the results. An intermediate draft cannot replace a missing final answer.
 
+## Original M5 baseline
+
+The original M5 V3 evidence was rechecked for all sixty records: twenty original requests and three seeds. Its saved scores are shown here as historical context. The revised baseline has different tools and a repair policy, so these records are not pooled with it or used as its paired comparison. V2 evidence is not used for the baseline claims below.
+
+| Measure | Mean ± SD of three seed means (%) | SD across sixty runs (percentage points) |
+|---|---:|---:|
+| Activity preference match | 93.50 ± 2.89 | 19.44 |
+| Restaurant budget match | 96.67 ± 2.89 | 18.10 |
+| Hotel budget match | 96.67 ± 2.89 | 18.10 |
+| Structural itinerary feasibility | 81.67 ± 2.89 | 39.02 |
+| Search-tool coverage | 100.00 ± 0.00 | 0.00 |
+
+Structural pass³ was 80%: sixteen of twenty original cases passed structural itinerary feasibility on all three seeds. This historical measure does not certify the new distance, hotel-cost, interest-quota or search-grounding rules. Search-tool coverage records whether each search tool was used; it does not prove that every selected place was returned by search.
+
+Eleven original records failed structural feasibility: nine contained repeated activities and two had no readable output. For example, G05 with seed 33 selected ACT_00813 on both day 1 and day 5. G07 with seed 22 failed to return a readable itinerary. These are saved outcome examples, not evidence that removing or adding a particular team role caused the failure. The [recheck evidence](../revision/reports/M5_V3_RECHECK.json) contains all counts and examples.
+
 ## Experimental comparisons
 
 The main grid contains forty requests, three seeds and two systems: 240 records. A dated execution appendix prioritises the twenty hard requests after finishing any started original case, preserving all registered units and their within-case condition order. Group completion and full-grid completion are reported separately. The primary model is gemini-3.5-flash-lite. Original and additional cases are reported separately. The historical M5 V3 baseline remains available as context, but its sixty runs are not pooled with the revised baseline because the tools and repair policy differ.
