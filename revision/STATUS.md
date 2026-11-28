@@ -28,7 +28,7 @@ The original evidence verifier passed for all 60 M5 baseline records. The origin
 
 Two additional numeric-replay tests passed in both working copies. A [cross-platform check](reports/NUMERIC_REPLAY.md) confirmed identical rule decisions for all twenty feasible examples despite tiny route-number rounding differences. Raw hashes and all non-route checks remain exact.
 
-The [deadline queue](reports/PRIORITY_EXECUTION.md) prioritises the new hard cases after finishing a started original case. All forty registered cases remain planned; no data or scoring change is made.
+The [registered queue](reports/PRIORITY_EXECUTION.md) prioritises the new hard cases after finishing a started original case. All forty registered cases remain planned; no data or scoring change is made.
 
 ## Experiments
 
@@ -41,3 +41,7 @@ The original partial main grid and its unfinished journal remain preserved. [Rec
 The separate [M6 review revision](https://github.com/BashaierAwal/riyadh-travel-planner-m6-multi-agent/tree/m6/review-revision) retains the earlier experiment as history. [Original-case coverage limits](reports/ORIGINAL_CASE_COVERAGE.md) are documented without changing the approved data or requests.
 
 Three complete-group reporting tests also passed in each working copy. The reporting guard refuses the incomplete live hard-case group; it cannot produce a comparison from whichever cases happened to finish first.
+
+## Full study scope confirmed on 28 November 2026
+
+The complete 840-record plan is retained with Gemini. There is no current submission deadline constraint. Hard-case groups run first, followed by the remaining original-case comparisons. A separately saved, bounded service-error supervisor can wait five minutes and continue unstarted records after temporary provider failures; it stops at quota or inspection errors.
