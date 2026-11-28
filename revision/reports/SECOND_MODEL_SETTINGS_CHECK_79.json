@@ -1,0 +1,15 @@
+{
+  "scope": "Saved request-configuration audit, not a performance comparison or proof of seed determinism",
+  "records": 79,
+  "generation_requests": 670,
+  "archive_sha256": "e752b595cf4873d47760bd4088a4c98fefec3379d07198017d9c700bce92ba80",
+  "identity_sha256": "a62c4c0b6866761728f26702167c7c199c542bd649ed8c62e9a606ad73493656",
+  "requested_models": {
+    "gemini-3.1-flash-lite": 670
+  },
+  "requested_seed_matches_record": true,
+  "temperature": 0,
+  "max_output_tokens_per_request": 8192,
+  "all_requests_match_registered_settings": true,
+  "server_seed_determinism_claim": false
+}

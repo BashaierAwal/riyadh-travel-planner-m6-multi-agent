@@ -1,0 +1,41 @@
+{
+  "status": "pass_with_explicit_python_error_text_compatibility",
+  "evidence_mode": "live",
+  "completed": 103,
+  "expected": 240,
+  "route_tolerance_km": 1e-12,
+  "rounding_comparisons": 146,
+  "maximum_difference_km": 1.4210854715202004e-14,
+  "execution_priority": {
+    "registered_at_utc": "2026-11-28T08:01:14.054511+00:00",
+    "worker_sha256": "c95bc39ceb2fc45e01aee8e34e2a49ce489eea67194aad89859bd7edb243f7dc",
+    "queue_sha256": "6fc0598df20f4f494439674e4b8be8817fc257841d711226b707b297739f2787",
+    "finish_started_original_cases": []
+  },
+  "raw_integrity_checks": "Exact manifest, source, dataset, record and journal hashes",
+  "other_replay_checks": "Exact IDs, result ordering, scores, rule decisions and non-route values except the two listed Python error qualification strings",
+  "scope": "Native Python 3.13.18 exact audit passed independently in Colab. Local audit additionally maps only the exact missing-budget argument error for find_hotels to its recorded qualified spelling. The saved journal and generation code are unchanged. Route-number tolerance remains 1e-12 km.",
+  "verifier_sha256": "50ba84332ea495034e9187c81bd030ac2d12302f9ef083355c6a57ae6eb8b015",
+  "local_python": "3.9.6",
+  "recorded_python": "3.13.18",
+  "error_text_exceptions": [
+    {
+      "tool": "find_hotels",
+      "arguments": {
+        "limit": 5,
+        "center_id": "ACT_00504"
+      },
+      "local_error": "find_hotels() missing 1 required positional argument: 'budget_level'",
+      "recorded_error": "Tools.find_hotels() missing 1 required positional argument: 'budget_level'"
+    },
+    {
+      "tool": "find_hotels",
+      "arguments": {
+        "center_id": "ACT_00084",
+        "limit": 5
+      },
+      "local_error": "find_hotels() missing 1 required positional argument: 'budget_level'",
+      "recorded_error": "Tools.find_hotels() missing 1 required positional argument: 'budget_level'"
+    }
+  ]
+}
