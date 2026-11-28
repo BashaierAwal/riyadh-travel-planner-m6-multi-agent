@@ -24,14 +24,18 @@ The [role-tool audit](ROLE_TOOL_AUDIT_54.json) counts executed feasibility-stage
 
 ## Second-model saved checkpoint
 
-The locally verified checkpoint contains 24 of 240 records and 173 generation requests. G01, G02, G03 and H01 each have both conditions and all three requested seeds. This is six of the 120 required hard-group records; it is not a completed hard-case comparison.
+The locally verified checkpoint contains 46 of 240 records and 359 generation requests. G01–G03 and H01–H04 each have both conditions and all three requested seeds; H05 has four of its six planned records. The hard group has 28 of 120 required records and remains incomplete.
 
-Seven attempts ended at the registered model-stage request limit. Eight ended with provider-service errors: six HTTP 503 responses and two connection or timeout failures. All fifteen failed attempts remain included. The source, data, record and journal checks passed in Colab and locally. Calculated route differences on the Mac were at most 3.553e-15 km, within the disclosed route-only tolerance; scores and rule decisions matched exactly.
+Sixteen attempts ended at the registered model-stage request limit. Thirteen ended with provider-service errors: eleven HTTP 503 responses and two connection or timeout failures. All these attempts remain included. The saved HTTP 503 responses report temporary high demand. Source, data, record and journal checks passed in Colab and locally. The maximum route-only replay difference on the Mac was 7.106e-15 km; scores and rule decisions matched exactly.
 
-The priority appendix was registered before any hard-case model output. It finished G03 before moving to H01. The saved checkpoint also includes the continuation supervisor, controller and their policy. Their source hashes match that policy. The supervisor waits for an existing controller to stop before any continuation, waits five minutes after a temporary service error, and allows at most four continuations per invocation. Quota, access and inspection failures stop it.
+The [request-configuration audit](MODEL_SETTINGS_CHECK_46.json) checked all 359 saved generation requests. Both systems and every serial role requested gemini-3.1-flash-lite, the recorded seed, temperature zero and the registered 8,192-output-token ceiling. This confirms requested settings, not that the provider produces deterministic outputs.
 
-[Second-model 24-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_24.zip). Archive SHA256: `396bd9696179bdf6c072b507dab0875747981f63a84183098564c74ee22cf601`.
+The priority appendix was registered before any hard-case model output. It finished G03 before H01. The snapshot includes the bounded continuation supervisor, controller and their policy. After repeated service failures, the supervisor stopped at its continuation limit. Two separate availability checks then returned HTTP 200: one short request with the shared tool declarations and one with a larger synthetic context. Their saved diagnostic trace is separate from the case records and is not scored or counted in the 359 study requests. A new bounded continuation was started after these checks; saved failed attempts are never retried or replaced.
+
+[Second-model 46-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_46.zip). Archive SHA256: `f78ea726a8f6f6edce497d35853b5b18d88eab2fd19c6d0d82a94f58a812d2af`.
 
 ## Scope confirmed on 28 November
 
-The full 840-record Gemini study is retained: main 240, component removals 240, second model 240 and coordinator-only 120. The submission deadline constraint has been removed. The registered case order and all generation settings remain unchanged. Hard-group completion remains an intermediate milestone; the remaining original cases still run afterward. This page reports a verified saved snapshot, not a live completion counter.
+The full 840-record Gemini study is retained: main 240, component removals 240, second model 240 and coordinator-only 120. The submission deadline constraint has been removed. The registered case order and all generation settings remain unchanged. Hard-group completion remains an intermediate milestone; the remaining original cases still run afterward.
+
+The two published snapshots contain 100 saved study attempts in total: 54 main-model and 46 second-model records, including failures. The grids remain incomplete. This page reports verified snapshots, not a live completion counter.

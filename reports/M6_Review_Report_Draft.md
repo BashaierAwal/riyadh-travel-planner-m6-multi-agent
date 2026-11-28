@@ -42,7 +42,7 @@ The primary outcome is complete-constraint success on H01–H20, including searc
 
 For each condition, the report gives the mean and sample standard deviation of the three seed means, alongside variation across runs. Pass³ is the share of cases that pass on all three runs. Conditions are compared using one mean paired difference per case, preserving its three seeds together. The 95% bootstrap interval uses 20,000 case resamples. A two-sided sign-flip test also operates on case means. Secondary outcomes and component-removal comparisons are exploratory.
 
-Execution time includes failed runs. Total elapsed time, measured scheduled pacing and elapsed time excluding pacing are reported separately. Time excluding pacing still includes network, tool and local processing. Cost estimates use dated official prices for the exact model and observed billable tokens, including thinking tokens where reported. List-price estimates remain separate from actual billing.
+Per-attempt execution time includes failed runs. Total elapsed time for an attempt, measured scheduled pacing and elapsed time excluding pacing are reported separately. Service cooldowns and daily-quota waits occur between attempts and are logged separately; they are outside the measured time for an individual attempt. Time excluding pacing still includes network, tool and local processing. Cost estimates use dated official prices for the exact model and observed billable tokens, including thinking tokens where reported. List-price estimates remain separate from actual billing. Cost and speed are interpreted alongside success, since an early failure can consume less time or fewer tokens.
 
 ## Failure interpretation and limits
 
