@@ -45,3 +45,5 @@ Three complete-group reporting tests also passed in each working copy. The repor
 ## Full study scope confirmed on 28 November 2026
 
 The complete 840-record plan is retained with Gemini. There is no current submission deadline constraint. Hard-case groups run first, followed by the remaining original-case comparisons. A separately saved, bounded service-error supervisor can wait five minutes and continue unstarted records after temporary provider failures; it stops at quota or inspection errors.
+
+A second service supervisor adds readiness checks before controller starts, with bounded waits and no new case attempt while a check fails. Its six software tests passed in each working copy. This operational change preserves the frozen generation settings and all saved outcomes. See the [execution appendix](reports/PRIORITY_EXECUTION.md).
