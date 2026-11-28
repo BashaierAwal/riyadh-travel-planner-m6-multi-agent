@@ -32,7 +32,7 @@ The [registered queue](reports/PRIORITY_EXECUTION.md) prioritises the new hard c
 
 ## Experiments
 
-The [current progress record](reports/PROGRESS.md) documents the verified 103-record main-grid and 79-record second-model snapshots, quota and service stops, and the second-model continuation. The revised grids remain incomplete; no new hard-case comparative result is claimed.
+The [current progress record](reports/PROGRESS.md) documents the verified 103-record main-grid and 88-record second-model snapshots, quota and service stops, and the second-model continuation. The revised grids remain incomplete; no new hard-case comparative result is claimed.
 
 The [first development pilot](reports/PILOT_v1.md) and [final pilot and repeated-seed check](reports/PREFLIGHT_v2.md) are separate from the formal grids. Their saved evidence passed Colab and local checks.
 

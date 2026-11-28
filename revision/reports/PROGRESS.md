@@ -1,6 +1,6 @@
 # Current experiment progress
 
-Updated 28 November 2026, 20:06 Riyadh. The revised comparison is incomplete. Counts below describe verified saved snapshots, including failed attempts.
+Updated 28 November 2026, 20:42 Riyadh. The revised comparison is incomplete. Counts below describe verified saved snapshots, including failed attempts.
 
 ## Main grid
 
@@ -12,15 +12,15 @@ The checkpoint contains 875 generation requests. Six attempts ended at the regis
 
 ## Second-model grid
 
-The gemini-3.1-flash-lite checkpoint contains 79 of 240 records: 18 original-case records covering G01–G03, and 61 hard-case records. H01–H10 are complete; H11 has one of six records. This hard group also remains incomplete.
+The gemini-3.1-flash-lite checkpoint contains 88 of 240 records: 18 original-case records covering G01–G03, and 70 hard-case records. H01–H11 are complete; H12 has four of six records. This hard group also remains incomplete.
 
-The checkpoint contains 670 generation requests. Twenty-nine attempts ended at the registered model-stage request limit. Twenty-one ended with provider-service errors: sixteen HTTP 503 responses, four connection or timeout failures, and one earlier HTTP 429 daily-quota response. The scheduled continuation stopped after its bounded temporary-error continuations were used. All failed attempts remain included.
+The checkpoint contains 738 generation requests. Thirty-three attempts ended at the registered model-stage request limit. Twenty-four ended with provider-service errors: seventeen HTTP 503 responses, six connection or timeout failures, and one earlier HTTP 429 daily-quota response. The scheduled continuation stopped after its bounded temporary-error continuations were used. All failed attempts remain included.
 
-[Second-model 79-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_79.tar.xz). Published archive SHA256: `a6408c049e0f6a017bff85cfbc759d55981bb6eac6fb1a85a67956f3cbf62c72`. Its files match the downloaded ZIP exactly; ZIP SHA256: `e752b595cf4873d47760bd4088a4c98fefec3379d07198017d9c700bce92ba80`.
+[Second-model 88-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_88.tar.xz). Published archive SHA256: `a99201e11cdd784f53beb8463ccbd62c9aa1eec471de93f7d08e0ebeb95a3d50`. Its files match the downloaded ZIP exactly; ZIP SHA256: `f1b852c03e7322fc89ef72d2f162e171fcfb00f1d26a48663ee1c7b43c2ecd42`.
 
 ## Verification
 
-Both archives passed native exact verification in Colab with Python 3.13.18, including source and dataset checksums, record and journal integrity, scores and dataset-backed tool replay. No unfinished record existed when the snapshots were taken. The [main settings audit](MAIN_SETTINGS_CHECK_103.json) and [second-model settings audit](SECOND_MODEL_SETTINGS_CHECK_79.json) checked every saved generation request against its registered model, requested seed, temperature zero and 8,192-output-token ceiling. Requested settings do not prove provider seed determinism.
+Both archives passed native exact verification in Colab with Python 3.13.18, including source and dataset checksums, record and journal integrity, scores and dataset-backed tool replay. The archives contain completed records only. The main snapshot was taken while its grid was stopped; the later second-model snapshot excludes its active unfinished attempt. The [main settings audit](MAIN_SETTINGS_CHECK_103.json) and [second-model settings audit](SECOND_MODEL_SETTINGS_CHECK_88.json) checked every saved generation request against its registered model, requested seed, temperature zero and 8,192-output-token ceiling. Requested settings do not prove provider seed determinism.
 
 The second-model archive also passed the Mac replay check with the documented route-only 1e-12 km tolerance. The main archive has two additional cross-version text differences: Python 3.13 qualifies a missing-argument error with `Tools.`, while local Python 3.9 omits that prefix. The [explicit replay note](MAIN_REPLAY_NOTE_103.json) lists both occurrences. A separate local check with only those exact error-text mappings passed; raw journals were not rewritten. Scores and rule decisions matched exactly. The maximum route-number difference in each archive was 1.4211e-14 km. The unchanged Mac verifier alone does not pass the main archive, so that limitation remains visible. Native exact verification is the reference.
 
@@ -28,7 +28,7 @@ The second-model archive also passed the Mac replay check with the documented ro
 
 The queued 28 November continuation ran after the daily quota reset. Main advanced from 54 to 103 records and second model from 61 to 79. The scheduled sequence finished at 11:03 UTC. Reconnecting the notebook later recovered the same runtime and saved source.
 
-At 17:07 UTC (20:07 Riyadh), a new bounded second-model continuation was started after several hours without requests. It checks availability with separate synthetic text before starting an unstarted study case. This is an operational start receipt, not a claim that a new planning case has succeeded. Saved failed attempts are never retried. The main grid remains stopped at its daily model quota. Component-removal and coordinator-only grids remain pending.
+At 17:07 UTC (20:07 Riyadh), a new bounded second-model continuation was started after several hours without requests. It checks availability with separate synthetic text before starting an unstarted study case. A live check at 17:38 UTC confirmed both readiness requests returned HTTP 200 and the controller was running. The 17:42 UTC snapshot then verified 88 saved second-model records. The live count can advance beyond this snapshot; this page does not claim any later outcome. Saved failed attempts are never retried. The main grid remains stopped at its daily model quota. Component-removal and coordinator-only grids remain pending.
 
 All generation uses frozen source commit `797621176f2148d804d111437713a7c1c3d899b8`, approved data, cases, seeds, prompts, tools and limits. The [execution appendix](PRIORITY_EXECUTION.md) records the order: finish a started original case, then H01–H20, then remaining original cases. All forty inputs remain registered. Hard-group completion is an intermediate milestone, not a reduced study.
 
@@ -36,6 +36,6 @@ All generation uses frozen source commit `797621176f2148d804d111437713a7c1c3d899
 
 The full 840-record Gemini study is retained: main 240, component removals 240, second model 240 and coordinator-only 120. No paid upgrade or provider switch was made. The deadline constraint has been removed.
 
-These snapshots contain 182 of 840 planned study attempts (21.67%), including failures. This percentage measures saved experimental attempts, not overall submission readiness. Complete predefined groups are required before reporting paired estimates, confidence intervals and pass³. The remaining experiments, revised result tables, error analysis and final M6 report are still required.
+These snapshots contain 191 of 840 planned study attempts (22.74%), including failures. This percentage measures saved experimental attempts, not overall submission readiness. Complete predefined groups are required before reporting paired estimates, confidence intervals and pass³. The remaining experiments, revised result tables, error analysis and final M6 report are still required.
 
 The [role-tool audit](ROLE_TOOL_AUDIT_54.json) and [original-case coverage note](ORIGINAL_CASE_COVERAGE.md) remain diagnostics. They do not replace a complete comparison or establish the cause of a revised failure.
