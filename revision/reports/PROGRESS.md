@@ -1,6 +1,6 @@
 # Current experiment progress
 
-Updated 27 November 2026. The revised comparison is incomplete.
+Updated 28 November 2026. The revised comparison is incomplete.
 
 ## Main grid
 
@@ -24,8 +24,14 @@ The [role-tool audit](ROLE_TOOL_AUDIT_54.json) counts executed feasibility-stage
 
 ## Second-model saved checkpoint
 
-The locally verified checkpoint has 16 of 240 records, all from original cases. It includes 107 generation requests, five model-stage-limit failures and five provider-service failures (four HTTP 503 responses and one connection or timeout failure). The failed attempts remain saved. A separate small service check returned HTTP 200 before continuation; it is not a case result and is excluded from the checkpoint counts.
+The locally verified checkpoint contains 24 of 240 records and 173 generation requests. G01, G02, G03 and H01 each have both conditions and all three requested seeds. This is six of the 120 required hard-group records; it is not a completed hard-case comparison.
 
-The priority appendix was registered before any hard-case model output, with zero hard-case records at registration. G03 finishes before H01 starts. The manifest, source, data, record and journal checks passed in Colab and locally. This is a saved checkpoint, not a live completion counter.
+Seven attempts ended at the registered model-stage request limit. Eight ended with provider-service errors: six HTTP 503 responses and two connection or timeout failures. All fifteen failed attempts remain included. The source, data, record and journal checks passed in Colab and locally. Calculated route differences on the Mac were at most 3.553e-15 km, within the disclosed route-only tolerance; scores and rule decisions matched exactly.
 
-[Second-model 16-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_16.zip). Archive SHA256: `bb4919f684f23ae3a6a0117c6c5f550a83981ea0522eb5b501674f1beebec43d`.
+The priority appendix was registered before any hard-case model output. It finished G03 before moving to H01. The saved checkpoint also includes the continuation supervisor, controller and their policy. Their source hashes match that policy. The supervisor waits for an existing controller to stop before any continuation, waits five minutes after a temporary service error, and allows at most four continuations per invocation. Quota, access and inspection failures stop it.
+
+[Second-model 24-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_24.zip). Archive SHA256: `396bd9696179bdf6c072b507dab0875747981f63a84183098564c74ee22cf601`.
+
+## Scope confirmed on 28 November
+
+The full 840-record Gemini study is retained: main 240, component removals 240, second model 240 and coordinator-only 120. The submission deadline constraint has been removed. The registered case order and all generation settings remain unchanged. Hard-group completion remains an intermediate milestone; the remaining original cases still run afterward. This page reports a verified saved snapshot, not a live completion counter.

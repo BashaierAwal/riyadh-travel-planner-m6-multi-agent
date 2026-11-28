@@ -1,6 +1,6 @@
 # Review update status
 
-Updated 27 November 2026. This page separates implemented changes from experiments that still need saved results.
+Updated 28 November 2026. This page separates implemented changes from experiments that still need saved results.
 
 | Review request | Current status |
 |---|---|
