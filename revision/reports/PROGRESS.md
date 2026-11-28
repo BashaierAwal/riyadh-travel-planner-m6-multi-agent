@@ -24,18 +24,24 @@ The [role-tool audit](ROLE_TOOL_AUDIT_54.json) counts executed feasibility-stage
 
 ## Second-model saved checkpoint
 
-The locally verified checkpoint contains 46 of 240 records and 359 generation requests. G01–G03 and H01–H04 each have both conditions and all three requested seeds; H05 has four of its six planned records. The hard group has 28 of 120 required records and remains incomplete.
+The locally verified checkpoint contains 61 of 240 records and 490 generation requests. G01–G03 and H01–H07 each have both conditions and all three requested seeds; H08 has one of its six planned records. The hard group has 43 of 120 required records and remains incomplete.
 
-Sixteen attempts ended at the registered model-stage request limit. Thirteen ended with provider-service errors: eleven HTTP 503 responses and two connection or timeout failures. All these attempts remain included. The saved HTTP 503 responses report temporary high demand. Source, data, record and journal checks passed in Colab and locally. The maximum route-only replay difference on the Mac was 7.106e-15 km; scores and rule decisions matched exactly.
+Twenty-one attempts ended at the registered model-stage request limit. Sixteen ended with provider-service errors: thirteen HTTP 503 responses, two connection or timeout failures and one HTTP 429 daily-quota response. All these attempts remain included. Source, data, record and journal checks passed in Colab and locally. The maximum route-only replay difference on the Mac was 7.106e-15 km; scores and rule decisions matched exactly.
 
-The [request-configuration audit](MODEL_SETTINGS_CHECK_46.json) checked all 359 saved generation requests. Both systems and every serial role requested gemini-3.1-flash-lite, the recorded seed, temperature zero and the registered 8,192-output-token ceiling. This confirms requested settings, not that the provider produces deterministic outputs.
+The [request-configuration audit](MODEL_SETTINGS_CHECK_61.json) checked all 490 saved generation requests. Both systems and every serial role requested gemini-3.1-flash-lite, the recorded seed, temperature zero and the registered 8,192-output-token ceiling. This confirms requested settings, not that the provider produces deterministic outputs.
 
-The priority appendix was registered before any hard-case model output. It finished G03 before H01. The snapshot includes the bounded continuation supervisor, controller and their policy. After repeated service failures, the supervisor stopped at its continuation limit. Two separate availability checks then returned HTTP 200: one short request with the shared tool declarations and one with a larger synthetic context. Their saved diagnostic trace is separate from the case records and is not scored or counted in the 359 study requests. A new bounded continuation was started after these checks; saved failed attempts are never retried or replaced.
+The priority appendix was registered before any hard-case model output. It finished G03 before H01. The snapshot includes the bounded continuation supervisors, controller, policies and separate synthetic service-readiness traces. These diagnostic requests are not scored or counted in the 490 study requests. Saved failed attempts are never retried or replaced.
 
-[Second-model 46-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_46.zip). Archive SHA256: `f78ea726a8f6f6edce497d35853b5b18d88eab2fd19c6d0d82a94f58a812d2af`.
+[Second-model 61-record evidence](../evidence/Riyadh_Review_Second_Model_Checkpoint_61.zip). Archive SHA256: `376f85e16cae1931ce44de7d582b325c30ca84adfbcf616ca8ea6404ff969c2a`.
+
+## Recovery and next continuation
+
+After the daily-quota stop, Colab disconnected. A fresh runtime was connected on 28 November, restored at the same frozen source commit and Python 3.13.18, and audited both saved grids. All 54 main and 61 second-model records passed the native exact replay; neither grid had an unfinished record.
+
+A background launcher was verified running at 07:17 UTC. It waits until 08:00:30 UTC (11:00:30 AM Riyadh) on 28 November, then invokes the unchanged readiness supervisor for the main grid and second-model grid in sequence. Each invocation checks service availability before starting an unstarted case. This is a queued continuation, not evidence that Google has reset the quota or that a new attempt has finished. It depends on Colab keeping the runtime connected. The full 840-record plan remains unchanged.
 
 ## Scope confirmed on 28 November
 
 The full 840-record Gemini study is retained: main 240, component removals 240, second model 240 and coordinator-only 120. The submission deadline constraint has been removed. The registered case order and all generation settings remain unchanged. Hard-group completion remains an intermediate milestone; the remaining original cases still run afterward.
 
-The two published snapshots contain 100 saved study attempts in total: 54 main-model and 46 second-model records, including failures. The grids remain incomplete. This page reports verified snapshots, not a live completion counter.
+The two published snapshots contain 115 saved study attempts in total: 54 main-model and 61 second-model records, including failures. The grids remain incomplete. This page reports verified snapshots, not a live completion counter.
